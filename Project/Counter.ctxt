@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Counter
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Counter\ here.\ @author\ (your\ name)\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Counter\ wants\ to\ do.\ A\ Counter\ will\ appear\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ addLife()
+comment2.text=\r\n\ Adds\ one\ life\ to\ the\ total\ amount\ of\ life\r\n
+comment3.params=
+comment3.target=void\ minLife()
+comment3.text=\r\n\ Removes\ one\ life\ to\ the\ total\ amount\ of\ life\r\n
+numComments=4
