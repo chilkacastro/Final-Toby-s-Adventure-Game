@@ -29,6 +29,7 @@
          */
         public void removeToby() {
             if (isTouching(Toby.class)) {
+                getWorld().addObject(new Blood(), getX()-50, getY());
                 removeTouching(Toby.class);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();
@@ -52,11 +53,17 @@
          * reviveToby() - bring back Toby
          */
         public void reviveToby() {
+        if (getWorld() instanceof Level1) {
             Level1 myLevel1 = (Level1)getWorld();
             myLevel1.addObject(new Toby(), 800, 640);
-           
+        }
+        else {
+            Level3 myLevel3 = (Level3)getWorld();
+            myLevel3.addObject(new Toby(), 800, 640);
+       
         }
     }
+}
       
 
 

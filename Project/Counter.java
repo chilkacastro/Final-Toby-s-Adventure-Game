@@ -7,7 +7,7 @@ import greenfoot.*;
 public class Counter extends Actor
 { 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
-    // protected int lifescore = 3;
+    
 
     /**
      * Act - do whatever the Counter wants to do. A Counter will appear whenever the 'Act' or 'Run' button gets pressed in the environment.

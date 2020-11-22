@@ -14,10 +14,48 @@ public class Truck1 extends Actor
      */
     public void act() 
     {
-       if(isTouching(Toby.class)) {
-           MyWorld myWorld = (MyWorld)getWorld();
-           myWorld.addScore(-100);
-       }
+       move(-3);    
+       removeToby();
+       if(isAtEdge()) {
+        turn(180);
+        move(20);
+       } 
+    }
         
-    }    
-}
+        /**
+         * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
+         */
+        public void removeToby() {
+            if (isTouching(Toby.class)) {
+                removeTouching(Toby.class);
+                deductPoints();
+                MyWorld myWorld = (MyWorld)getWorld();
+                if (myWorld.getLifeCount() > 0) {
+                    reviveToby();
+                }   
+    
+            }
+        }
+    
+        /**
+         * deducPoints() - to remove points when Toby touches the traffic cones.
+         */
+         public void deductPoints() {
+            MyWorld myWorld = (MyWorld)getWorld();
+            myWorld.lifeCount(-1);
+    
+        }
+    
+        /**
+         * reviveToby() - bring back Toby
+         */
+        public void reviveToby() {
+            Level3 myLevel3 = (Level3)getWorld();
+            myLevel3.addObject(new Toby(), 800, 640);
+           
+        }
+    }
+      
+
+
+ 

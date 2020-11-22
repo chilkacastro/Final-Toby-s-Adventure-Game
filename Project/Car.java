@@ -7,13 +7,14 @@
  * @version (a version number or a date)
  */
 public class Car extends Actor {
-    private int speed = 5;
+    private int speed;
+    private String image;
         
         /**
          * Default constructor 
          */
          public Car() {
-            // Chilka: I am trying to make a constructor here. If you have an idea, add something to the parameter.
+            speed = 2;
             
         } 
         
@@ -37,7 +38,8 @@ public class Car extends Actor {
          * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
          */
         public void removeToby() {
-            if (isTouching(Toby.class)) {
+             if (isTouching(Toby.class)) {
+                getWorld().addObject(new Blood(), getX()-80, getY());
                 removeTouching(Toby.class);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();
