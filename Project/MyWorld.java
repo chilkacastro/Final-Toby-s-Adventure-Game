@@ -1,5 +1,5 @@
     import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-    
+    import java.util.*;
 /**
  * Write a description of class MyWorld here.
  * 
@@ -7,11 +7,10 @@
  * @version (a version number or a date)
  */
  public class MyWorld extends World {
-
-    protected int score;                // initial points
-    protected int lifeCount;            // initial 3 lives
+    protected static int score;               // initial points
+    protected static int lifeCount;           // initial 3 lives
     protected static int zeroScore;
-
+    protected static int bloodCounter = 0;
         /**
          * Constructor for objects of class MyWorld.
          * 
@@ -36,6 +35,12 @@
          */
         public int getLifeCount() {
             return lifeCount;
+        }
+        /**
+         * getLifeCount() - To allow the actor classes to access the lifeCount.
+         */
+        public int getZeroScore() {
+            return zeroScore;
         }
     
         // SCORE
@@ -94,6 +99,15 @@
                 lifeCount = 0;
                 score = 10000;
             }
+        }
+        
+        public void removeBloodyToby() {
+            int tobyCount = getObjects(Toby.class).size();
+            if (tobyCount > 0) {
+                List <Blood> bloodytobies = new ArrayList<>();
+                bloodytobies.removeAll(getObjects(Blood.class));
+            }            
+
         }
 }
     

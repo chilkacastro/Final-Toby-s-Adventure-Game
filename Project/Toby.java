@@ -7,15 +7,15 @@
      * @version (a version number or a date)
      */
     public class Toby extends Actor {
-        private GreenfootImage image1 = null;
-        private GreenfootImage image3 = null;
-        private GreenfootImage image4 = null;
-        private GreenfootImage image6 = null;
-        private GreenfootImage image7 = null;
-        private GreenfootImage image9 = null;
-        private GreenfootImage image10 = null;
-        private GreenfootImage image12 = null;
-        private int slow = 0;
+            private GreenfootImage image1;
+            private GreenfootImage image3;
+            private GreenfootImage image4;
+            private GreenfootImage image6;
+            private GreenfootImage image7;
+            private GreenfootImage image9;
+            private GreenfootImage image10;
+            private GreenfootImage image12;
+            private int slow = 0;
         
             /**
              * To create objects.
@@ -49,6 +49,8 @@
                if (isTouching(KeyPass.class)) {
                     //((MyWorld)getWorld()).addObject(this, 10, 200);
                     Greenfoot.setWorld(new Level2());
+
+     
                 } 
                 // Level 3
                if (isTouching(KeyPass2.class)) {

@@ -13,7 +13,16 @@ public class DogCatcher extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
-    {
-        // Add your action code here.
-    }    
+    {   /*
+        setLocation(getX()-2, getY());
+        if(getX() == 0) {
+            setLocation(getX()-2, getY());
+            
+         
+        } 
+        if(getX() == 1630) {
+            setLocation(getX()+2, getY());
+        
+        } */
+    }
 }
