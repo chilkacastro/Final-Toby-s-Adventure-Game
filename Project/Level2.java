@@ -14,13 +14,20 @@ public class Level2 extends MyWorld
      * 
      */
     public Level2() {
-        setPaintOrder(Cactus.class, Cactus2.class,Train.class);
+        setPaintOrder(Cactus.class, Cactus2.class, Train.class, Train2.class);
         prepare();
         showScore();
         showLife();
-  
+        //addCoin();
     }
-   
+    /*
+    private void addCoin() {
+        for(int i = 0; i < 20; i++){
+            addObject(new Coin(), i * Greenfoot.getRandomNumber(100), i * Greenfoot.getRandomNumber(300));
+            
+        }    
+    } */
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -102,6 +109,87 @@ public class Level2 extends MyWorld
         train7.setLocation(1172,549);
         train7.setLocation(1370,571);
         train6.setLocation(357,563);
+        train7.setLocation(1620,568);
+        train7.setLocation(1502,562);
+        train7.setLocation(1383,569);
+        train7.setLocation(1409,557);
+        train7.setLocation(1370,571);
+        removeObject(train7);
+        Train train11 = new Train();
+        addObject(train11,1179,561);
+        train5.setLocation(1303,478);
+        train5.setLocation(995,439);
+        train5.setLocation(1077,432);
+        train5.setLocation(1397,481);
+        train5.setLocation(1479,489);
+        removeObject(train5);
+        cactus5.setLocation(1305,422);
+        removeObject(cactus5);
+        Cactus2 cactus29 = new Cactus2();
+        addObject(cactus29,1347,485);
+        removeObject(train4);
+        removeObject(train2);
+        train9.setLocation(1229,190);
+        removeObject(train9);
+        train3.setLocation(1226,336);
+        Train train12 = new Train();
+        addObject(train12,368,436);
+        Train train13 = new Train();
+        addObject(train13,1251,442);
+        Train train14 = new Train();
+        addObject(train14,364,207);
+        Train train15 = new Train();
+        addObject(train15,1234,212);
+        train14.setLocation(346,194);
+        removeObject(train14);
+        train15.setLocation(943,217);
+        removeObject(train15);
+        Train2 train22 = new Train2();
+        addObject(train22,370,213);
+        Train2 train23 = new Train2();
+        addObject(train23,1217,214);
+        train12.setLocation(591,442);
+        train12.setLocation(591,442);
+        removeObject(train12);
+        train13.setLocation(1069,459);
+        removeObject(train13);
+        Train2 train24 = new Train2();
+        addObject(train24,352,443);
+        Train2 train25 = new Train2();
+        addObject(train25,1229,439);
+        train3.setLocation(946,325);
+        Coin coin = new Coin();
+        addObject(coin,1122,496);
+        Coin coin2 = new Coin();
+        addObject(coin2,532,370);
+        Coin coin3 = new Coin();
+        addObject(coin3,1402,320);
+        coin3.setLocation(1402,320);
+        Coin coin4 = new Coin();
+        addObject(coin4,357,147);
+        Coin coin5 = new Coin();
+        addObject(coin5,739,84);
+        Coin coin6 = new Coin();
+        addObject(coin6,958,149);
+        Coin coin7 = new Coin();
+        addObject(coin7,150,381);
+        Coin coin8 = new Coin();
+        addObject(coin8,66,268);
+        Coin coin9 = new Coin();
+        addObject(coin9,1549,485);
+        Coin coin10 = new Coin();
+        addObject(coin10,1541,133);
+        Coin coin11 = new Coin();
+        addObject(coin11,148,140);
+        Coin coin12 = new Coin();
+        addObject(coin12,275,32);
+        Coin coin13 = new Coin();
+        addObject(coin13,1235,31);
+        Coin coin14 = new Coin();
+        addObject(coin14,839,270);
+        Coin coin15 = new Coin();
+        addObject(coin15,880,377);
+        coin15.setLocation(880,377);
     }
 
 }

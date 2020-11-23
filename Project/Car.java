@@ -1,4 +1,4 @@
-        import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
         
 /**
  * Write a description of class Car here.
@@ -7,32 +7,26 @@
  * @version (a version number or a date)
  */
 public class Car extends Actor {
-    private int speed;
-    private String image;
-        
-        /**
-         * Default constructor 
-         */
-         public Car() {
-            speed = 2;
-            
-        } 
-        
-        
+    
+      
+  
        /**
         * Act - do whatever the Car wants to do. This method is called whenever
         * the 'Act' or 'Run' button gets pressed in the environment.
         */
         public void act() {
-           setLocation(getX()-speed, getY());
-           removeToby();
-          
-           if (getX() == 0) {
-              getWorld().removeObject(this);  
-              
+        removeToby();
+        move(-3);
+    
+           if(getX() == 0){
+               turn(90);
+               move(-35);
+                  
+                  //getWorld().removeObject(this);  
+                  
            }
 
-       }
+        }
         
         /**
          * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
@@ -55,6 +49,7 @@ public class Car extends Actor {
          */
          public void deductPoints() {
             MyWorld myWorld = (MyWorld)getWorld();
+            myWorld.addScore(-1000);
             myWorld.lifeCount(-1);
     
         }

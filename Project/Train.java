@@ -1,29 +1,40 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-/**
- * Write a description of class Train here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Train extends Actor
-{
+    import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+    
+    /**
+     * Write a description of class Train here.
+     * 
+     * @author (your name) 
+     * @version (a version number or a date)
+     */
+    public class Train extends Actor
+    {
         private int trainCounter = 0;
+  
         /**
          * Act - do whatever the Train wants to do. This method is called whenever
          * the 'Act' or 'Run' button gets pressed in the environment.
          */
         public void act() 
-        {
-            setLocation(getX()-5, getY());
-            if (getX() == 0) {
-                trainCounter++;
-                if(trainCounter == 25){
-                    setLocation(1650,getY());
-                    trainCounter = 0;
+            {
+                setLocation(getX()-6, getY());
+                if (getX() == 0) {
+                    trainCounter++;
+                    if (trainCounter == 5) {
+                        setImage("end3.png");
+                    }
+                    if (trainCounter == 10) {
+                        setImage("end2.png");
+                    }
+                    if (trainCounter == 12) {
+                        setImage("end1.png");
+                    }
+                    if(trainCounter == 14){
+                        setImage("Train3.png");
+                        setLocation(1650,getY());
+                        trainCounter = 0;
+                    }
                 }
-            }
-            removeToby();
+                removeToby();
         }    
         /**
          * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
@@ -58,9 +69,7 @@ public class Train extends Actor
            
         }
         
-        public void removeTrain() {
 
-        }
     }
       
 

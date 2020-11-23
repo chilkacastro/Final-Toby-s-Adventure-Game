@@ -13,6 +13,4 @@ comment3.text=\r\n\ deducPoints()\ -\ to\ remove\ points\ when\ Toby\ touches\ t
 comment4.params=
 comment4.target=void\ reviveToby()
 comment4.text=\r\n\ reviveToby()\ -\ bring\ back\ Toby\r\n
-comment5.params=
-comment5.target=void\ removeTrain()
-numComments=6
+numComments=5

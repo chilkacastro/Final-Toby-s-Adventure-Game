@@ -19,6 +19,8 @@ public class Coin extends Actor
         if (isTouching(Toby.class)) {
             ((MyWorld)getWorld()).addScore(100); 
             getWorld().removeObject(this);
-        }    
+        }
+
+        
     }
 }

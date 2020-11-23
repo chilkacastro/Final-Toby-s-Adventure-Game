@@ -7,19 +7,17 @@
  * @version (a version number or a date)
  */
  public class MyWorld extends World {
-    protected static int score;               // initial points
-    protected static int lifeCount;           // initial 3 lives
+    protected static int score = 10000;                 // initial points
+    protected static int lifeCount = 3;                 // initial 3 lives
     protected static int zeroScore;
-    protected static int bloodCounter = 0;
+    
         /**
          * Constructor for objects of class MyWorld.
          * 
          */
         public MyWorld() {
             super(1600, 650, 1); 
-            score = 10000;
-            lifeCount = 3;
-            zeroScore = 0;
+
         }
         
         // GETTERS
@@ -81,12 +79,15 @@
             showText("Lives:" + lifeCount, 200, 25);
             if (lifeCount <= 0){
                 showText("YOU LOST!", 800, 325); 
+                // if score is positive -> show real score
                 if (score > 0) {
                     showText("Score:  " + score, 800, 420); 
                 }
+                // to prevent score from showing negative score
                 if (score <= 0) {
                     showText("Score:  " + zeroScore, 800, 420); 
                 }
+                
             }
         }
         
@@ -96,8 +97,7 @@
         public void stopGame() {
             if (lifeCount <= 0) {
                 Greenfoot.stop();
-                lifeCount = 0;
-                score = 10000;
+                
             }
         }
         
