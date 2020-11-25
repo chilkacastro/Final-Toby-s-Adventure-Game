@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MenuScreen extends World
 {
-
     /**
      * Constructor for objects of class MenuScreen.
      * 
@@ -16,5 +15,13 @@ public class MenuScreen extends World
     public MenuScreen()
     {    
         super(600, 400, 1); 
+        
     }
+    public void act() {
+        if (Greenfoot.isKeyDown("enter")) {
+            Greenfoot.setWorld(new Level1());
+        }
+        
+    }
+    
 }

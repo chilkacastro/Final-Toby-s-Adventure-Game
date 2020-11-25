@@ -22,7 +22,7 @@ public class TrafficCone extends Actor
      public void deductPoints() {
        if (isTouching(Toby.class)) {
             MyWorld myWorld = (MyWorld)getWorld();
-            myWorld.addScore(-100);
+            myWorld.addScore(-50);
        }
     
     }

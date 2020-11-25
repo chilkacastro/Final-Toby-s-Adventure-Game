@@ -14,12 +14,11 @@ public class Truck1 extends Actor
      */
     public void act() 
     {
-       move(-3);    
+       setLocation(getX()-6, getY());   
        removeToby();
-       if(isAtEdge()) {
-        turn(180);
-        move(20);
-       } 
+       if (getX() == 0) {
+           setLocation(1650,getY());
+       }
     }
         
         /**

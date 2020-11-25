@@ -7,25 +7,23 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Car extends Actor {
-    
-      
-  
+   
        /**
         * Act - do whatever the Car wants to do. This method is called whenever
         * the 'Act' or 'Run' button gets pressed in the environment.
         */
         public void act() {
-        removeToby();
-        move(-3);
+           removeToby();
+           move(-3);
     
-           if(getX() == 0){
+           if(isAtEdge()) {
                turn(90);
                move(-35);
                   
                   //getWorld().removeObject(this);  
                   
            }
-
+           
         }
         
         /**
@@ -58,9 +56,15 @@ public class Car extends Actor {
          * reviveToby() - bring back Toby
          */
         public void reviveToby() {
+         if (getWorld() instanceof Level1) {
             Level1 myLevel1 = (Level1)getWorld();
             myLevel1.addObject(new Toby(), 800, 640);
-           
+         }
+         else {
+            Level3 myLevel3 = (Level3)getWorld();
+            myLevel3.addObject(new Toby(), 800, 640);
+       
+         }
         }
 
 }

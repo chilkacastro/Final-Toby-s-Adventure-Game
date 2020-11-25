@@ -41,6 +41,7 @@
          */
             public void removeToby() {
             if (isTouching(Toby.class)) {
+                getWorld().addObject(new Blood(), getX()-80, getY());
                 removeTouching(Toby.class);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();
@@ -57,6 +58,7 @@
          public void deductPoints() {
             MyWorld myWorld = (MyWorld)getWorld();
             myWorld.lifeCount(-1);
+            myWorld.addScore(-1000);
     
         }
     

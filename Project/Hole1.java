@@ -39,6 +39,7 @@ public class Hole1 extends Actor
      public void deductPoints() {
         MyWorld myWorld = (MyWorld)getWorld();
         myWorld.lifeCount(-1);
+        myWorld.addScore(-1000);
 
     }
     
