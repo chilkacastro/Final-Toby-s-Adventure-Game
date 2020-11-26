@@ -280,5 +280,13 @@ public class Level3 extends MyWorld {
         addObject(dogCatcher,514,39);
         DogCatcher dogCatcher2 = new DogCatcher();
         addObject(dogCatcher2,1034,38);
+        removeObject(dogCatcher);
+        removeObject(dogCatcher2);
+        removeObject(truck16);
+        truck117.setLocation(412,437);
+        truck117.setLocation(416,453);
+        truck14.setLocation(594,250);
+        car15.setLocation(673,588);
+        truck213.setLocation(951,476);
     }
 }

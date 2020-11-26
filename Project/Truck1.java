@@ -14,7 +14,7 @@ public class Truck1 extends Actor
      */
     public void act() 
     {
-       setLocation(getX()-6, getY());   
+       setLocation(getX()-4, getY());   
        removeToby();
        if (getX() == 0) {
            setLocation(1650,getY());
