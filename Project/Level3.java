@@ -13,6 +13,7 @@ public class Level3 extends MyWorld {
      */
     public Level3()
     {
+        setPaintOrder(Heart.class, Truck1.class, Truck2.class);
         prepare();
         showScore();
         showLife();
@@ -288,5 +289,11 @@ public class Level3 extends MyWorld {
         truck14.setLocation(594,250);
         car15.setLocation(673,588);
         truck213.setLocation(951,476);
+        Heart heart = new Heart();
+        addObject(heart,864,347);
+        Heart heart2 = new Heart();
+        addObject(heart2,221,464);
+        heart2.setLocation(221,404);
+        heart.setLocation(863,269);
     }
 }
