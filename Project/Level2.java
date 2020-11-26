@@ -200,6 +200,8 @@ public class Level2 extends MyWorld
         dogCatcher.setLocation(1153,251);
         dogCatcher.setLocation(1251,247);
         dogCatcher.setLocation(1262,252);
+        DogCatcher dogCatcher2 = new DogCatcher();
+        addObject(dogCatcher2,445,609);
     }
 
 }

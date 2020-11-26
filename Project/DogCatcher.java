@@ -27,7 +27,13 @@ public class DogCatcher extends Actor{
      */
     public void act() 
     {
-    movement();    
+    movement();
+    if(isTouching(Toby.class)) {
+                Greenfoot.playSound("Crying.wav");
+                removeTouching(Toby.class);
+                getWorld().showText("You have been CAPTURED AND ENSLAVED BY THE DOG CATCHER!",500, 500);
+                Greenfoot.stop();
+            }
     //atEdge();
     //slowDown();
     }
@@ -76,20 +82,6 @@ public class DogCatcher extends Actor{
     //   move (10);
     //} else if (getX() == 1599){
     //  movement();
-    //}
-    //}
-    //}
-    //} 
-    /**
-    * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
-    */
-        public void removeToby() {
-    if (isTouching(Toby.class)) {
-         getWorld().addObject(new DogCatcher(), getX()-80, getY());
-         removeTouching(Toby.class);
-         MyWorld myWorld = (MyWorld)getWorld();
-                }  
-    }
     /**
      * slowDown - to slow down Toby's movement.
      */

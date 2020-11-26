@@ -41,7 +41,9 @@ public class Train2 extends Actor
             public void removeToby() {
             if (isTouching(Toby.class)) {
                 getWorld().addObject(new Blood(), getX()-80, getY());
+                Greenfoot.playSound("Train.wav");
                 removeTouching(Toby.class);
+                getWorld().showText("You lose a life!",500, 500);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();
                 if (myWorld.getLifeCount() > 0) {

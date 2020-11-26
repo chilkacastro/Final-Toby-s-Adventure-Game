@@ -17,6 +17,7 @@ public class Cactus2 extends Actor
        if(isTouching(Toby.class)) {
            MyWorld myWorld = (MyWorld)getWorld();
            myWorld.addScore(-100);
+           getWorld().showText("You lost some POINTS!",250, 250);
        }
     }    
 }

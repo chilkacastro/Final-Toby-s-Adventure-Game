@@ -18,6 +18,7 @@ public class Coin extends Actor
         //Greenfoot.getRandomNumber(650));
         if (isTouching(Toby.class)) {
             ((MyWorld)getWorld()).addScore(100); 
+            getWorld().showText("You GAINED Points!",450, 350);
             getWorld().removeObject(this);
         }
 

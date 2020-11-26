@@ -32,7 +32,9 @@ public class Truck2 extends Actor {
          */
         public void removeToby() {
             if (isTouching(Toby.class)) {
+                Greenfoot.playSound("tireSkid.wav");
                 removeTouching(Toby.class);
+                getWorld().showText("You lose a life!",500, 500);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();
                 if (myWorld.getLifeCount() > 0) {
