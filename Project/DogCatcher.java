@@ -13,6 +13,7 @@ public class DogCatcher extends Actor{
     private GreenfootImage image4;
     private int counter1=0;
     private int counter2=0;
+    private int counter3= 0;
     
     public DogCatcher(){
     image1 = new GreenfootImage("dn_right1.png");
@@ -34,20 +35,22 @@ public class DogCatcher extends Actor{
     public void movement () {
     counter1++;    
     if (counter1>80) {
-        setLocation(getX() + Greenfoot.getRandomNumber(8), getY());
-        if (getImage() == image1) {
+        setLocation(getX() + Greenfoot.getRandomNumber(5), getY());
+        counter3++;
+        if (counter3 <4) {
+            setImage (image1);
+        } else if (counter3 >8){
         setImage(image2);
+        if (counter3 ==12){
+        counter3=0;
         }
-        else {
-        setImage(image1);
-        }
-        }
+                               } 
+    }
     else if (counter1<80) {
     setLocation(getX() - Greenfoot.getRandomNumber(5), getY());
     counter2++; 
     if (counter2 < 4){
      setImage (image3);
-     //movement();
      }
      else if ( counter2 > 8){
      setImage (image4); 
@@ -68,14 +71,15 @@ public class DogCatcher extends Actor{
     }    
     
     //public void atEdge(){
-    //if (getX() == 1) {
+    //if (getX() == 10) {
     //   turn(-90);
-    //   move (5);
+    //   move (10);
     //} else if (getX() == 1599){
     //  movement();
     //}
     //}
-    
+    //}
+    //} 
     /**
     * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
     */
