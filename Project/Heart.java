@@ -11,7 +11,7 @@ public class Heart extends Actor
     private GreenfootImage image1;
     private GreenfootImage image2;
     private int counter=0;
-    /**
+     /**
      * 
      */
     public Heart(){
@@ -24,18 +24,20 @@ public class Heart extends Actor
      */
     public void act() 
     {
-counter++;   
-if (counter<10) {
-setImage(image1);
-}
-else if (counter>20){
-setImage(image2);
-    counter=0;
-}   
+     counter++;   
+     if (counter<10) {
+         setImage(image1);
+     }
+    else if (counter>20){
+        setImage(image2);
+        counter=0;
+    } 
+    gainPoints();  
     }
+    
     public void gainPoints(){
             if (isTouching(Toby.class)) {
-            //((MyWorld)getWorld()).addTrial(+1); 
+            ((MyWorld)getWorld()).lifeCount(+1); 
             getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
             getWorld().removeObject(this);
         }
