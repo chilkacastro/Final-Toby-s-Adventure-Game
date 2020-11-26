@@ -555,5 +555,9 @@ public class Level1 extends MyWorld {
         bench9.setLocation(1042,251);
         bench9.setLocation(1048,252);
         bench9.setLocation(1042,251);
+        car44.setLocation(767,336);
+        car25.setLocation(771,296);
+        car26.setLocation(166,292);
+        car33.setLocation(184,326);
     }
 }

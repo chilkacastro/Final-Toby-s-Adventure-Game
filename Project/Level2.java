@@ -14,7 +14,7 @@ public class Level2 extends MyWorld
      * 
      */
     public Level2() {
-        setPaintOrder(Cactus.class, Cactus2.class, Train.class, Train2.class);
+        setPaintOrder(DogCatcher.class, Cactus.class, Cactus2.class, Train.class, Train2.class);
         prepare();
         showLife();
         showScore();
@@ -185,6 +185,21 @@ public class Level2 extends MyWorld
         coin15.setLocation(880,377);
         KeyPass2 keyPass2 = new KeyPass2();
         addObject(keyPass2,846,31);
+        coin2.setLocation(529,381);
+        coin15.setLocation(882,383);
+        coin14.setLocation(840,265);
+        cactus26.setLocation(635,255);
+        cactus26.setLocation(658,267);
+        cactus26.setLocation(653,243);
+        removeObject(cactus26);
+        removeObject(cactus10);
+        removeObject(cactus2);
+        DogCatcher dogCatcher = new DogCatcher();
+        addObject(dogCatcher,783,247);
+        dogCatcher.setLocation(1149,233);
+        dogCatcher.setLocation(1153,251);
+        dogCatcher.setLocation(1251,247);
+        dogCatcher.setLocation(1262,252);
     }
 
 }
