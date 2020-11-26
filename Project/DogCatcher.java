@@ -11,8 +11,8 @@ public class DogCatcher extends Actor{
     private GreenfootImage image2;
     private GreenfootImage image3;
     private GreenfootImage image4;
-    private int counterr=0;
-    private int slow=0;
+    private int counter1=0;
+    private int counter2=0;
     
     public DogCatcher(){
     image1 = new GreenfootImage("dn_right1.png");
@@ -28,13 +28,13 @@ public class DogCatcher extends Actor{
     {
     movement();    
     //atEdge();
-    slowDown();
+    //slowDown();
     }
   
     public void movement () {
-    counterr++;    
-    if (counterr>80) {
-        setLocation(getX() + Greenfoot.getRandomNumber(10), getY());
+    counter1++;    
+    if (counter1>80) {
+        setLocation(getX() + Greenfoot.getRandomNumber(8), getY());
         if (getImage() == image1) {
         setImage(image2);
         }
@@ -42,17 +42,28 @@ public class DogCatcher extends Actor{
         setImage(image1);
         }
         }
-        else if (counterr<80) {
-        setLocation(getX() - Greenfoot.getRandomNumber(10), getY());
-        if (getImage() == image3) {
-        setImage(image4);
+    else if (counter1<80) {
+    setLocation(getX() - Greenfoot.getRandomNumber(5), getY());
+    counter2++; 
+    if (counter2 < 4){
+     setImage (image3);
+     //movement();
+     }
+     else if ( counter2 > 8){
+     setImage (image4); 
+     if (counter2==12){
+     counter2= 0;
+    }
+    }
+      //    if (getImage() == image3) {
+      //  setImage(image4);
+      //  }
+      //  else {
+      //  setImage(image3);
+      //  }
         }
-        else {
-        setImage(image3);
-        }
-        }
-    if (counterr==100) {
-        counterr=0;
+    if (counter1==100) {
+        counter1=0;
         }
     }    
     
@@ -80,12 +91,14 @@ public class DogCatcher extends Actor{
      */
      public void slowDown(){
     // Helps slow down the dog's catcher movement.
-     if (slow == 50){
-     movement();
-     slow = 0;
+    counter2++; 
+    if (counter2 < 5){
+     setImage (image3);
+     //movement();
      }
-     else {
-     slow += 1;
+     else if ( counter2 > 1){
+     setImage (image4);         
+     counter2= 0;
     }
             }
     }
