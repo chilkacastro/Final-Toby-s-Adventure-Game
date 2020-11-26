@@ -185,6 +185,9 @@ public class Level2 extends MyWorld
         coin15.setLocation(880,377);
         KeyPass2 keyPass2 = new KeyPass2();
         addObject(keyPass2,846,31);
+        coin2.setLocation(529,381);
+        coin15.setLocation(882,383);
+        coin14.setLocation(840,265);
     }
 
 }
