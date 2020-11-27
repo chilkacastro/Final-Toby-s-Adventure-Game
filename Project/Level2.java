@@ -212,6 +212,19 @@ public class Level2 extends MyWorld
         train10.setLocation(213,323);
         train10.setLocation(286,330);
         train10.setLocation(219,317);
+        Heart heart = new Heart();
+        addObject(heart,1457,324);
+        Heart heart2 = new Heart();
+        addObject(heart2,562,210);
+        train10.setLocation(304,306);
+        train22.setLocation(368,212);
+        removeObject(train22);
+        train24.setLocation(358,440);
+        removeObject(train24);
+        train23.setLocation(1218,210);
+        removeObject(train23);
+        train25.setLocation(1229,442);
+        removeObject(train25);
     }
 
 }
