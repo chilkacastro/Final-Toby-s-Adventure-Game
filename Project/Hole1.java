@@ -14,7 +14,7 @@ public class Hole1 extends Actor
      */
     public void act() 
     {
-       removeToby(); 
+       //Test 
        
     }
     
@@ -50,7 +50,8 @@ public class Hole1 extends Actor
      */
     public void reviveToby() {
         Level1 myLevel1 = (Level1)getWorld();
+        Level4 myLevel4 = (Level4)getWorld();
         myLevel1.addObject(new Toby(), 800, 640);
-       
+        myLevel4.addObject(new Toby(), 800, 640);
     }
 }

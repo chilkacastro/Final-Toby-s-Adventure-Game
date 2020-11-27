@@ -25,7 +25,7 @@ public class Placeholder extends Actor
         if (toby != null) {
             World theWorld = getWorld();
             theWorld.removeObject(toby);
-            Greenfoot.playSound("oof.wav");
+            Greenfoot.playSound("Crying.wav");
             Greenfoot.stop();
             getWorld().showText("POISONED!", 300, 200);
         }
