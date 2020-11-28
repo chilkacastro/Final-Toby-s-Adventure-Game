@@ -33,9 +33,10 @@ public class DogCatcher extends Actor{
         removeTouching(Toby.class);
         getWorld().showText("You have been CAPTURED AND ENSLAVED BY THE DOG CATCHER!",500, 500);
         Greenfoot.stop();
-            }
+    }
     //atEdge();
     //slowDown();
+    rotateAtEdge();
     }
   
     
@@ -79,12 +80,15 @@ public class DogCatcher extends Actor{
         }
     }    
     
-    //public void atEdge(){
-    //if (getX() == 10) {
-    //   turn(-90);
-    //   move (10);
-    //} else if (getX() == 1599){
-    //  movement();
+    public void rotateAtEdge() {
+        if (getX() == 0) {
+          setLocation(1590, 500); 
+        }
+        
+        if (getX() == 0) {
+           setLocation(getX()-10, getY());  
+        }
+    }
     /**
      * slowDown - to slow down Toby's movement.
      */

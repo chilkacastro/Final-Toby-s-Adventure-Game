@@ -27,19 +27,11 @@ public class Level4 extends MyWorld
      */
     private void prepare()
     {
+        /*
         Heart heart = new Heart();
         addObject(heart,402,292);
         Heart heart2 = new Heart();
         addObject(heart2,514,293);
-        Coin coin = new Coin();
-        addObject(coin,831,372);
-        Coin coin2 = new Coin();
-        addObject(coin2,1112,551);
-        Coin coin3 = new Coin();
-        addObject(coin3,1109,363);
-        coin3.setLocation(1109,368);
-        Coin coin4 = new Coin();
-        addObject(coin4,820,551);
         Toby toby = new Toby();
         addObject(toby,1323,441);
         DogCatcher dogCatcher = new DogCatcher();
@@ -157,6 +149,6 @@ public class Level4 extends MyWorld
         addObject(keyPass3,632,285);
         electric.setLocation(1366,128);
         KeyPass2 keyPass29 = new KeyPass2();
-        addObject(keyPass29,1366,128);
+        addObject(keyPass29,1366,128); */
     }
 }

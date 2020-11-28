@@ -70,7 +70,7 @@
             public void removeToby() {
             if (isTouching(Toby.class)) {
                 getWorld().addObject(new Blood(), getX()-80, getY());
-                Greenfoot.playSound("Train.wav");
+                //Greenfoot.playSound("Train.wav");
                 removeTouching(Toby.class);
                 getWorld().showText("You lose a life!",500, 500);
                 deductPoints();
@@ -96,9 +96,12 @@
          * reviveToby() - bring back Toby
          */
         public void reviveToby() {
-            Level2 myLevel2 = (Level2)getWorld();
-            myLevel2.addObject(new Toby(), 800, 640);
+            if (getWorld() instanceof Level2) {
+                Level2 myLevel2 = (Level2)getWorld();
+                myLevel2.addObject(new Toby(), 800, 640);
            
+            }
+
         }
         
 

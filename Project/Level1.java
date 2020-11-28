@@ -120,10 +120,9 @@ public class Level1 extends MyWorld {
             KeyPass keypass = new KeyPass();
             addObject(keypass, (i * 400) + 40, 20);
         }
-        
-        
-        
+
         addObject(new Toby(), 792, 630); 
+        
         Tree tree = new Tree();
         addObject(tree,1089,496);
         Tree tree2 = new Tree();
