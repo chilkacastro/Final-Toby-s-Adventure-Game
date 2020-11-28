@@ -14,7 +14,7 @@ public class Hole1 extends Actor
      */
     public void act() 
     {
-       //Test 
+       removeToby();
        
     }
     
@@ -36,7 +36,7 @@ public class Hole1 extends Actor
     }
     
     /**
-     * deducPoints() - to remove points when Toby touches the traffic cones.
+     * deductPoints() - to remove points when Toby touches the holes.
      */
      public void deductPoints() {
         MyWorld myWorld = (MyWorld)getWorld();
@@ -46,12 +46,18 @@ public class Hole1 extends Actor
     }
     
     /**
-     * reviveToby() - bring back Toby
+     * reviveToby() - bring back Toby to initial position.
      */
-    public void reviveToby() {
-        Level1 myLevel1 = (Level1)getWorld();
-        Level4 myLevel4 = (Level4)getWorld();
-        myLevel1.addObject(new Toby(), 800, 640);
-        myLevel4.addObject(new Toby(), 800, 640);
+        public void reviveToby() {
+         if (getWorld() instanceof Level1) {
+            Level1 myLevel1 = (Level1)getWorld();
+            myLevel1.addObject(new Toby(), 800, 640);
+         }
+         else {
+            Level3 myLevel3 = (Level3)getWorld();
+            myLevel3.addObject(new Toby(), 800, 640);
+       
+         }
     }
+
 }

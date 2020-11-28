@@ -48,7 +48,7 @@ public class Level2 extends MyWorld
         }
         
         for(int i = 1; i <= 2; i++) {
-            addObject(new Train2(), i * 750, 560); 
+            addObject(new Train2(), i * 750, 564); 
 
         }
     }

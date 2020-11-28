@@ -39,25 +39,25 @@
                 if (getX() == 0) {
                     trainCounter++;
                     if (trainCounter == 8) {
-                        setImage("end1.png");
+                        setImage(image2);
                     }
                     if (trainCounter == 16 ) {
-                        setImage("end2.png");
+                        setImage(image3);
                     }
                     if (trainCounter == 24) {
-                        setImage("end3.png");
+                        setImage(image4);
                     }
                     if (trainCounter == 32) {
-                        setImage("end4.png");
+                        setImage(image5);
                     }
                     if (trainCounter == 40) {
-                        setImage("end5.png");
+                        setImage(image6);
                     }
                     if (trainCounter == 48) {
-                        setImage("end6.png");
+                        setImage(image7);
                     }
                     if(trainCounter == 56){
-                        setImage("Train3.png");
+                        setImage(image1);
                         setLocation(1650,getY());
                         trainCounter = 0;
                     }
