@@ -9,6 +9,25 @@
     public class Train extends Actor
     {
         private int trainCounter = 0;
+        private GreenfootImage image1;
+        private GreenfootImage image2;
+        private GreenfootImage image3;
+        private GreenfootImage image4;
+        private GreenfootImage image5;
+        private GreenfootImage image6;
+        private GreenfootImage image7;
+        private GreenfootImage image8;
+        
+        public Train() {
+            image1 = new GreenfootImage("Train3.png");
+            image2 = new GreenfootImage("end1.png");
+            image3 = new GreenfootImage("end2.png");
+            image4 = new GreenfootImage("end3.png");
+            image5 = new GreenfootImage("end4.png");
+            image6 = new GreenfootImage("end5.png");
+            image7 = new GreenfootImage("end6.png");
+            setImage(image1);
+        }
   
         /**
          * Act - do whatever the Train wants to do. This method is called whenever
@@ -16,25 +35,34 @@
          */
         public void act() 
             {
-                setLocation(getX()-6, getY());
+                setLocation(getX()-5, getY());
                 if (getX() == 0) {
                     trainCounter++;
-                    if (trainCounter == 5) {
-                        setImage("end3.png");
-                    }
-                    if (trainCounter == 10) {
-                        setImage("end2.png");
-                    }
-                    if (trainCounter == 12) {
+                    if (trainCounter == 8) {
                         setImage("end1.png");
                     }
-                    if(trainCounter == 14){
+                    if (trainCounter == 16 ) {
+                        setImage("end2.png");
+                    }
+                    if (trainCounter == 24) {
+                        setImage("end3.png");
+                    }
+                    if (trainCounter == 32) {
+                        setImage("end4.png");
+                    }
+                    if (trainCounter == 40) {
+                        setImage("end5.png");
+                    }
+                    if (trainCounter == 48) {
+                        setImage("end6.png");
+                    }
+                    if(trainCounter == 56){
                         setImage("Train3.png");
                         setLocation(1650,getY());
                         trainCounter = 0;
                     }
                 }
-                removeToby();
+               removeToby();
         }    
         /**
          * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.

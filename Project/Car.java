@@ -7,23 +7,35 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Car extends Actor {
-   
+       private int rotation;
+       
+       public Car() {
+          // do not remove default constructor
+           
+       }
+
+       public Car(int rotation) {
+           setRotation(180);
+           
+       }
+       
        /**
         * Act - do whatever the Car wants to do. This method is called whenever
         * the 'Act' or 'Run' button gets pressed in the environment.
         */
         public void act() {
            removeToby();
-           move(-3);
+           move(-2);
     
            if(isAtEdge()) {
                turn(90);
-               move(-35);
+               move(-30);
+
                   
                   //getWorld().removeObject(this);  
                   
            }
-           
+
         }
         
         /**

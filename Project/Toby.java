@@ -16,7 +16,7 @@
             private GreenfootImage image10;
             private GreenfootImage image12;
             private int slow = 0;
-        
+            private int keyCount = 0;
             /**
              * To create objects.
              */  
@@ -41,25 +41,34 @@
                 nextLevel();
             }
             
-            /**
-             *  nextLevel() - to move Toby to the next level.
-             */
-             public void nextLevel() {
-                // Level 2
-               if (isTouching(KeyPass.class)) {
-                    //((MyWorld)getWorld()).addObject(this, 10, 200);
-                    Greenfoot.setWorld(new Level2());
-
-     
-                } 
-                // Level 3
-               if (isTouching(KeyPass2.class)) {
-                    //((MyWorld)getWorld()).addObject(this, 10, 200);
-                    Greenfoot.setWorld(new Level3());
-               }  
+            public void nextLevel() {
+                if(isTouching(KeyPass.class)){
+                    removeTouching(KeyPass.class);
+                    keyCount++;
+                    if(keyCount == 3) {
+                         Greenfoot.setWorld(new Level2());
+                         keyCount = 0;
+                    
                 
-            }  
-    
+                    }
+                }
+                
+                if(isTouching(KeyPass2.class)){
+                    removeTouching(KeyPass2.class); 
+                    keyCount++;
+                    if(keyCount == 3) {
+                         Greenfoot.setWorld(new Level3());
+                         keyCount = 0;
+                    
+                
+                    }
+                
+                }
+                  
+            }
+            
+            
+            
             /**
              * checkKeyPressed - to move or control Toby whenever a key is pressed.
              */
