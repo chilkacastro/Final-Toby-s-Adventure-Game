@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Truck2 extends Actor {
+public class Truck2 extends Car {
         /**
          * Act - do whatever the Truck2 wants to do. This method is called whenever
          * the 'Act' or 'Run' button gets pressed in the environment.

@@ -6,20 +6,27 @@
      * @author (your name) 
      * @version (a version number or a date)
      */
-    public class Car2 extends Actor
-    {
+    public class Car2 extends Car
+    {  private int rotation;
+       public Car2() {
+           
+           
+       }
+
+       public Car2(int rotation) {
+               setRotation(rotation);
+               
+       }
         /**
          * Act - do whatever the Car2 wants to do. This method is called whenever
          * the 'Act' or 'Run' button gets pressed in the environment.
          */
          public void act() {
-            move(3);    
+            move(2);    
             removeToby();
             if(isAtEdge()) {
-                turn(45);
-                move(20);
-                turn(45);
-                move(-1);
+                turn(90);
+                move(35);
                 
             } 
         }
