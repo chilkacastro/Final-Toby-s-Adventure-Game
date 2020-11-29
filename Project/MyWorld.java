@@ -1,15 +1,15 @@
         import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
         import java.util.*;
-    /**
-     * Write a description of class MyWorld here.
-     * 
-     * @author (your name) 
-     * @version (a version number or a date)
-     */
-     public class MyWorld extends World {
-        protected static int score = 10000;                 // initial points
-        protected static int lifeCount = 3;                 // initial 3 lives
-     
+     /**
+      * Write a description of class MyWorld here.
+      * 
+      * @author (your name) 
+      * @version (a version number or a date)
+      */
+        public class MyWorld extends World {
+            protected static int score = 10000; // initial points
+            protected static int lifeCount = 3; // initial 3 lives
+         
         
             /**
              * Constructor for objects of class MyWorld.
@@ -17,6 +17,7 @@
              */
             public MyWorld() {
                 super(1600, 650, 1); 
+                
             }
                       
             // GETTERS

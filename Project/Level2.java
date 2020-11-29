@@ -14,7 +14,7 @@ public class Level2 extends MyWorld
      * 
      */
     public Level2() {
-        setPaintOrder(DogCatcher.class, Coin.class, Cactus.class, Cactus2.class, Train.class, Train2.class);
+        setPaintOrder(KeyPass.class, LeftBorder.class, RightBorder. class, DogCatcher.class, Coin.class, Cactus.class, Cactus2.class, Train.class, Train2.class);
         prepare();
         showLife();
         showScore();
@@ -31,27 +31,27 @@ public class Level2 extends MyWorld
             addObject(new Train(), i * 1200, 205); 
 
         }
-        
+
         for(int i = 1; i <= 2; i++) {
             addObject(new Train(), i * 980, 438); 
 
         }
-        
+
         for(int i = 0; i <= 1; i++) {
             addObject(new Train2(), i * 650, 90); 
 
         }
-        
+
         for(int i = 0; i <= 1; i++) {
             addObject(new Train2(), i * 850, 320); 
 
         }
-        
+
         for(int i = 1; i <= 2; i++) {
             addObject(new Train2(), i * 750, 564); 
 
         }
-        
+
         for(int i = 0; i < 3; i++) {
             addObject(new Cactus(),(i * 450) + 100, 110); 
 
@@ -62,7 +62,7 @@ public class Level2 extends MyWorld
         }
         addObject(new DogCatcher() ,1200, 130);
         addObject(new DogCatcher() ,500, 470);
-        
+
         for(int i = 0; i <= 8; i++) {
             addObject(new Coin(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
 
@@ -72,6 +72,10 @@ public class Level2 extends MyWorld
             KeyPass keypass = new KeyPass();
             addObject(keypass, (i * 400) + 40, 20);
         }
+        LeftBorder leftBorder = new LeftBorder();
+        addObject(leftBorder,48,323);
+        RightBorder rightBorder = new RightBorder();
+        addObject(rightBorder,1590,320);
     }
     
 }

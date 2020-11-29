@@ -295,12 +295,19 @@ public class Level3 extends MyWorld {
         addObject(heart2,221,464);
         heart2.setLocation(221,404);
         heart.setLocation(863,269);
-        Bee bee1 = new Bee();
-        addObject(bee1,500,400);
-        addObject(new Bee(),600, 200);
+        Bee bee = new Bee();
+        addObject(bee,486,353);
+        addObject(new Bee(180),900, 200);
         truck217.setLocation(606,469);
         truck217.setLocation(606,471);
         truck27.setLocation(627,140);
         truck211.setLocation(1502,479);
+        water4.setLocation(333,289);
+        removeObject(water4);
+        removeObject(water11);
+        removeObject(water15);
+        removeObject(water3);
+        DogCatcher2 dogCatcher22 = new DogCatcher2();
+        addObject(dogCatcher22,790,283);
     }
 }
