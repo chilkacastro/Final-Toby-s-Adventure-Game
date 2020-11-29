@@ -296,8 +296,8 @@ public class Level3 extends MyWorld {
         heart2.setLocation(221,404);
         heart.setLocation(863,269);
         Bee bee1 = new Bee();
-        addObject(bee1,500,400);
-        addObject(new Bee(),600, 200);
+        addObject(bee1,1000,150);
+        addObject(new Bee(90),300, 350);
         truck217.setLocation(606,469);
         truck217.setLocation(606,471);
         truck27.setLocation(627,140);

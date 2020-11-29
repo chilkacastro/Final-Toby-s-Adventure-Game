@@ -31,7 +31,7 @@ public class Level1 extends MyWorld {
 
         for(int i = 0; i < 3; i++) {
             addObject(new Car2(), i * 500, 63); 
-
+            
         }
 
         for(int i = 1; i <= 4; i++) {

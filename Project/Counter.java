@@ -8,13 +8,17 @@ public class Counter extends Actor
 { 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
     
-
+    public Counter() {
+         
+         // setImage( new  GreenfootImage("Life : " + lifeCount, 30, Color.YELLOW, Color.BLACK));
+        
+    }
     /**
      * Act - do whatever the Counter wants to do. A Counter will appear whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-       /* setImage( new  GreenfootImage("Life : " + lifescore, 30, Color.YELLOW, Color.BLACK));
+       /*
         if (lifescore == 0) {
             Greenfoot.stop();
             getWorld().showText("YOU DIED!", 300, 200);

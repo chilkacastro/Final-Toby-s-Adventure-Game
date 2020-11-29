@@ -21,7 +21,9 @@ public class Bee extends Actor
     public Bee(int rotation){
         image1 =  new GreenfootImage("bee1.png");
         image2 =  new GreenfootImage("bee2.png");
-        setRotation (rotation);
+        setRotation(rotation);
+        setRotation(90);
+        
     }
     /**
      * Act - do whatever the Bee wants to do. This method is called whenever

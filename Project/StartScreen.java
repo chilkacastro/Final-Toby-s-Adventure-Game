@@ -22,15 +22,18 @@ public class StartScreen extends World
     
     private void mouseClicked() {
       Paw pawStart = new Paw();
-      addObject(pawStart, 390, 560);
- 
+      addObject(pawStart, 320, 555);
+      addObject(new Start(), 420, 560);
+        
       Paw pawInstruction = new Paw();
-      addObject(pawInstruction, 630, 560);
+      addObject(pawInstruction, 520, 555);
+      addObject(new Instructions(), 690, 555);
       
       Paw pawCredit = new Paw();
-      addObject(pawCredit, 880, 560);
+      addObject(pawCredit, 860, 555);
+      addObject(new Credits(),975, 555);
     
-      addObject(new Start("Start"), 880, 560);
+      //addObject(new Start("Start"), 880, 560);
       
     }
 }
