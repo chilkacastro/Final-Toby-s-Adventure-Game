@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Electric here.
+ * Write a description of class LeftBorder here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Electric extends Actor
+public class LeftBorder extends Actor
 {
     /**
-     * Act - do whatever the Electric wants to do. This method is called whenever
+     * Act - do whatever the LeftBorder wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
