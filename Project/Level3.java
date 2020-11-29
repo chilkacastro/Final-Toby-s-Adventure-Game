@@ -329,5 +329,13 @@ public class Level3 extends MyWorld {
         house2.setLocation(761,41);
         owner.setLocation(792,41);
         house2.setLocation(792,13);
+        DogTreat dogTreat = new DogTreat();
+        addObject(dogTreat,161,453);
+        DogTreat dogTreat2 = new DogTreat();
+        addObject(dogTreat2,1382,336);
+        DogTreats2 dogTreats2 = new DogTreats2();
+        addObject(dogTreats2,1212,140);
+        dogTreats2.setLocation(1212,138);
+        removeObject(dogTreats2);
     }
 }
