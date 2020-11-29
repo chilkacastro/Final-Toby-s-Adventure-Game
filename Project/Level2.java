@@ -14,7 +14,7 @@ public class Level2 extends MyWorld
      * 
      */
     public Level2() {
-        setPaintOrder(DogCatcher.class, Cactus.class, Cactus2.class, Train.class, Train2.class);
+        setPaintOrder(DogCatcher.class, Coin.class, Cactus.class, Cactus2.class, Train.class, Train2.class);
         prepare();
         showLife();
         showScore();

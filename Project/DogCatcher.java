@@ -82,12 +82,10 @@ public class DogCatcher extends Actor{
     
     public void rotateAtEdge() {
         if (getX() == 0) {
-          setLocation(1590, 500); 
+          setLocation(1590, getY()); 
         }
         
-        if (getX() == 0) {
-           setLocation(getX()-10, getY());  
-        }
+       
     }
     /**
      * slowDown - to slow down Toby's movement.
