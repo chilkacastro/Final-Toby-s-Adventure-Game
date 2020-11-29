@@ -295,9 +295,21 @@ public class Level3 extends MyWorld {
         addObject(heart2,221,464);
         heart2.setLocation(221,404);
         heart.setLocation(863,269);
+<<<<<<< HEAD
+
+        Bee bee1 = new Bee();
+        addObject(bee1,1000,150);
+        addObject(new Bee(90),300, 350);
+
         Bee bee = new Bee();
         addObject(bee,486,353);
         addObject(new Bee(180),900, 200);
+
+=======
+        Bee bee = new Bee();
+        addObject(bee,486,353);
+        addObject(new Bee(180),900, 200);
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
         truck217.setLocation(606,469);
         truck217.setLocation(606,471);
         truck27.setLocation(627,140);
@@ -307,6 +319,9 @@ public class Level3 extends MyWorld {
         removeObject(water11);
         removeObject(water15);
         removeObject(water3);
+<<<<<<< HEAD
+
+=======
         DogCatcher2 dogCatcher22 = new DogCatcher2();
         addObject(dogCatcher22,790,283);
         owner.setLocation(879,59);
@@ -329,6 +344,7 @@ public class Level3 extends MyWorld {
         house2.setLocation(761,41);
         owner.setLocation(792,41);
         house2.setLocation(792,13);
+<<<<<<< HEAD
         DogTreat dogTreat = new DogTreat();
         addObject(dogTreat,161,453);
         DogTreat dogTreat2 = new DogTreat();
@@ -337,5 +353,8 @@ public class Level3 extends MyWorld {
         addObject(dogTreats2,1212,140);
         dogTreats2.setLocation(1212,138);
         removeObject(dogTreats2);
+=======
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
     }
 }

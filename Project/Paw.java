@@ -24,5 +24,12 @@ public class Paw extends Actor
       if (Greenfoot.mouseClicked(this) && getX() == 860) {
           Greenfoot.setWorld(new Credit());
      }
+     
+     if (Greenfoot.mouseClicked(this)) {
+        if (getWorld() instanceof Instruction) {
+            Greenfoot.setWorld(new StartScreen());
+        }
+         
+     }
     }
 }
