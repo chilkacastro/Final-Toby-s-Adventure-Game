@@ -15,7 +15,7 @@ public class Car extends Actor {
        }
 
        public Car(int rotation) {
-           setRotation(180);
+           setRotation(rotation);
            
        }
        

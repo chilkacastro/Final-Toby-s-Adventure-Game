@@ -13,7 +13,7 @@ public class Level3 extends MyWorld {
      */
     public Level3()
     {
-        setPaintOrder(Heart.class, Truck1.class, Truck2.class);
+        setPaintOrder(Bee.class, Heart.class, Truck1.class, Truck2.class);
         prepare();
         showScore();
         showLife();
@@ -297,5 +297,10 @@ public class Level3 extends MyWorld {
         heart.setLocation(863,269);
         Bee bee = new Bee();
         addObject(bee,486,353);
+        addObject(new Bee(180),900, 200);
+        truck217.setLocation(606,469);
+        truck217.setLocation(606,471);
+        truck27.setLocation(627,140);
+        truck211.setLocation(1502,479);
     }
 }
