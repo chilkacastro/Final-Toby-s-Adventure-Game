@@ -11,14 +11,17 @@ public class Bee extends Actor
 {
     private GreenfootImage image1;
     private GreenfootImage image2;
+    private int rotation;
     
     public Bee(){
-    image1 =  new  GreenfootImage("bee1.png");
-    image2 =  new  GreenfootImage("bee2.png");
+        image1 =  new  GreenfootImage("bee1.png");
+        image2 =  new  GreenfootImage("bee2.png");
     }
     
     public Bee(int rotation){
-    setRotation (rotation);
+        image1 =  new GreenfootImage("bee1.png");
+        image2 =  new GreenfootImage("bee2.png");
+        setRotation (rotation);
     }
     /**
      * Act - do whatever the Bee wants to do. This method is called whenever
@@ -71,6 +74,6 @@ public class Bee extends Actor
             MyWorld myWorld = (MyWorld)getWorld();
             myWorld.addScore(-100);
             getWorld().showText("You lost some POINTS!",790, 320);
+        }
     }
-   }
   }
