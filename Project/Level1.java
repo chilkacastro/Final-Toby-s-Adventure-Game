@@ -29,7 +29,7 @@ public class Level1 extends MyWorld {
     private void prepare() {
         // 1st road
 
-        for(int i = 0; i < 4; i++) {
+        for(int i = 0; i < 3; i++) {
             addObject(new Car2(), i * 500, 63); 
 
         }
@@ -60,13 +60,13 @@ public class Level1 extends MyWorld {
 
         }
 
-        for(int i = 0; i < 5; i++) {
-            addObject(new Car3(), (i * 450), 335); 
+        for(int i = 0; i < 2; i++) {
+            addObject(new Car3(), (i * 600), 335); 
 
         }
 
-        for(int i = 1; i <= 3; i++) {
-            addObject(new Car4(180), (i * 230 - 100), 335); 
+        for(int i = 1; i <= 2; i++) {
+            addObject(new Car4(180), (i * 500), 335); 
 
         }        
 
@@ -93,11 +93,11 @@ public class Level1 extends MyWorld {
 
         }
 
-        for(int i = 1; i <= 3; i++) {
+        for(int i = 1; i <= 8; i++) {
             addObject(new Hole2(), Greenfoot.getRandomNumber(1590)+ 20, Greenfoot.getRandomNumber(450)+80); 
 
         }
-        for(int i = 1; i <= 3; i++) {
+        for(int i = 1; i <= 9; i++) {
             addObject(new Hole1(), Greenfoot.getRandomNumber(1590) + 40, Greenfoot.getRandomNumber(300)+120); 
 
         }
@@ -120,10 +120,9 @@ public class Level1 extends MyWorld {
             KeyPass keypass = new KeyPass();
             addObject(keypass, (i * 400) + 40, 20);
         }
-        
-        
-        
+
         addObject(new Toby(), 792, 630); 
+        
         Tree tree = new Tree();
         addObject(tree,1089,496);
         Tree tree2 = new Tree();
