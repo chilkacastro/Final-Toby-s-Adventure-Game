@@ -34,7 +34,7 @@ public class Train2 extends Actor
          */
         public void act() 
             {
-                setLocation(getX() + 5, getY());
+                setLocation(getX() + 6, getY());
                 if (isAtEdge()) {
                     trainCounter++;
                     if (trainCounter == 8) {

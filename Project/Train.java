@@ -35,7 +35,7 @@
          */
         public void act() 
             {
-                setLocation(getX()-5, getY());
+                setLocation(getX()-4, getY());
                 if (getX() == 0) {
                     trainCounter++;
                     if (trainCounter == 8) {
