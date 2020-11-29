@@ -336,15 +336,6 @@ dependency89.type=UsesDependency
 dependency9.from=Level4
 dependency9.to=Electric
 dependency9.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=28
-package.numDependencies=69
-package.numTargets=31
-=======
 dependency90.from=Motorcycle
 dependency90.to=Blood
 dependency90.type=UsesDependency
@@ -375,14 +366,13 @@ dependency98.type=UsesDependency
 dependency99.from=Motorcycle2
 dependency99.to=Level3
 dependency99.type=UsesDependency
-editor.fx.0.height=1056
-editor.fx.0.width=1936
-editor.fx.0.x=-8
-editor.fx.0.y=-8
-height=1056
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=275
+editor.fx.0.y=-4
+height=744
 package.numDependencies=111
 package.numTargets=41
->>>>>>> 5e210190c3d71afe16d69b0d25100ea0fb81743d
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -685,11 +675,7 @@ target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
-<<<<<<< HEAD
-width=160
-=======
-width=1936
->>>>>>> 5e210190c3d71afe16d69b0d25100ea0fb81743d
-world.lastInstantiated=Level2
+width=1382
+world.lastInstantiated=Level1
 xPosition=0
 yPosition=0
