@@ -11,7 +11,13 @@ class.Car4.image=cars4.png
 class.Coin.image=Coin.png
 class.Credit.image=credit.png
 class.DogCatcher.image=dn_left1.png
+<<<<<<< HEAD
+class.DogCatcher2.image=leftcatcher1.png
+class.DogTreat.image=twobonestreat.png
+class.DogTreats2.image=bowlflat.png
+=======
 class.Door.image=door.png
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
 class.Heart.image=heart1.png
 class.Hole1.image=Hole1.png
 class.Hole2.image=Hole2.png
@@ -45,6 +51,7 @@ dependency1.type=UsesDependency
 dependency10.from=Level2
 dependency10.to=LeftBorder
 dependency10.type=UsesDependency
+<<<<<<< HEAD
 dependency100.from=Motorcycle
 dependency100.to=Level3
 dependency100.type=UsesDependency
@@ -53,6 +60,30 @@ dependency101.to=Blood
 dependency101.type=UsesDependency
 dependency102.from=Train
 dependency102.to=MyWorld
+=======
+<<<<<<< HEAD
+dependency100.from=Train
+dependency100.to=Blood
+=======
+<<<<<<< HEAD
+dependency100.from=TrafficCone
+=======
+dependency100.from=Placeholder
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+dependency100.to=Toby
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+dependency100.type=UsesDependency
+dependency101.from=Train
+dependency101.to=MyWorld
+dependency101.type=UsesDependency
+<<<<<<< HEAD
+dependency102.from=Train
+dependency102.to=Level2
+=======
+<<<<<<< HEAD
+dependency102.from=DogCatcher
+dependency102.to=Toby
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency102.type=UsesDependency
 dependency103.from=Train
 dependency103.to=Level2
@@ -69,15 +100,55 @@ dependency106.type=UsesDependency
 dependency107.from=Placeholder
 dependency107.to=Toby
 dependency107.type=UsesDependency
+<<<<<<< HEAD
 dependency108.from=DogCatcher
 dependency108.to=Toby
 dependency108.type=UsesDependency
 dependency109.from=Bee
 dependency109.to=MyWorld
+=======
+dependency108.from=Hole2
+dependency108.to=MyWorld
+dependency108.type=UsesDependency
+dependency109.from=Hole2
+dependency109.to=Level1
+=======
+dependency102.from=Bee
+dependency102.to=MyWorld
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+dependency102.type=UsesDependency
+dependency103.from=Train
+dependency103.to=Toby
+dependency103.type=UsesDependency
+dependency104.from=TrafficCone
+dependency104.to=MyWorld
+dependency104.type=UsesDependency
+dependency105.from=TrafficCone
+dependency105.to=Toby
+dependency105.type=UsesDependency
+dependency106.from=Placeholder
+dependency106.to=Toby
+dependency106.type=UsesDependency
+dependency107.from=DogCatcher
+dependency107.to=Toby
+dependency107.type=UsesDependency
+dependency108.from=Bee
+dependency108.to=MyWorld
+dependency108.type=UsesDependency
+<<<<<<< HEAD
+dependency109.from=Bee
+dependency109.to=Toby
+=======
+dependency109.from=Hole2
+dependency109.to=Level3
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency109.type=UsesDependency
 dependency11.from=Level2
 dependency11.to=RightBorder
 dependency11.type=UsesDependency
+<<<<<<< HEAD
 dependency110.from=Bee
 dependency110.to=Toby
 dependency110.type=UsesDependency
@@ -92,10 +163,58 @@ dependency113.to=Toby
 dependency113.type=UsesDependency
 dependency114.from=Hole2
 dependency114.to=MyWorld
+=======
+<<<<<<< HEAD
+dependency110.from=Credits
+dependency110.to=Credit
+=======
+<<<<<<< HEAD
+dependency110.from=Hole2
+dependency110.to=Toby
+=======
+dependency110.from=Hole1
+dependency110.to=MyWorld
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+dependency110.type=UsesDependency
+dependency111.from=Cactus2
+dependency111.to=MyWorld
+dependency111.type=UsesDependency
+dependency112.from=Cactus2
+dependency112.to=Toby
+dependency112.type=UsesDependency
+dependency113.from=Hole2
+dependency113.to=MyWorld
+dependency113.type=UsesDependency
+<<<<<<< HEAD
+dependency114.from=Hole2
+dependency114.to=Level1
+dependency114.type=UsesDependency
+dependency115.from=Hole2
+dependency115.to=Toby
+dependency115.type=UsesDependency
+dependency116.from=Hole2
+dependency116.to=Level3
+dependency116.type=UsesDependency
+dependency117.from=Hole1
+dependency117.to=MyWorld
+dependency117.type=UsesDependency
+dependency118.from=Hole1
+dependency118.to=Level1
+dependency118.type=UsesDependency
+dependency119.from=Hole1
+dependency119.to=Toby
+dependency119.type=UsesDependency
+=======
+<<<<<<< HEAD
+dependency114.from=Hole1
+dependency114.to=Toby
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency114.type=UsesDependency
 dependency115.from=Hole2
 dependency115.to=Level1
 dependency115.type=UsesDependency
+<<<<<<< HEAD
 dependency116.from=Hole2
 dependency116.to=Toby
 dependency116.type=UsesDependency
@@ -108,15 +227,25 @@ dependency118.type=UsesDependency
 dependency119.from=Hole1
 dependency119.to=Level1
 dependency119.type=UsesDependency
+=======
+=======
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency12.from=Level3
 dependency12.to=Water
 dependency12.type=UsesDependency
 dependency120.from=Hole1
+<<<<<<< HEAD
 dependency120.to=Toby
 dependency120.type=UsesDependency
 dependency121.from=Hole1
 dependency121.to=Level3
 dependency121.type=UsesDependency
+=======
+dependency120.to=Level3
+dependency120.type=UsesDependency
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency13.from=Level3
 dependency13.to=Toby
 dependency13.type=UsesDependency
@@ -151,7 +280,11 @@ dependency22.from=Level3
 dependency22.to=Bee
 dependency22.type=UsesDependency
 dependency23.from=Level3
+<<<<<<< HEAD
 dependency23.to=DogCatcher2
+=======
+dependency23.to=DogTreat
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency23.type=UsesDependency
 dependency24.from=Level1
 dependency24.to=Car2
@@ -169,13 +302,30 @@ dependency28.from=Level1
 dependency28.to=Car3
 dependency28.type=UsesDependency
 dependency29.from=Level1
+<<<<<<< HEAD
 dependency29.to=Car4
+=======
+<<<<<<< HEAD
+dependency29.to=Car4
+=======
+dependency29.to=Hole2
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency29.type=UsesDependency
 dependency3.from=Level2
 dependency3.to=Train2
 dependency3.type=UsesDependency
 dependency30.from=Level1
+<<<<<<< HEAD
 dependency30.to=Hole2
+=======
+<<<<<<< HEAD
+dependency30.to=Hole2
+=======
+<<<<<<< HEAD
+dependency30.to=KeyPass
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency30.type=UsesDependency
 dependency31.from=Level1
 dependency31.to=Hole1
@@ -187,6 +337,33 @@ dependency33.from=Level1
 dependency33.to=TrafficCone
 dependency33.type=UsesDependency
 dependency34.from=Level1
+<<<<<<< HEAD
+=======
+dependency34.to=Tree3
+dependency34.type=UsesDependency
+dependency35.from=StartScreen
+dependency35.to=Paw
+dependency35.type=UsesDependency
+dependency36.from=StartScreen
+dependency36.to=Start
+dependency36.type=UsesDependency
+dependency37.from=StartScreen
+dependency37.to=Instructions
+=======
+dependency30.to=Hole1
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+dependency30.type=UsesDependency
+dependency31.from=Level1
+dependency31.to=Hole1
+dependency31.type=UsesDependency
+dependency32.from=Level1
+dependency32.to=Bench
+dependency32.type=UsesDependency
+dependency33.from=Level1
+dependency33.to=TrafficCone
+dependency33.type=UsesDependency
+dependency34.from=Level1
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency34.to=KeyPass
 dependency34.type=UsesDependency
 dependency35.from=Level1
@@ -196,13 +373,31 @@ dependency36.from=Level1
 dependency36.to=Tree
 dependency36.type=UsesDependency
 dependency37.from=Level1
+<<<<<<< HEAD
 dependency37.to=Tree2
+=======
+<<<<<<< HEAD
+dependency37.to=Tree2
+=======
+dependency37.to=Tree3
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency37.type=UsesDependency
 dependency38.from=Level1
 dependency38.to=Tree3
 dependency38.type=UsesDependency
 dependency39.from=StartScreen
+<<<<<<< HEAD
 dependency39.to=Paw
+=======
+<<<<<<< HEAD
+dependency39.to=Paw
+=======
+dependency39.to=Start
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency39.type=UsesDependency
 dependency4.from=Level2
 dependency4.to=Cactus
@@ -234,14 +429,43 @@ dependency47.type=UsesDependency
 dependency48.from=Train2
 dependency48.to=Toby
 dependency48.type=UsesDependency
+<<<<<<< HEAD
 dependency49.from=Start
 dependency49.to=Level1
+=======
+<<<<<<< HEAD
+dependency49.from=Start
+dependency49.to=Level1
+=======
+dependency49.from=Coin
+<<<<<<< HEAD
+dependency49.to=MyWorld
+=======
+dependency49.to=Toby
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency49.type=UsesDependency
 dependency5.from=Level2
 dependency5.to=Cactus2
 dependency5.type=UsesDependency
+<<<<<<< HEAD
 dependency50.from=Paw
 dependency50.to=Level1
+=======
+<<<<<<< HEAD
+dependency50.from=Paw
+dependency50.to=Level1
+=======
+<<<<<<< HEAD
+dependency50.from=Coin
+dependency50.to=Toby
+=======
+dependency50.from=Toby
+dependency50.to=Level2
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency50.type=UsesDependency
 dependency51.from=Paw
 dependency51.to=Instruction
@@ -249,6 +473,7 @@ dependency51.type=UsesDependency
 dependency52.from=Paw
 dependency52.to=Credit
 dependency52.type=UsesDependency
+<<<<<<< HEAD
 dependency53.from=Paw
 dependency53.to=StartScreen
 dependency53.type=UsesDependency
@@ -256,9 +481,39 @@ dependency54.from=Coin
 dependency54.to=MyWorld
 dependency54.type=UsesDependency
 dependency55.from=Coin
+=======
+dependency53.from=Coin
+dependency53.to=MyWorld
+dependency53.type=UsesDependency
+dependency54.from=Coin
+dependency54.to=Toby
+dependency54.type=UsesDependency
+<<<<<<< HEAD
+dependency55.from=Toby
+dependency55.to=Level2
+=======
+dependency55.from=Cactus
+<<<<<<< HEAD
+dependency55.to=MyWorld
+dependency55.type=UsesDependency
+dependency56.from=Cactus
+dependency56.to=Toby
+dependency56.type=UsesDependency
+dependency57.from=KeyPass2
+dependency57.to=Level2
+dependency57.type=UsesDependency
+dependency58.from=Instructions
+dependency58.to=Instruction
+dependency58.type=UsesDependency
+dependency59.from=Car
+dependency59.to=Blood
+=======
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency55.to=Toby
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
 dependency55.type=UsesDependency
 dependency56.from=Toby
+<<<<<<< HEAD
 dependency56.to=Level2
 dependency56.type=UsesDependency
 dependency57.from=Toby
@@ -269,10 +524,24 @@ dependency58.to=KeyPass
 dependency58.type=UsesDependency
 dependency59.from=Toby
 dependency59.to=KeyPass2
+=======
+dependency56.to=Level3
+dependency56.type=UsesDependency
+dependency57.from=Toby
+dependency57.to=KeyPass
+dependency57.type=UsesDependency
+dependency58.from=Toby
+dependency58.to=KeyPass2
+dependency58.type=UsesDependency
+dependency59.from=Cactus
+dependency59.to=MyWorld
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency59.type=UsesDependency
 dependency6.from=Level2
 dependency6.to=DogCatcher
 dependency6.type=UsesDependency
+<<<<<<< HEAD
 dependency60.from=Cactus
 dependency60.to=MyWorld
 dependency60.type=UsesDependency
@@ -302,10 +571,66 @@ dependency68.to=Toby
 dependency68.type=UsesDependency
 dependency69.from=Car
 dependency69.to=Level3
+=======
+<<<<<<< HEAD
+dependency60.from=Cactus
+dependency60.to=Toby
+=======
+dependency60.from=Car
+<<<<<<< HEAD
+dependency60.to=MyWorld
+=======
+dependency60.to=Level1
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+dependency60.type=UsesDependency
+dependency61.from=KeyPass2
+dependency61.to=Level2
+dependency61.type=UsesDependency
+dependency62.from=DogCatcher2
+dependency62.to=Toby
+dependency62.type=UsesDependency
+dependency63.from=Instructions
+dependency63.to=Instruction
+dependency63.type=UsesDependency
+dependency64.from=Car
+dependency64.to=Blood
+dependency64.type=UsesDependency
+dependency65.from=Car
+dependency65.to=MyWorld
+dependency65.type=UsesDependency
+dependency66.from=Car
+dependency66.to=Level1
+dependency66.type=UsesDependency
+dependency67.from=Car
+dependency67.to=Toby
+dependency67.type=UsesDependency
+<<<<<<< HEAD
+dependency68.from=Car
+dependency68.to=Level3
+dependency68.type=UsesDependency
+dependency69.from=Truck1
+dependency69.to=MyWorld
+=======
+dependency68.from=Truck2
+<<<<<<< HEAD
+dependency68.to=Level3
+dependency68.type=UsesDependency
+dependency69.from=Truck2
+dependency69.to=Toby
+=======
+dependency68.to=Toby
+dependency68.type=UsesDependency
+dependency69.from=Car4
+dependency69.to=Blood
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency69.type=UsesDependency
 dependency7.from=Level2
 dependency7.to=Coin
 dependency7.type=UsesDependency
+<<<<<<< HEAD
 dependency70.from=Truck1
 dependency70.to=MyWorld
 dependency70.type=UsesDependency
@@ -335,10 +660,66 @@ dependency78.to=Level1
 dependency78.type=UsesDependency
 dependency79.from=Car4
 dependency79.to=Toby
+=======
+<<<<<<< HEAD
+dependency70.from=Truck1
+dependency70.to=Level3
+=======
+dependency70.from=Car4
+<<<<<<< HEAD
+dependency70.to=Blood
+=======
+dependency70.to=MyWorld
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+dependency70.type=UsesDependency
+dependency71.from=Truck1
+dependency71.to=Toby
+dependency71.type=UsesDependency
+dependency72.from=Truck2
+dependency72.to=MyWorld
+dependency72.type=UsesDependency
+dependency73.from=Truck2
+dependency73.to=Level3
+dependency73.type=UsesDependency
+dependency74.from=Truck2
+dependency74.to=Toby
+dependency74.type=UsesDependency
+dependency75.from=Car4
+dependency75.to=Blood
+dependency75.type=UsesDependency
+dependency76.from=Car4
+dependency76.to=MyWorld
+dependency76.type=UsesDependency
+dependency77.from=Car4
+dependency77.to=Level1
+dependency77.type=UsesDependency
+<<<<<<< HEAD
+dependency78.from=Car4
+dependency78.to=Toby
+dependency78.type=UsesDependency
+dependency79.from=Car4
+dependency79.to=Level3
+=======
+dependency78.from=Motorcycle2
+<<<<<<< HEAD
+dependency78.to=Toby
+dependency78.type=UsesDependency
+dependency79.from=Motorcycle2
+dependency79.to=Level3
+=======
+dependency78.to=Level3
+dependency78.type=UsesDependency
+dependency79.from=Car3
+dependency79.to=Blood
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency79.type=UsesDependency
 dependency8.from=Level2
 dependency8.to=Toby
 dependency8.type=UsesDependency
+<<<<<<< HEAD
 dependency80.from=Car4
 dependency80.to=Level3
 dependency80.type=UsesDependency
@@ -368,10 +749,66 @@ dependency88.to=Level1
 dependency88.type=UsesDependency
 dependency89.from=Car3
 dependency89.to=Toby
+=======
+<<<<<<< HEAD
+dependency80.from=Motorcycle2
+dependency80.to=Blood
+=======
+dependency80.from=Car3
+<<<<<<< HEAD
+dependency80.to=Blood
+=======
+dependency80.to=MyWorld
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+dependency80.type=UsesDependency
+dependency81.from=Motorcycle2
+dependency81.to=MyWorld
+dependency81.type=UsesDependency
+dependency82.from=Motorcycle2
+dependency82.to=Level1
+dependency82.type=UsesDependency
+dependency83.from=Motorcycle2
+dependency83.to=Toby
+dependency83.type=UsesDependency
+dependency84.from=Motorcycle2
+dependency84.to=Level3
+dependency84.type=UsesDependency
+dependency85.from=Car3
+dependency85.to=Blood
+dependency85.type=UsesDependency
+dependency86.from=Car3
+dependency86.to=MyWorld
+dependency86.type=UsesDependency
+dependency87.from=Car3
+dependency87.to=Level1
+dependency87.type=UsesDependency
+<<<<<<< HEAD
+dependency88.from=Car3
+dependency88.to=Toby
+dependency88.type=UsesDependency
+dependency89.from=Car3
+dependency89.to=Level3
+=======
+dependency88.from=Car2
+<<<<<<< HEAD
+dependency88.to=Toby
+dependency88.type=UsesDependency
+dependency89.from=Car2
+dependency89.to=Level3
+=======
+dependency88.to=Level3
+dependency88.type=UsesDependency
+dependency89.from=Motorcycle
+dependency89.to=Blood
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency89.type=UsesDependency
 dependency9.from=Level2
 dependency9.to=KeyPass
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 dependency90.from=Car3
 dependency90.to=Level3
 dependency90.type=UsesDependency
@@ -395,6 +832,45 @@ dependency96.to=Blood
 dependency96.type=UsesDependency
 dependency97.from=Motorcycle
 dependency97.to=MyWorld
+=======
+<<<<<<< HEAD
+dependency90.from=Car2
+dependency90.to=Blood
+=======
+dependency90.from=Motorcycle
+<<<<<<< HEAD
+dependency90.to=Blood
+=======
+dependency90.to=MyWorld
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+dependency90.type=UsesDependency
+dependency91.from=Car2
+dependency91.to=MyWorld
+dependency91.type=UsesDependency
+dependency92.from=Car2
+dependency92.to=Level1
+dependency92.type=UsesDependency
+dependency93.from=Car2
+dependency93.to=Toby
+dependency93.type=UsesDependency
+dependency94.from=Car2
+dependency94.to=Level3
+dependency94.type=UsesDependency
+dependency95.from=Motorcycle
+dependency95.to=Blood
+dependency95.type=UsesDependency
+dependency96.from=Motorcycle
+dependency96.to=MyWorld
+dependency96.type=UsesDependency
+<<<<<<< HEAD
+dependency97.from=Motorcycle
+dependency97.to=Level1
+=======
+dependency97.from=Train
+<<<<<<< HEAD
+dependency97.to=Level2
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 dependency97.type=UsesDependency
 dependency98.from=Motorcycle
 dependency98.to=Level1
@@ -407,8 +883,36 @@ editor.fx.0.width=1936
 editor.fx.0.x=-8
 editor.fx.0.y=-8
 height=1056
+<<<<<<< HEAD
 package.numDependencies=121
 package.numTargets=50
+=======
+package.numDependencies=115
+package.numTargets=49
+=======
+dependency97.to=Toby
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+dependency97.type=UsesDependency
+dependency98.from=Motorcycle
+dependency98.to=Toby
+dependency98.type=UsesDependency
+dependency99.from=Motorcycle
+dependency99.to=Level3
+dependency99.type=UsesDependency
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=744
+<<<<<<< HEAD
+package.numDependencies=120
+package.numTargets=51
+=======
+package.numDependencies=113
+package.numTargets=50
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -683,49 +1187,77 @@ target42.width=80
 target42.x=0
 target42.y=0
 target43.height=50
+<<<<<<< HEAD
 target43.name=Door
+=======
+target43.name=DogTreats2
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 target43.showInterface=false
 target43.type=ClassTarget
 target43.width=80
 target43.x=0
 target43.y=0
 target44.height=50
+<<<<<<< HEAD
 target44.name=RightBorder
+=======
+<<<<<<< HEAD
+target44.name=KeyPass
+=======
+<<<<<<< HEAD
+target44.name=Door
+=======
+target44.name=RightBorder
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 target44.showInterface=false
 target44.type=ClassTarget
-target44.width=90
+target44.width=80
 target44.x=0
 target44.y=0
 target45.height=50
-target45.name=StartScreen
+target45.name=RightBorder
 target45.showInterface=false
 target45.type=ClassTarget
-target45.width=80
+target45.width=90
 target45.x=0
 target45.y=0
 target46.height=50
-target46.name=Credits
+target46.name=StartScreen
 target46.showInterface=false
 target46.type=ClassTarget
 target46.width=80
 target46.x=0
 target46.y=0
 target47.height=50
-target47.name=Cactus2
+target47.name=Credits
 target47.showInterface=false
 target47.type=ClassTarget
 target47.width=80
 target47.x=0
 target47.y=0
 target48.height=50
-target48.name=Hole2
+target48.name=Cactus2
 target48.showInterface=false
 target48.type=ClassTarget
 target48.width=80
 target48.x=0
 target48.y=0
 target49.height=50
+<<<<<<< HEAD
 target49.name=LeftBorder
+=======
+<<<<<<< HEAD
+target49.name=Hole2
+=======
+<<<<<<< HEAD
+target49.name=Hole1
+=======
+target49.name=LeftBorder
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 target49.showInterface=false
 target49.type=ClassTarget
 target49.width=80
@@ -739,12 +1271,26 @@ target5.width=80
 target5.x=0
 target5.y=0
 target50.height=50
-target50.name=Hole1
+target50.name=LeftBorder
 target50.showInterface=false
 target50.type=ClassTarget
 target50.width=80
 target50.x=0
 target50.y=0
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+target51.height=50
+target51.name=Hole1
+target51.showInterface=false
+target51.type=ClassTarget
+target51.width=80
+target51.x=0
+target51.y=0
+=======
+>>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
+>>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
+>>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
 target6.height=50
 target6.name=Truck1
 target6.showInterface=false

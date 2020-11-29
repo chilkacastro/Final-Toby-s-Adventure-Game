@@ -76,6 +76,12 @@ public class Level2 extends MyWorld
         addObject(leftBorder,48,323);
         RightBorder rightBorder = new RightBorder();
         addObject(rightBorder,1590,320);
+        DogTreats2 dogTreats2 = new DogTreats2();
+        addObject(dogTreats2,1072,146);
+        DogTreats2 dogTreats22 = new DogTreats2();
+        addObject(dogTreats22,220,325);
+        DogTreats2 dogTreats23 = new DogTreats2();
+        addObject(dogTreats23,381,495);
     }
     
 }
