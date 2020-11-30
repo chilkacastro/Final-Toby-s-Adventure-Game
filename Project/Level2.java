@@ -72,8 +72,8 @@ public class Level2 extends MyWorld
             KeyPass2 keypass2 = new KeyPass2();
             addObject(keypass2, (i * 400) + 40, 20);
         }
-        LeftBorder leftBorder = new LeftBorder();
-        addObject(leftBorder,48,323);
+        
+        addObject(new LeftBorder(),50,323);
         RightBorder rightBorder = new RightBorder();
         addObject(rightBorder,1590,320);
         DogTreats2 dogTreats2 = new DogTreats2();
