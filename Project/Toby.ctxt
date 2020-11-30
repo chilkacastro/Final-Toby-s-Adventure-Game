@@ -9,6 +9,7 @@ comment2.target=void\ act()
 comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Toby\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment3.params=
 comment3.target=void\ nextLevel()
+comment3.text=\r\n\ nextLevel()\ -\ to\ bring\ Toby\ to\ next\ level.\r\n
 comment4.params=
 comment4.target=void\ checkKeyPressed()
 comment4.text=\r\n\ checkKeyPressed\ -\ to\ move\ or\ control\ Toby\ whenever\ a\ key\ is\ pressed.\r\n

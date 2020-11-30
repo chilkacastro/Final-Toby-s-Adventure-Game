@@ -69,8 +69,8 @@ public class Level2 extends MyWorld
         }
         addObject(new Toby(), 792, 630); 
         for (int i = 1; i <= 3; i++) {
-            KeyPass keypass = new KeyPass();
-            addObject(keypass, (i * 400) + 40, 20);
+            KeyPass2 keypass2 = new KeyPass2();
+            addObject(keypass2, (i * 400) + 40, 20);
         }
         LeftBorder leftBorder = new LeftBorder();
         addObject(leftBorder,48,323);
