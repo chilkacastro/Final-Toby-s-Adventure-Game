@@ -3,7 +3,6 @@ comment0.target=Counter
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Counter\ here.\ @author\ (your\ name)\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Counter()
-comment1.text=(World,\ Actor,\ GreenfootImage,\ Greenfoot\ and\ MouseInfo)
 comment2.params=
 comment2.target=void\ act()
 comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Counter\ wants\ to\ do.\ A\ Counter\ will\ appear\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

@@ -46,6 +46,7 @@
              */
             public void nextLevel() {
                 if (isTouching(KeyPass.class)){
+                    Greenfoot.playSound("Treats.wav");
                     removeTouching(KeyPass.class);
                     keyCount++;
                     if (keyCount == 3) {
@@ -57,7 +58,8 @@
                 }
                 
                 if (isTouching(KeyPass2.class)) {
-                    removeTouching(KeyPass2.class); 
+                    Greenfoot.playSound("Treats.wav");
+                    removeTouching(KeyPass2.class);
                     keyCount++;
                     if (keyCount == 3) {
                          Greenfoot.setWorld(new Level3());

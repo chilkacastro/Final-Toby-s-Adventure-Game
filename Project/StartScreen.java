@@ -18,6 +18,7 @@ public class StartScreen extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1065, 600, 1); 
         mouseClicked();
+        Greenfoot.playSound("Intro.wav");
     }
     
     private void mouseClicked() {
