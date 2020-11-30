@@ -68,8 +68,11 @@
                 
                 }
                   
+                if (isTouching(Door.class)) {
+                    Greenfoot.setWorld(new Level1());
+                    
+                }
             }
-    
             /**
              * checkKeyPressed - to move or control Toby whenever a key is pressed.
              */

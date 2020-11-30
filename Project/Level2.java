@@ -82,6 +82,9 @@ public class Level2 extends MyWorld
         addObject(dogTreats22,220,325);
         DogTreats2 dogTreats23 = new DogTreats2();
         addObject(dogTreats23,381,495);
+       
+        Door door = new Door();
+        addObject(door,139,623);
     }
     
 }
