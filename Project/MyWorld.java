@@ -75,9 +75,12 @@
         
             public void stopGame() {
                 if (lifeCount <= 0 || score <= 0){
+                    Greenfoot.setWorld(new GameOver());
                     showText("YOU LOST!", 800, 250); 
-                    showText("Score:"+ score, 800, 325); 
-                    Greenfoot.stop();
+                    showText("Score:"+ score, 800, 325);
+                    score = 10000;
+                    lifeCount = 3;
+                    //Greenfoot.stop();
                         
                 }
             }  

@@ -15,8 +15,12 @@ public class DogTreat extends Actor
     public void act() 
     {
         if (isTouching(Toby.class)) {
+
+            ((MyWorld)getWorld()).addScore(200); 
+
             ((MyWorld)getWorld()).addScore(100); 
             Greenfoot.playSound("Treats.wav");
+
             getWorld().showText("You GAINED Points!",450, 350);
             getWorld().removeObject(this);
         }

@@ -73,9 +73,9 @@ public class Level2 extends MyWorld
             addObject(keypass2, (i * 400) + 40, 20);
         }
         
-        addObject(new LeftBorder(),50,323);
+        addObject(new LeftBorder(), 200,323);
         RightBorder rightBorder = new RightBorder();
-        addObject(rightBorder,1590,320);
+        addObject(rightBorder,1400,320);
         DogTreats2 dogTreats2 = new DogTreats2();
         addObject(dogTreats2,1072,146);
         DogTreats2 dogTreats22 = new DogTreats2();
@@ -83,8 +83,8 @@ public class Level2 extends MyWorld
         DogTreats2 dogTreats23 = new DogTreats2();
         addObject(dogTreats23,381,495);
        
-        Door door = new Door();
-        addObject(door,139,623);
+        
+        addObject(new Door(),400,625);
     }
     
 }
