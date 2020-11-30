@@ -15,7 +15,7 @@ public class DogTreats2 extends Actor
     public void act() 
     {
         if (isTouching(Toby.class)) {
-            ((MyWorld)getWorld()).addScore(100); 
+            ((MyWorld)getWorld()).addScore(200); 
             getWorld().showText("You GAINED Points!",450, 350);
             getWorld().removeObject(this);
         }

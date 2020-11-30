@@ -38,5 +38,12 @@ public class Paw extends Actor
         }
          
      }
+     
+     if (Greenfoot.mouseClicked(this)) {
+        if (getWorld() instanceof Credit) {
+            Greenfoot.setWorld(new StartScreen());
+        }
+         
+     }
     }
 }
