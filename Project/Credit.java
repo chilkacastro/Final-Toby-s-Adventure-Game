@@ -31,8 +31,7 @@ public class Credit extends World
         addObject(returnToStart,350,308);
         Paw paw = new Paw();
         addObject(paw,257,302);
-=======
+
         addObject(new Paw(),50,500);
->>>>>>> 8d0061d357b741f85c4dc17e80cc6f619c2163eb
     }
 }
