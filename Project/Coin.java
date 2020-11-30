@@ -16,6 +16,7 @@ public class Coin extends Actor
     {
         if (isTouching(Toby.class)) {
             ((MyWorld)getWorld()).addScore(100); 
+            Greenfoot.playSound("Coin.wav");
             getWorld().showText("You GAINED Points!",450, 350);
             getWorld().removeObject(this);
         }

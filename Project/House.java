@@ -14,6 +14,11 @@ public class House extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        if (isTouching(Toby.class)) {
+                Greenfoot.playSound("House.wav");
+                removeTouching(Toby.class);
+                getWorld().showText("You have won the game!",500, 500);
+                MyWorld myWorld = (MyWorld)getWorld();
+        }
     }    
 }
