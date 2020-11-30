@@ -15,6 +15,7 @@ public class Cactus extends Actor
     public void act() 
     {
        if(isTouching(Toby.class)) {
+           Greenfoot.playSound("Crying.wav");
            MyWorld myWorld = (MyWorld)getWorld();
            myWorld.addScore(-100);
            getWorld().showText("You lost some POINTS!",250, 250);
