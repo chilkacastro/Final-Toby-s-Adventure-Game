@@ -332,10 +332,9 @@ public class Level3 extends MyWorld {
         house2.setLocation(761,41);
         owner.setLocation(792,41);
         house2.setLocation(792,13);
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
+
+
         DogTreat dogTreat = new DogTreat();
         addObject(dogTreat,161,453);
         DogTreat dogTreat2 = new DogTreat();
@@ -344,9 +343,6 @@ public class Level3 extends MyWorld {
         addObject(dogTreats2,1212,140);
         dogTreats2.setLocation(1212,138);
         removeObject(dogTreats2);
-=======
->>>>>>> ef4f02cca3133ae4d2f2fb9ec695fff446e94bbb
->>>>>>> 1f4bfd622207ed46ab935d549b808d610e344b35
->>>>>>> 6bb45cfa9cc0682814769f5285cc7d7ed8f0afd0
+
     }
 }

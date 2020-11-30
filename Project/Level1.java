@@ -20,7 +20,7 @@ public class Level1 extends MyWorld {
         score = 10000;
         lifeCount = 3;
             
-        }
+    }
         
     /**
      * Prepare the world for the start of the program.

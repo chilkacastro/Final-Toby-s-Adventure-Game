@@ -41,11 +41,14 @@
                 nextLevel();
             }
             
+            /**
+             * nextLevel() - to bring Toby to next level.
+             */
             public void nextLevel() {
-                if(isTouching(KeyPass.class)){
+                if (isTouching(KeyPass.class)){
                     removeTouching(KeyPass.class);
                     keyCount++;
-                    if(keyCount == 3) {
+                    if (keyCount == 3) {
                          Greenfoot.setWorld(new Level2());
                          keyCount = 0;
                     
@@ -53,10 +56,10 @@
                     }
                 }
                 
-                if(isTouching(KeyPass2.class)){
+                if (isTouching(KeyPass2.class)) {
                     removeTouching(KeyPass2.class); 
                     keyCount++;
-                    if(keyCount == 3) {
+                    if (keyCount == 3) {
                          Greenfoot.setWorld(new Level3());
                          keyCount = 0;
                     
@@ -66,9 +69,7 @@
                 }
                   
             }
-            
-            
-            
+    
             /**
              * checkKeyPressed - to move or control Toby whenever a key is pressed.
              */
