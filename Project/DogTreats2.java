@@ -16,6 +16,7 @@ public class DogTreats2 extends Actor
     {
         if (isTouching(Toby.class)) {
             ((MyWorld)getWorld()).addScore(100); 
+            Greenfoot.playSound("Treats.wav");
             getWorld().showText("You GAINED Points!",450, 350);
             getWorld().removeObject(this);
         }
