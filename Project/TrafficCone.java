@@ -14,7 +14,7 @@ public class TrafficCone extends Actor
      public void act() {
         deductPoints();
 
-  }    
+    }    
     
     /**
      * deducPoints() - to remove points when Toby touches the traffic cones.

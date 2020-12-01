@@ -340,6 +340,8 @@ public class Level3 extends MyWorld {
         addObject(dogTreats2,1212,140);
         dogTreats2.setLocation(1212,138);
         removeObject(dogTreats2);
-
+        
+       
+        
     }
 }

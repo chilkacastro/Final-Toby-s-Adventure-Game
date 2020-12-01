@@ -17,8 +17,9 @@
             private GreenfootImage image12;
             private int slow = 0;
             private int keyCount = 0;
+            
             /**
-             * To create objects.
+             * Default Constructor- To create objects.
              */  
              public Toby() {
                 image1 = new GreenfootImage("Right1.png");
@@ -32,6 +33,7 @@
                 setImage(image7);
                 
             }
+            
             /**
              * Act - do whatever the Toby wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
              */
@@ -51,8 +53,7 @@
                     if (keyCount == 3) {
                          Greenfoot.setWorld(new Level2());
                          keyCount = 0;
-                    
-                
+   
                     }
                 }
                 
@@ -62,7 +63,6 @@
                     if (keyCount == 3) {
                          Greenfoot.setWorld(new Level3());
                          keyCount = 0;
-                    
                 
                     }
                 
@@ -73,6 +73,7 @@
                     
                 }
             }
+            
             /**
              * checkKeyPressed - to move or control Toby whenever a key is pressed.
              */

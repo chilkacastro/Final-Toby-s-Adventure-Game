@@ -27,7 +27,7 @@ public class Level1 extends MyWorld {
      * That is: create the initial objects and add them to the world.
      */
     private void prepare() {
-        // 1st road
+        // 1st road - above
 
         for(int i = 0; i < 3; i++) {
             addObject(new Car2(), i * 500, 63); 
@@ -39,7 +39,7 @@ public class Level1 extends MyWorld {
 
         }
 
-        // 2nd road 
+        // 2nd road - above
         for(int i = 0; i < 5; i++) {
             addObject(new Car(-180), i * 385, 180); 
 
@@ -50,7 +50,7 @@ public class Level1 extends MyWorld {
 
         }
 
-        //3RD 
+        // 3rd road - middle one
         for(int i = 1; i <= 3; i++) {
             addObject(new Motorcycle(), (i * 385), 305); 
 
@@ -70,7 +70,7 @@ public class Level1 extends MyWorld {
 
         }        
 
-        //4th 
+        //4th road - below
         for(int i = 0; i < 3; i++) {
             addObject(new Car2(), i * 430, 420); 
 
@@ -82,7 +82,7 @@ public class Level1 extends MyWorld {
         }
         addObject(new Car3(), 150, 455); 
 
-        // Last- 5th road
+        // Last- 5th road bellow
         for(int i = 0; i < 4; i++) {
             addObject(new Car(180), i * 500, 550); 
 
@@ -93,6 +93,7 @@ public class Level1 extends MyWorld {
 
         }
 
+        // Holes
         for(int i = 1; i <= 8; i++) {
             addObject(new Hole2(), Greenfoot.getRandomNumber(1590)+ 20, Greenfoot.getRandomNumber(450)+80); 
 
@@ -115,12 +116,13 @@ public class Level1 extends MyWorld {
             addObject(new TrafficCone(), Greenfoot.getRandomNumber(1600) + 60, 70); 
         }
         
-        
+        // Keypass to next level(Level 2)
         for (int i = 1; i <= 3; i++) {
             KeyPass keypass = new KeyPass();
             addObject(keypass, (i * 400) + 40, 20);
         }
-
+        
+        // Toby
         addObject(new Toby(), 792, 630); 
         
         Tree tree = new Tree();
@@ -160,7 +162,7 @@ public class Level1 extends MyWorld {
         Tree3 tree36 = new Tree3();
         addObject(tree36,189,498);
         tree36.setLocation(34,502);
+
     }
 
-        
 }

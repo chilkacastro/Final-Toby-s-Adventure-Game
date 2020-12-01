@@ -8,8 +8,7 @@
       */
         public class MyWorld extends World {
             protected static int score = 10000; // initial points
-            protected static int lifeCount = 3; // initial 3 lives
-         
+            protected static int lifeCount = 3; // initial 3 lives   
         
             /**
              * Constructor for objects of class MyWorld.
@@ -46,7 +45,7 @@
                 stopGame();
             }
             
- 
+        
             /**
              * showScore() - To print the score.
              */
@@ -63,8 +62,7 @@
                 showLife();
                 stopGame();
             }
-        
-        
+            
             /**
              * showLife() - To show how many lives does Toby has and if player lost.
              */
@@ -73,6 +71,10 @@
                 
             }
         
+            // GAME OVER
+            /**
+             * stopGame() - To stop the game when there is no points OR there is no more lives left.
+             */
             public void stopGame() {
                 if (lifeCount <= 0 || score <= 0){
                     Greenfoot.setWorld(new GameOver());
@@ -85,6 +87,7 @@
                 }
             }  
              
+           
             /*
             public void removeBloodyToby() {
                 int tobyCount = getObjects(Toby.class).size();
