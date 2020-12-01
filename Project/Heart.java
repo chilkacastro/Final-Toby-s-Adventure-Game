@@ -48,9 +48,16 @@ public class Heart extends Actor
      */
     public void gainPoints(){
             if (isTouching(Toby.class)) {
+<<<<<<< HEAD
            ((MyWorld)getWorld()).lifeCount(+1); 
            getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
            getWorld().removeObject(this);
+=======
+            ((MyWorld)getWorld()).lifeCount(+1); 
+            Greenfoot.playSound("Heart.wav");
+            getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
+            getWorld().removeObject(this);
+>>>>>>> 8b517bbafeded700e061d3b5854d772426c2b392
         }
     }
 }

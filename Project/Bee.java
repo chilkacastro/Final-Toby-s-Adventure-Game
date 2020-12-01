@@ -79,7 +79,7 @@ public class Bee extends Actor
      */
     public void decreasePoints(){
         if (isTouching(Toby.class)) {
-            Greenfoot.playSound("Crying.wav");
+            Greenfoot.playSound("Bee.wav");
             MyWorld myWorld = (MyWorld)getWorld();
             myWorld.addScore(-100);
             

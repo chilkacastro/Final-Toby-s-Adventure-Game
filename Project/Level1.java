@@ -19,7 +19,9 @@ public class Level1 extends MyWorld {
         stopGame();
         score = 10000;
         lifeCount = 3;
-            
+        //Plays music
+        GreenfootSound bg = new GreenfootSound("Credit.mp3");
+        bg.playLoop();    
     }
         
     /**
