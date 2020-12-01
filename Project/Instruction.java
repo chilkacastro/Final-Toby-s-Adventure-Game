@@ -17,7 +17,6 @@ public class Instruction extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 565, 1); 
-        addObject(new Paw(),80,500);
         prepare();
     }
 
@@ -27,9 +26,9 @@ public class Instruction extends World
      */
     private void prepare()
     {
-        ReturnToStart returnToStart = new ReturnToStart();
-        addObject(returnToStart,85,541);
         addObject(new Paw(),80,525);
-        addObject(new Return(),250,535);
+        addObject(new ReturnToStart(),250,535);
+        //return.setLocation(247,530);
+        //removeObject(return);
     }
 }
