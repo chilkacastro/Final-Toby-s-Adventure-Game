@@ -7,6 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Level1 extends MyWorld {
+   
    /**
     * Constructor for objects of class Level1.
     * 
@@ -21,7 +22,8 @@ public class Level1 extends MyWorld {
         lifeCount = 3;
         //Plays music
         GreenfootSound bg = new GreenfootSound("Credit.mp3");
-        bg.playLoop();    
+        bg.playLoop();  
+        
     }
         
     /**

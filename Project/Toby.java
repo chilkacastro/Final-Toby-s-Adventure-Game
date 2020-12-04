@@ -32,8 +32,8 @@
                 image12 = new GreenfootImage("Front3.png");
                 setImage(image7);
                 
-            }
-            
+             }
+         
             /**
              * Act - do whatever the Toby wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
              */
@@ -41,6 +41,7 @@
                 checkKeyPressed();
                 slowDown();
                 nextLevel();
+                
             }
             
             /**
@@ -54,7 +55,7 @@
                     if (keyCount == 3) {
                          Greenfoot.setWorld(new Level2());
                          keyCount = 0;
-   
+                         getWorld().removeObject(this);
                     }
                 }
                 
@@ -65,16 +66,22 @@
                     if (keyCount == 3) {
                          Greenfoot.setWorld(new Level3());
                          keyCount = 0;
-                
+  
                     }
                 
                 }
                   
-                if (isTouching(Door.class)) {
+                if (isTouching(Door.class) && getWorld() instanceof Level2) {
                     Greenfoot.setWorld(new Level1());
                     
                 }
+                
+                if (isTouching(Door.class) && getWorld() instanceof Level3) {
+                    Greenfoot.setWorld(new Level2());
+                    
+                }
             }
+        
             
             /**
              * checkKeyPressed - to move or control Toby whenever a key is pressed.
@@ -143,4 +150,7 @@
                     slow += 1;
                 }
             }
-    }
+            
+            
+        }
+    
