@@ -14,7 +14,7 @@ public class Level2 extends MyWorld
      * 
      */
     public Level2() {
-        //setPaintOrder(KeyPass.class, LeftBorder.class, RightBorder. class, DogCatcher.class, Coin.class, Cactus.class, Cactus2.class, Train.class, Train2.class);
+        setPaintOrder(KeyPass.class, LeftBorder.class, RightBorder. class, DogCatcher.class, Coin.class, Cactus.class, Cactus2.class, Train.class, Train2.class);
         prepare();
         showLife();
         showScore();
@@ -82,9 +82,10 @@ public class Level2 extends MyWorld
         addObject(dogTreats22,220,325);
         DogTreats2 dogTreats23 = new DogTreats2();
         addObject(dogTreats23,381,495);
-       
-        
         addObject(new Door(),400,625);
-    }
+        
+       
     
+    
+    }
 }
