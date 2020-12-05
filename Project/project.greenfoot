@@ -36,6 +36,7 @@ class.Motorcycle.image=motor1.png
 class.Motorcycle2.image=motor2.png
 class.Owner.image=student.png
 class.Paw.image=paw.png
+class.PlayAgain.image=return.png
 class.RightBorder.image=rightborder.png
 class.StarTreat.image=startreat.png
 class.Start.image=start.png

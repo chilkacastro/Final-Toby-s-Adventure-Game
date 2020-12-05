@@ -51,11 +51,7 @@ public class Heart extends Actor
            ((MyWorld)getWorld()).lifeCount(+1); 
            getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
            getWorld().removeObject(this);
-
-            ((MyWorld)getWorld()).lifeCount(+1); 
-            Greenfoot.playSound("Heart.wav");
-            getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
-            getWorld().removeObject(this);
+           Greenfoot.playSound("Heart.wav");
 
         }
     }
