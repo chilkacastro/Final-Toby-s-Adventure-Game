@@ -95,6 +95,7 @@ public class Level2 extends MyWorld
         Stop stop = new Stop();
         addObject(stop,99,614);
         
+        //Trap Door
         addObject(new Door(), 400,625);
 
         
