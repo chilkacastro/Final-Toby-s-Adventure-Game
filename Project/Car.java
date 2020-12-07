@@ -28,15 +28,10 @@ public class Car extends Actor {
         public void act() {
            removeToby();
            move(-2);
-    
            if(isAtEdge()) {
                turn(90);
                move(-30);
-
-                  
-                  //getWorld().removeObject(this);  
-                  
-           }
+            }
 
         }
         
@@ -63,7 +58,6 @@ public class Car extends Actor {
          */
          public void deductPoints() {
             MyWorld myWorld = (MyWorld)getWorld();
-            myWorld.addScore(-1000);
             myWorld.lifeCount(-1);
     
         }
@@ -72,15 +66,15 @@ public class Car extends Actor {
          * reviveToby() - bring back Toby
          */
         public void reviveToby() {
-         if (getWorld() instanceof Level1) {
-            Level1 myLevel1 = (Level1)getWorld();
-            myLevel1.addObject(new Toby(), 800, 640);
-         }
-         else {
-            Level3 myLevel3 = (Level3)getWorld();
-            myLevel3.addObject(new Toby(), 800, 640);
-       
-         }
+             if (getWorld() instanceof Level1) {
+                Level1 myLevel1 = (Level1)getWorld();
+                myLevel1.addObject(new Toby(), 800, 640);
+             }
+             else {
+                Level3 myLevel3 = (Level3)getWorld();
+                myLevel3.addObject(new Toby(), 800, 640);
+           
+             }
         }
 
 }

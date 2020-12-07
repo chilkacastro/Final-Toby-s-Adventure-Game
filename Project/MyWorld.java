@@ -8,9 +8,9 @@
       */
         public class MyWorld extends World {
             protected static int score = 10000; // initial points
-            protected static int lifeCount = 3; // initial 3 lives
-         
-        
+            protected static int lifeCount = 3; // initial 3 lives   
+            protected static boolean collectedKeys = false;
+            protected static boolean collectedKeys2 = false;
             /**
              * Constructor for objects of class MyWorld.
              * 
@@ -18,9 +18,16 @@
             public MyWorld() {
                 super(1600, 650, 1); 
                 
+                
             }
                       
             // GETTERS
+            
+            public void setCollectedKeys( boolean collectedKeys) {
+                this.collectedKeys = collectedKeys;
+         
+            }
+            
             /**
              * getScore() - To allow the actor classes to access the score.
              */
@@ -46,7 +53,7 @@
                 stopGame();
             }
             
- 
+        
             /**
              * showScore() - To print the score.
              */
@@ -63,8 +70,7 @@
                 showLife();
                 stopGame();
             }
-        
-        
+            
             /**
              * showLife() - To show how many lives does Toby has and if player lost.
              */
@@ -73,24 +79,32 @@
                 
             }
         
+            // GAME OVER
+            /**
+             * stopGame() - To stop the game when there is no points OR there is no more lives left.
+             */
             public void stopGame() {
                 if (lifeCount <= 0 || score <= 0){
-                    showText("YOU LOST!", 800, 250); 
-                    showText("Score:"+ score, 800, 325); 
-                    Greenfoot.stop();
+                    Greenfoot.setWorld(new GameOver());
+                    // showText("YOU LOST!", 800, 250); 
+                    showText("Score:"+ score, 800, 325);
+                    score = 10000;
+                    lifeCount = 3;
+                    //Greenfoot.stop();
                         
                 }
             }  
-             
             /*
             public void removeBloodyToby() {
-                int tobyCount = getObjects(Toby.class).size();
-                if (tobyCount > 0) {
+                keyCount = getObjects(KeyPass.class).size();
+                if (keyCount > 0) {
                     List <Blood> bloodytobies = new ArrayList<>();
                     bloodytobies.removeAll(getObjects(Blood.class));
                 }            
     
             } */
+            
+            
 }
     
     

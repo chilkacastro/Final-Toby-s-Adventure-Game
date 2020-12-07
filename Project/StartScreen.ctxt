@@ -6,4 +6,5 @@ comment1.target=StartScreen()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ StartScreen.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ mouseClicked()
+comment2.text=\r\n\ mouseClicked()\ -\ to\ move\ to\ different\ worlds\ by\ clicking\ the\ brown\ paw\ on\ the\ screen.\ \r\n
 numComments=3

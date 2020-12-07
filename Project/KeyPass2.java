@@ -14,9 +14,13 @@ public class KeyPass2 extends Actor
      */
     public void act() 
     {
+        if (isTouching(Toby.class)) {
+            Greenfoot.playSound("Key.wav");
+        }  
         if (this.getWorld() == null) {
+            Greenfoot.playSound("Key.wav");
             Greenfoot.setWorld(new Level2());
-
+            
         } 
     }
 }

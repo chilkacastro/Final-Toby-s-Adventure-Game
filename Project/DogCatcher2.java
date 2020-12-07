@@ -29,10 +29,17 @@ public class DogCatcher2 extends Actor{
     {
     movement();
     if(isTouching(Toby.class)) {
+
         Greenfoot.playSound("Crying.wav");
         removeTouching(Toby.class);
+        MyWorld myWorld = (MyWorld)getWorld();
+        myWorld.lifeCount(-1);
         getWorld().showText("You have been CAPTURED AND ENSLAVED BY THE DOG CATCHER!",500, 500);
-        Greenfoot.stop();
+            if (myWorld.getLifeCount() > 0) {
+                Level2 myLevel2 = (Level2)getWorld();
+                myLevel2.addObject(new Toby(), 800, 640);
+            }   
+        
     }
     //atEdge();
     //slowDown();

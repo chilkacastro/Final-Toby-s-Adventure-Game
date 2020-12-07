@@ -3,23 +3,34 @@ comment0.target=Bee
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Bee\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Bee()
+<<<<<<< HEAD
 comment1.text=\r\n\ Makes\ it\ seem\ like\ the\ bee\ is\ flying\r\n
 comment2.params=rotation
 comment2.target=Bee(int)
 comment2.text=\ \r\n\ Rotates\ the\ bee\r\n
+=======
+comment1.text=\r\n\ Default\ constructor\r\n
+comment2.params=rotation
+comment2.target=Bee(int)
+comment2.text=\r\n\ Constructor\ with\ one\ parameter\r\n
+>>>>>>> bfe6ce6da63f98e9c93c597859f7fc06f479bc8f
 comment3.params=
 comment3.target=void\ act()
 comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Bee\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment4.params=
 comment4.target=void\ turnAtEdge()
-comment4.text=\r\n\ Check\ whether\ we\ are\ at\ the\ edge\ of\ the\ world.\ If\ we\ are,\ turn\ a\ bit.\ If\ not,\ do\ nothing.\r\n
+comment4.text=\r\n\ turnAtEdge()\ -\ Check\ whether\ we\ are\ at\ the\ edge\ of\ the\ world.\ If\ we\ are,\ turn\ a\ bit.\ If\ not,\ do\ nothing.\r\n
 comment5.params=
 comment5.target=void\ switchImage()
-comment5.text=\r\n\ Alternate\ the\ bee's\ image\ between\ image1\ and\ image2.\r\n
+comment5.text=\r\n\ switchImage()\ -\ Alternate\ the\ bee's\ image\ between\ image1\ and\ image2.\r\n
 comment6.params=
 comment6.target=void\ randomTurn()
-comment6.text=\r\n\ Randomly\ decide\ to\ turn\ from\ the\ current\ direction,\ or\ not.\ If\ we\ turn\ turn\ a\ bit\ left\ or\ right\ by\ a\ random\ degree.\r\n
+comment6.text=\r\n\ randomTurn()\ -\ Randomly\ decide\ to\ turn\ from\ the\ current\ direction,\ or\ not.\ If\ we\ turn\ turn\ a\ bit\ left\ or\ right\ by\ a\ random\ degree.\r\n
 comment7.params=
 comment7.target=void\ decreasePoints()
+<<<<<<< HEAD
 comment7.text=\r\n\ Points\ decrease\ when\ bee\ touches\ Toby\r\n
+=======
+comment7.text=\r\n\ decreasePoints()\ -\ to\ decrease\ the\ points\ of\ Toby\ when\ the\ bee\ goes\ near\ him\ and\ to\ play\ a\ sound.\r\n
+>>>>>>> bfe6ce6da63f98e9c93c597859f7fc06f479bc8f
 numComments=8

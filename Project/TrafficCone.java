@@ -14,7 +14,7 @@ public class TrafficCone extends Actor
      public void act() {
         deductPoints();
 
-  }    
+    }    
     
     /**
      * deducPoints() - to remove points when Toby touches the traffic cones.
@@ -22,6 +22,7 @@ public class TrafficCone extends Actor
      public void deductPoints() {
        if (isTouching(Toby.class)) {
             MyWorld myWorld = (MyWorld)getWorld();
+            Greenfoot.playSound("Crying.wav");
             myWorld.addScore(-50);
             getWorld().showText("You lost some POINTS!",250, 250);
        }

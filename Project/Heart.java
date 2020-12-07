@@ -12,23 +12,29 @@ public class Heart extends Actor
     private GreenfootImage image2;
     private GreenfootImage image3;
     private int counter=0;
+    private int counter2=0;
     /**
+<<<<<<< HEAD
      * Makes heart look like it is rotating
+=======
+     * Default constructor
+>>>>>>> bfe6ce6da63f98e9c93c597859f7fc06f479bc8f
      */
     public Heart(){
-    image1 = new GreenfootImage("heart2.png");
-    image2 = new GreenfootImage("heart3.png");
-    image3 = new GreenfootImage("heart1.png");
-    setImage(image1);
+        image1 = new GreenfootImage("heart2.png");
+        image2 = new GreenfootImage("heart3.png");
+        image3 = new GreenfootImage("heart1.png");
+        setImage(image1);
     }
+    
     /**
      * Act - do whatever the Heart wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
-    {
-    counter++;   
-    getImage();
+    public void act() {
+        counter++;   
+        getImage();
+        gainPoints();  
         if (counter == 10) {
              setImage(image1);
         }
@@ -39,16 +45,34 @@ public class Heart extends Actor
             setImage(image3);
             counter=0;
         } 
-    gainPoints();  
+        
     }
+<<<<<<< HEAD
     /**
      * Gain a life if Toby grabs the heart
+=======
+    
+    /**
+     * gainPoints() - to gain points if Toby touches and picks up the heart.
+>>>>>>> bfe6ce6da63f98e9c93c597859f7fc06f479bc8f
      */
     public void gainPoints(){
-            if (isTouching(Toby.class)) {
-            ((MyWorld)getWorld()).lifeCount(+1); 
-            getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
-            getWorld().removeObject(this);
+        if (isTouching(Toby.class)) {
+           MyWorld myWorld = (MyWorld)getWorld();
+           myWorld.lifeCount(+1);
+           getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
+           Greenfoot.playSound("Heart.wav");
+           getWorld().removeObject(this);
+
+           counter2++;
+           ((MyWorld)getWorld()).lifeCount(+1); 
+           getWorld().showText("YOU GAINED 1 LIFE!",797, 350);
+           getWorld().removeObject(this);
+           Greenfoot.playSound("Heart.wav");
+           if (counter2 == 8){
+               getWorld().showText("",797, 350);           
+           }
+
         }
     }
 }
