@@ -12,7 +12,9 @@
            
            
        }
-
+       /**
+        * Rotates the car
+        */
        public Car2(int rotation) {
                setRotation(rotation);
                

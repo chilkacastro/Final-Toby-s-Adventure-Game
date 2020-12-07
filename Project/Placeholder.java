@@ -33,7 +33,7 @@ public class Placeholder extends Actor
     }
 
     /**
-     * 
+     * Makes it move and turn
      */
     public void moveAndTurn()
     {

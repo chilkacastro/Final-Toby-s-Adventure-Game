@@ -13,7 +13,9 @@ public class Car extends Actor {
           // do not remove default constructor
            
        }
-
+       /**
+        * Rotates the car
+        */
        public Car(int rotation) {
            setRotation(rotation);
            

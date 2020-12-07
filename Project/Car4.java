@@ -14,7 +14,9 @@ public class Car4 extends Car
           // do not remove default constructor
            
        }
-
+       /**
+        * Rotates the car
+        */
        public Car4(int rotation) {
            setRotation(rotation);
            

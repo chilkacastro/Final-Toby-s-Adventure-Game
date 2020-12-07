@@ -5,6 +5,7 @@ comment1.params=
 comment1.target=Car2()
 comment2.params=rotation
 comment2.target=Car2(int)
+comment2.text=\r\n\ Rotates\ the\ car\r\n
 comment3.params=
 comment3.target=void\ act()
 comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Car2\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

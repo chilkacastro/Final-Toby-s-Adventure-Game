@@ -13,7 +13,7 @@ public class Heart extends Actor
     private GreenfootImage image3;
     private int counter=0;
     /**
-     * 
+     * Makes heart look like it is rotating
      */
     public Heart(){
     image1 = new GreenfootImage("heart2.png");
@@ -41,7 +41,9 @@ public class Heart extends Actor
         } 
     gainPoints();  
     }
-    
+    /**
+     * Gain a life if Toby grabs the heart
+     */
     public void gainPoints(){
             if (isTouching(Toby.class)) {
             ((MyWorld)getWorld()).lifeCount(+1); 

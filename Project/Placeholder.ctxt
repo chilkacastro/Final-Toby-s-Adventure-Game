@@ -9,5 +9,5 @@ comment2.target=void\ act()
 comment2.text=\r\n\ Moves\ towards\ left\ screen\r\n
 comment3.params=
 comment3.target=void\ moveAndTurn()
-comment3.text=\r\n\ \r\n
+comment3.text=\r\n\ Makes\ it\ move\ and\ turn\r\n
 numComments=4

@@ -40,7 +40,9 @@ public class DogCatcher2 extends Actor{
     }
   
     
-    
+    /**
+     * Movement of catcher
+     */
     public void movement() {
         counter1++;    
         if (counter1>80) {
@@ -79,7 +81,9 @@ public class DogCatcher2 extends Actor{
             counter1=0;
         }
     }    
-    
+    /**
+     * Rotates at edge
+     */
     public void rotateAtEdge() {
         if (getX() == 0) {
           setLocation(1590, getY()); 

@@ -12,12 +12,16 @@ public class Bee extends Actor
     private GreenfootImage image1;
     private GreenfootImage image2;
     private int rotation;
-    
+    /**
+     * Makes it seem like the bee is flying
+     */
     public Bee(){
         image1 =  new  GreenfootImage("bee1.png");
         image2 =  new  GreenfootImage("bee2.png");
     }
-    
+    /** 
+     * Rotates the bee
+     */
     public Bee(int rotation){
         image1 =  new GreenfootImage("bee1.png");
         image2 =  new GreenfootImage("bee2.png");
@@ -70,7 +74,9 @@ public class Bee extends Actor
             turn(Greenfoot.getRandomNumber(40) - 10);
         }
     }
-    
+    /**
+     * Points decrease when bee touches Toby
+     */
     public void decreasePoints(){
         if (isTouching(Toby.class)) {
             Greenfoot.playSound("Crying.wav");
