@@ -46,19 +46,18 @@ public class Paw extends Actor
             }
         }
          
-        if (Greenfoot.mouseClicked(this)) {
+        if (Greenfoot.mouseClicked(this) && getX() == 340) {
             if (getWorld() instanceof Credit) {
                 Greenfoot.setWorld(new StartScreen());
             }
 
         }
-        
-        if (Greenfoot.mouseClicked(this)) {
-            if (getWorld() instanceof Sources) {
-                Greenfoot.setWorld(new StartScreen());
+
+        if (Greenfoot.mouseClicked(this) && getX() == 195) {
+            if (getWorld() instanceof Credit) {
+                Greenfoot.setWorld(new Sources());
             }
 
         }
-        
     }
 }
