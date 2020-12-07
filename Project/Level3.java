@@ -26,7 +26,7 @@ public class Level3 extends MyWorld {
      */
     private void prepare()
     {
-        
+
         for(int i = 1; i <= 2; i++) {
             addObject(new Truck2(), i * 350, 475); 
 
