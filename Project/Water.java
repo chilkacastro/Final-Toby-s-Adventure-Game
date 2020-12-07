@@ -20,7 +20,7 @@ public class Water extends Actor
             ((MyWorld)getWorld()).lifeCount(-1); 
             removeTouching(Toby.class);
             MyWorld myWorld = (MyWorld)getWorld();
-            if (myWorld.getLifeCount() > 0) {
+           if (myWorld.getLifeCount() > 0) {
                 Level3 myLevel3 = (Level3)getWorld();
                 myLevel3.addObject(new Toby(), 800, 640);
  

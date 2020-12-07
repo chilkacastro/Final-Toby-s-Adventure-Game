@@ -340,9 +340,12 @@ public class Level3 extends MyWorld {
         dogTreats2.setLocation(1212,138);
         removeObject(dogTreats2);
 
-        
         Door door = new Door();
         addObject(door,415,627);
         door.setLocation(288,631);
+        Stop stop = new Stop();
+        addObject(stop,84,626);
+        Bee bee3 = new Bee();
+        addObject(bee3,1236,610);
     }
 }

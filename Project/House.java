@@ -17,8 +17,9 @@ public class House extends Actor
         if (isTouching(Toby.class)) {
            Greenfoot.playSound("House.wav");
            removeTouching(Toby.class);
-           getWorld().showText("You have won the game!",500, 500);
-           MyWorld myWorld = (MyWorld)getWorld();
+           Greenfoot.setWorld(new WinScreen());
+           //getWorld().showText("You have won the game!",500, 500);
+           
         }
     }    
 }

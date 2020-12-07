@@ -27,14 +27,20 @@ public class TrafficCone extends Actor
             Greenfoot.playSound("Crying.wav");
             myWorld.addScore(-100);
             //getWorld().showText("You lost some POINTS!",250, 250);
+
+          if (myWorld.getLifeCount() > 0) {
+                Level1 myLevel1 = (Level1)getWorld();
+                myLevel1.addObject(new Toby(), 800, 640);
+ 
+          }  
             
-       }
-       if (lineCounter > 0) {
+           if (lineCounter > 0) {
             Level1 line = (Level1)getWorld();
             line.addObject(new MinusLine(), 850, 350); 
         
                 
+          }
        }
-    
+ 
     }
 }

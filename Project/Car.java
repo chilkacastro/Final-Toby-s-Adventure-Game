@@ -61,7 +61,7 @@ public class Car extends Actor {
                 if (lineCounter > 0) {
                     if (getWorld() instanceof Level1) {
                         Level1 line = (Level1)getWorld();
-                        line.addObject(new HitLine(), 850, 350); 
+                       line.addObject(new HitLine(), 850, 350); 
                     }
                     else {
                       Level3 line2 = (Level3)getWorld();

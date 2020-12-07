@@ -16,6 +16,7 @@ public class Train2 extends Actor
     private GreenfootImage image6;
     private GreenfootImage image7;
     private GreenfootImage image8;
+    private int lineCounter = 0;
     
         public Train2() {
             image1 = new GreenfootImage("Train2.png");
@@ -68,6 +69,7 @@ public class Train2 extends Actor
          */
             public void removeToby() {
             if (isTouching(Toby.class)) {
+                lineCounter++;
                 getWorld().addObject(new Blood(), getX()-80, getY());
                 Greenfoot.playSound("Train.wav");
                 removeTouching(Toby.class);
@@ -77,7 +79,8 @@ public class Train2 extends Actor
                 if (myWorld.getLifeCount() > 0) {
                     reviveToby();
                 }   
-    
+                Level2 line = (Level2)getWorld();
+                line.addObject(new HitLine(), 850, 350); 
             }
         }
     
@@ -87,8 +90,7 @@ public class Train2 extends Actor
          public void deductPoints() {
             MyWorld myWorld = (MyWorld)getWorld();
             myWorld.lifeCount(-1);
-            myWorld.addScore(-1000);
-    
+
         }
     
         /**
