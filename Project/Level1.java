@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Level1 extends MyWorld {
-   
+
    /**
     * Constructor for objects of class Level1.
     * 
@@ -20,9 +20,12 @@ public class Level1 extends MyWorld {
         stopGame();
         score = 10000;
         lifeCount = 3;
+        
+        
         //Plays music
-        GreenfootSound bg = new GreenfootSound("Credit.mp3");
-        bg.playLoop();  
+        
+        //GreenfootSound bg = new GreenfootSound("Credit.mp3");
+        //bg.playLoop();  
         
     }
         
@@ -35,7 +38,7 @@ public class Level1 extends MyWorld {
 
         for(int i = 0; i < 3; i++) {
             addObject(new Car2(), i * 500, 63); 
-            
+
         }
 
         for(int i = 1; i <= 4; i++) {
@@ -119,16 +122,32 @@ public class Level1 extends MyWorld {
             addObject(new TrafficCone(), Greenfoot.getRandomNumber(1600) + 60, 430); 
             addObject(new TrafficCone(), Greenfoot.getRandomNumber(1600) + 60, 70); 
         }
-        
-        // Keypass to next level(Level 2)
-        for (int i = 1; i <= 3; i++) {
-            KeyPass keypass = new KeyPass();
-            addObject(keypass, (i * 400) + 40, 20);
-        }
+
+
+       if (!collectedKeys) {
+            // Keypass to next level(Level 2)
+            for (int i = 1; i <= 3; i++) {
+                KeyPass keypass = new KeyPass();
+                addObject(keypass, (i * 400) + 40, 20);
+                collectedKeys = true;
+                
+               
+            }
+            
+       }
+       
+       int keyCount = getObjects(KeyPass.class).size();
+       if ((collectedKeys) && keyCount == 0) {
+            collectedKeys = false;
+            addObject(new Door() , 1400, 620);
+            collectedKeys = true;
+
+       }
+       
         
         // Toby
         addObject(new Toby(), 792, 630); 
-        
+
         Tree tree = new Tree();
         addObject(tree,1089,496);
         Tree tree2 = new Tree();
@@ -167,6 +186,9 @@ public class Level1 extends MyWorld {
         addObject(tree36,189,498);
         tree36.setLocation(34,502);
 
+        Stop stop1 = new Stop();
+        addObject(stop1,62,623);
+        
     }
-
 }
+

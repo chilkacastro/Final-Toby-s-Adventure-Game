@@ -9,7 +9,8 @@
         public class MyWorld extends World {
             protected static int score = 10000; // initial points
             protected static int lifeCount = 3; // initial 3 lives   
-            protected static int keyCount;
+            protected static boolean collectedKeys = false;
+            protected static boolean collectedKeys2 = false;
             /**
              * Constructor for objects of class MyWorld.
              * 
@@ -17,9 +18,16 @@
             public MyWorld() {
                 super(1600, 650, 1); 
                 
+                
             }
                       
             // GETTERS
+            
+            public void setCollectedKeys( boolean collectedKeys) {
+                this.collectedKeys = collectedKeys;
+         
+            }
+            
             /**
              * getScore() - To allow the actor classes to access the score.
              */
@@ -78,7 +86,7 @@
             public void stopGame() {
                 if (lifeCount <= 0 || score <= 0){
                     Greenfoot.setWorld(new GameOver());
-                    showText("YOU LOST!", 800, 250); 
+                    // showText("YOU LOST!", 800, 250); 
                     showText("Score:"+ score, 800, 325);
                     score = 10000;
                     lifeCount = 3;

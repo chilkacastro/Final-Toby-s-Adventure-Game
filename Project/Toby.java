@@ -55,7 +55,7 @@
                     if (keyCount == 3) {
                          Greenfoot.setWorld(new Level2());
                          keyCount = 0;
-                         getWorld().removeObject(this);
+                         
                     }
                 }
                 
@@ -70,16 +70,15 @@
                     }
                 
                 }
-                  
-                if (isTouching(Door.class) && getWorld() instanceof Level2) {
-                    Greenfoot.setWorld(new Level1());
+                 /*
+                
                     
-                }
+                } */
                 
                 if (isTouching(Door.class) && getWorld() instanceof Level3) {
                     Greenfoot.setWorld(new Level2());
                     
-                }
+                } 
             }
         
             

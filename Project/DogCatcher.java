@@ -27,19 +27,24 @@ public class DogCatcher extends Actor{
      */
     public void act() 
     {
-    movement();
-    if(isTouching(Toby.class)) {
-        Greenfoot.playSound("Crying.wav");
-        removeTouching(Toby.class);
-        getWorld().showText("You have been CAPTURED AND ENSLAVED BY THE DOG CATCHER!",500, 500);
-        Greenfoot.stop();
-    }
-    //atEdge();
-    //slowDown();
-    rotateAtEdge();
+        movement();
+        if(isTouching(Toby.class)) {
+            Greenfoot.playSound("Crying.wav");
+            removeTouching(Toby.class);
+            MyWorld myWorld = (MyWorld)getWorld();
+            myWorld.lifeCount(-1);
+            getWorld().showText("You have been CAPTURED AND ENSLAVED BY THE DOG CATCHER!",500, 500);
+            if (myWorld.getLifeCount() > 0) {
+                Level2 myLevel2 = (Level2)getWorld();
+                myLevel2.addObject(new Toby(), 800, 640);
+            }   
+        }
+        //atEdge();
+        //slowDown();
+        rotateAtEdge();
     }
   
-    
+
     
     public void movement() {
         counter1++;    
@@ -48,26 +53,27 @@ public class DogCatcher extends Actor{
             counter3++;
             if (counter3 <4) {
                 setImage (image1);
-            } else if (counter3 >8){
-            setImage(image2);
-            if (counter3 ==12){
-            counter3=0;
-            }
-                                   } 
+            } 
+            else if (counter3 >8){
+                setImage(image2);
+                if (counter3 ==12){
+                    counter3=0;
+                }
+            } 
         }
         else if (counter1<80) {
             setLocation(getX() - Greenfoot.getRandomNumber(5), getY());
             counter2++; 
         
-        if (counter2 < 4){
-         setImage (image3);
-         }
-         else if ( counter2 > 8){
-         setImage (image4); 
-         if (counter2==12){
-         counter2= 0;
-        }
-        }
+            if (counter2 < 4){
+             setImage (image3);
+            }
+             else if ( counter2 > 8){
+                setImage (image4); 
+                 if (counter2==12){
+                 counter2= 0;
+                }
+            }
           //    if (getImage() == image3) {
           //  setImage(image4);
           //  }
@@ -80,6 +86,7 @@ public class DogCatcher extends Actor{
         }
     }    
     
+    
     public void rotateAtEdge() {
         if (getX() == 0) {
           setLocation(1590, getY()); 
@@ -91,15 +98,15 @@ public class DogCatcher extends Actor{
      * slowDown - to slow down Toby's movement.
      */
      public void slowDown(){
-    // Helps slow down the dog's catcher movement.
-    counter2++; 
-    if (counter2 < 5){
-     setImage (image3);
-     //movement();
-     }
-     else if ( counter2 > 1){
-     setImage (image4);         
-     counter2= 0;
+        // Helps slow down the dog's catcher movement.
+        counter2++; 
+        if (counter2 < 5){
+         setImage (image3);
+         //movement();
+         }
+         else if ( counter2 > 1){
+         setImage (image4);         
+         counter2= 0;
+        }
     }
-            }
-    }
+  }
