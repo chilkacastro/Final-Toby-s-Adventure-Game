@@ -26,13 +26,10 @@ public class Car extends Actor {
         public void act() {
            removeToby();
            move(-2);
-    
            if(isAtEdge()) {
                turn(90);
                move(-30);
-               //getWorld().removeObject(this);  
-                  
-           }
+            }
 
         }
         
@@ -59,7 +56,6 @@ public class Car extends Actor {
          */
          public void deductPoints() {
             MyWorld myWorld = (MyWorld)getWorld();
-            myWorld.addScore(-1000);
             myWorld.lifeCount(-1);
     
         }
