@@ -1,20 +1,27 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
         
 /**
- * Write a description of class Car here.
+ * Class of Red Car
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 public class Car extends Actor {
        private int rotation;
+       private int lineCounter = 0;
        
+       /**
+        * Default constructor
+        */
        public Car() {
           // do not remove default constructor
            
        }
 
-       public Car(int rotation) {
+       /**
+        * Constructor with one parameter
+        */
+        public Car(int rotation) {
            setRotation(rotation);
            
        }
@@ -34,7 +41,7 @@ public class Car extends Actor {
                   
            }
 
-        }
+       }
         
         /**
          * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
@@ -44,6 +51,7 @@ public class Car extends Actor {
                 getWorld().addObject(new Blood(), getX()-80, getY());
                 Greenfoot.playSound("tireSkid.wav");
                 removeTouching(Toby.class);
+                
                 getWorld().showText("You lose a life!",500, 500);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();

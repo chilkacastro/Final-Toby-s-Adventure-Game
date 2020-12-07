@@ -8,23 +8,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class DogTreat extends Actor
 {
+    private int lineCounter = 0;
     /**
-     * Act - do whatever the DogTreat wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - do whatever the DogTreat wants to do. This method is called 
+     * whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
         if (isTouching(Toby.class)) {
-
-            ((MyWorld)getWorld()).addScore(200); 
-
-            ((MyWorld)getWorld()).addScore(100); 
+            lineCounter++;
+           ((MyWorld)getWorld()).addScore(100); 
             Greenfoot.playSound("Treats.wav");
-
-            getWorld().showText("You GAINED Points!",450, 350);
+            //getWorld().showText("You GAINED Points!",450, 350);
+            if (lineCounter > 0) {
+                Level2 myLevel2 = (Level2)getWorld();
+                myLevel2.addObject(new PlusPoint(), 700, 400);
+            }
             getWorld().removeObject(this);
         }
 
-        
     }    
 }

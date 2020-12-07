@@ -14,33 +14,39 @@ public class DogCatcher2 extends Actor{
     private int counter1=0;
     private int counter2=0;
     private int counter3= 0;
-    
+    private int lineCounter = 0;
     public DogCatcher2(){
         image1 = new GreenfootImage("rightcatcher1.png");
         image2 = new GreenfootImage("rightcatcher2.png");
         image3 = new GreenfootImage("leftcatcher1.png");
         image4 = new GreenfootImage("leftcatcher2.png");       
     }
+    
+    
     /**
      * Act - do whatever the DogCatcher wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
-    {
-    movement();
-    if(isTouching(Toby.class)) {
-
-        Greenfoot.playSound("Crying.wav");
-        removeTouching(Toby.class);
-        MyWorld myWorld = (MyWorld)getWorld();
-        myWorld.lifeCount(-1);
-        getWorld().showText("You have been CAPTURED AND ENSLAVED BY THE DOG CATCHER!",500, 500);
-            if (myWorld.getLifeCount() > 0) {
+    public void act() {
+        movement();
+        if (isTouching(Toby.class)) {
+            lineCounter++;
+            Greenfoot.playSound("Crying.wav");
+            removeTouching(Toby.class);
+            MyWorld myWorld = (MyWorld)getWorld();
+            myWorld.lifeCount(-1);
+          if (lineCounter > 0) {
+                Level2 myLevel2 = (Level2)getWorld();
+                myLevel2.addObject(new CatcherLine(), 700, 400); 
+                
+                
+           }
+          if (myWorld.getLifeCount() > 0) {
                 Level2 myLevel2 = (Level2)getWorld();
                 myLevel2.addObject(new Toby(), 800, 640);
-            }   
+          }   
         
-    }
+        }
     //atEdge();
     //slowDown();
     rotateAtEdge();
