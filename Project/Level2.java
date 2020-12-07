@@ -80,8 +80,7 @@ public class Level2 extends MyWorld
         // } 
         //int keyCount2 = getObjects(KeyPass2.class).size();
         /* if ((collectedKeys2) && keyCount2 == 0) {
-        addObject(new Door(),1200,625);
-
+        
         } */
         addObject(new LeftBorder(), 200,323);
         RightBorder rightBorder = new RightBorder();
@@ -96,6 +95,8 @@ public class Level2 extends MyWorld
         Stop stop = new Stop();
         addObject(stop,99,614);
         
+        addObject(new Door(), 400,625);
+
         
     }
   }

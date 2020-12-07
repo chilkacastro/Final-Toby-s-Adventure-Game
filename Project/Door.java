@@ -25,9 +25,10 @@ public class Door extends Actor
           Greenfoot.setWorld(new Level3());
         } */
         
-       if ( getX() == 400 && (isTouching(Toby.class) && getWorld() instanceof Level2)) {
+        
+       if (getX() == 400 && (isTouching(Toby.class) && getWorld() instanceof Level2)) {
           Greenfoot.setWorld(new Level1());
-          Greenfoot.setWorld(new Level1());
-        }
+          
+       }
     }
 }
