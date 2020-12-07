@@ -296,7 +296,6 @@ public class Level3 extends MyWorld {
         heart2.setLocation(221,404);
         heart.setLocation(863,269);
 
-
         Bee bee1 = new Bee();
         addObject(bee1,1000,150);
         addObject(new Bee(90),300, 350);
@@ -341,5 +340,9 @@ public class Level3 extends MyWorld {
         dogTreats2.setLocation(1212,138);
         removeObject(dogTreats2);
 
+        
+        Door door = new Door();
+        addObject(door,415,627);
+        door.setLocation(288,631);
     }
 }

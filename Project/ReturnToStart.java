@@ -18,6 +18,6 @@ public class ReturnToStart extends Actor
           Greenfoot.playSound("Woof.wav");
           Greenfoot.setWorld(new StartScreen());
           
-      }
+        }
     }    
 }

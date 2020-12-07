@@ -24,4 +24,5 @@ comment7.target=void\ showLife()
 comment7.text=\r\n\ showLife()\ -\ To\ show\ how\ many\ lives\ does\ Toby\ has\ and\ if\ player\ lost.\r\n
 comment8.params=
 comment8.target=void\ stopGame()
+comment8.text=\r\n\ stopGame()\ -\ To\ stop\ the\ game\ when\ there\ is\ no\ points\ OR\ there\ is\ no\ more\ lives\ left.\r\n
 numComments=9

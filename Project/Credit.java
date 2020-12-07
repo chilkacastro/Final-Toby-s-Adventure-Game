@@ -17,6 +17,7 @@ public class Credit extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 560, 1); 
+
         prepare();
     }
 
@@ -26,9 +27,11 @@ public class Credit extends World
      */
     private void prepare()
     {
-        ReturnToStart returnToStart = new ReturnToStart();
-        addObject(returnToStart,350,308);
+        /*ReturnToStart returnToStart = new ReturnToStart();
+        
         Paw paw = new Paw();
-        addObject(paw,257,302);
+        addObject(paw,257,302); */
+        addObject(new ReturnToStart(),350,308);
+        addObject(new Paw(),340, 250);
     }
 }

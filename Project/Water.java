@@ -14,6 +14,10 @@ public class Water extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        if (isTouching(Toby.class)) {
+            ((MyWorld)getWorld()).addScore(-100); 
+            getWorld().showText("You LOSE Points!",450, 350);
+            
+        }
     }    
 }

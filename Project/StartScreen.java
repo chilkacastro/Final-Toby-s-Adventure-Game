@@ -21,6 +21,9 @@ public class StartScreen extends World
         Greenfoot.playSound("Intro.wav");
     }
     
+    /**
+     * mouseClicked() - to move to different worlds by clicking the brown paw on the screen. 
+     */
     private void mouseClicked() {
       // paw and start
       Paw pawStart = new Paw();

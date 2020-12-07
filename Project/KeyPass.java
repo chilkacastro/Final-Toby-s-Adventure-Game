@@ -16,6 +16,7 @@ public class KeyPass extends Actor
     {
       if (isTouching(Toby.class)) {
         Greenfoot.playSound("Key.wav");
-    }  
+     }  
+
     }
 }
