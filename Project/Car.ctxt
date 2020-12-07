@@ -6,11 +6,7 @@ comment1.target=Car()
 comment1.text=\r\n\ Default\ constructor\r\n
 comment2.params=rotation
 comment2.target=Car(int)
-<<<<<<< HEAD
 comment2.text=\r\n\ Constructor\ with\ one\ parameter\r\n
-=======
-comment2.text=\r\n\ Rotates\ the\ car\r\n
->>>>>>> 06e33bf36ddcfb33b2c698de0f74758ec6b33568
 comment3.params=
 comment3.target=void\ act()
 comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Car\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

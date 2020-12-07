@@ -17,18 +17,13 @@ public class Car extends Actor {
           // do not remove default constructor
            
        }
-<<<<<<< HEAD
+
 
        /**
         * Constructor with one parameter
         */
         public Car(int rotation) {
-=======
-       /**
-        * Rotates the car
-        */
-       public Car(int rotation) {
->>>>>>> 06e33bf36ddcfb33b2c698de0f74758ec6b33568
+
            setRotation(rotation);
            
        }

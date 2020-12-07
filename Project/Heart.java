@@ -14,11 +14,7 @@ public class Heart extends Actor
     private int counter=0;
     private int counter2=0;
     /**
-<<<<<<< HEAD
-     * Makes heart look like it is rotating
-=======
      * Default constructor
->>>>>>> bfe6ce6da63f98e9c93c597859f7fc06f479bc8f
      */
     public Heart(){
         image1 = new GreenfootImage("heart2.png");
@@ -47,14 +43,11 @@ public class Heart extends Actor
         } 
         
     }
-<<<<<<< HEAD
-    /**
-     * Gain a life if Toby grabs the heart
-=======
-    
+
+
     /**
      * gainPoints() - to gain points if Toby touches and picks up the heart.
->>>>>>> bfe6ce6da63f98e9c93c597859f7fc06f479bc8f
+
      */
     public void gainPoints(){
         if (isTouching(Toby.class)) {
