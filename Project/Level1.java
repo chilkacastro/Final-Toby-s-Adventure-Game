@@ -124,25 +124,25 @@ public class Level1 extends MyWorld {
         }
 
 
-       if (!collectedKeys) {
+       //if (!collectedKeys) {
             // Keypass to next level(Level 2)
-            for (int i = 1; i <= 3; i++) {
-                KeyPass keypass = new KeyPass();
-                addObject(keypass, (i * 400) + 40, 20);
-                collectedKeys = true;
-                
-               
-            }
-            
-       }
-       
-       int keyCount = getObjects(KeyPass.class).size();
-       if ((collectedKeys) && keyCount == 0) {
-            collectedKeys = false;
-            addObject(new Door() , 1400, 620);
+        for (int i = 1; i <= 3; i++) {
+            KeyPass keypass = new KeyPass();
+            addObject(keypass, (i * 400) + 40, 20);
             collectedKeys = true;
+            
+           
+        }
+        
+       //}
+       
+       //int keyCount = getObjects(KeyPass.class).size();
+       //if ((collectedKeys) && keyCount == 0) {
+          /*  collectedKeys = false;
+            addObject(new Door() , 1400, 620);
+            collectedKeys = true; */
 
-       }
+       //}
        
         
         // Toby
