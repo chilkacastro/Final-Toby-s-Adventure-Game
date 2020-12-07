@@ -155,8 +155,6 @@ public class Level4 extends MyWorld
         addObject(starTreat,947,238);
         Spider spider = new Spider();
         addObject(spider,1344,283);
-        BallTreat ballTreat = new BallTreat();
-        addObject(ballTreat,1143,171);
         PawTreat pawTreat = new PawTreat();
         addObject(pawTreat,1153,366);
     }

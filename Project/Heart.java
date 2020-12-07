@@ -12,6 +12,7 @@ public class Heart extends Actor
     private GreenfootImage image2;
     private GreenfootImage image3;
     private int counter=0;
+    private int counter2=0;
     /**
      * Default constructor
      */
@@ -48,11 +49,22 @@ public class Heart extends Actor
      */
     public void gainPoints(){
            if (isTouching(Toby.class)) {
+<<<<<<< HEAD
            MyWorld myWorld = (MyWorld)getWorld();
            myWorld.lifeCount(+1);
            getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
            Greenfoot.playSound("Heart.wav");
            getWorld().removeObject(this);
+=======
+           counter2++;
+           ((MyWorld)getWorld()).lifeCount(+1); 
+           getWorld().showText("YOU GAINED 1 LIFE!",797, 350);
+           getWorld().removeObject(this);
+           Greenfoot.playSound("Heart.wav");
+           if (counter2 == 8){
+           getWorld().showText("",797, 350);           
+           }
+>>>>>>> 387ae6b919fcd77e269da1ee1148ca3dd8d0e68c
 
         }
     }
