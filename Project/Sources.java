@@ -16,6 +16,19 @@ public class Sources extends World
     public Sources()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(1600, 650, 1); 
+        prepare();
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        ReturnToStart returnToStart = new ReturnToStart();
+        addObject(returnToStart,1467,54);
+        Paw paw = new Paw();
+        addObject(paw,1280,53);
     }
 }

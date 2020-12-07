@@ -20,6 +20,7 @@ public class Level2 extends MyWorld
         showScore();
         stopGame();
         
+        
     }  
     
     /**
@@ -68,11 +69,23 @@ public class Level2 extends MyWorld
 
         }
         addObject(new Toby(), 792, 630); 
+
+        
+       // if (!collectedKeys2) {
         for (int i = 1; i <= 3; i++) {
             KeyPass2 keypass2 = new KeyPass2();
             addObject(keypass2, (i * 400) + 40, 20);
+            //collectedKeys2 = true;
+            //addObject(new Door(),400,625);
         }
-        
+       // } 
+       //int keyCount2 = getObjects(KeyPass2.class).size();
+            /* if ((collectedKeys2) && keyCount2 == 0) {
+                addObject(new Door(),1200,625);
+
+            
+            } */
+       
         addObject(new LeftBorder(), 200,323);
         RightBorder rightBorder = new RightBorder();
         addObject(rightBorder,1400,320);
@@ -82,10 +95,10 @@ public class Level2 extends MyWorld
         addObject(dogTreats22,220,325);
         DogTreats2 dogTreats23 = new DogTreats2();
         addObject(dogTreats23,381,495);
-        addObject(new Door(),400,625);
+      
         
        
     
     
-    }
-}
+   }
+  }

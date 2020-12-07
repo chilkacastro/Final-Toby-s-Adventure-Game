@@ -48,14 +48,20 @@ public class Heart extends Actor
      * gainPoints() - to gain points if Toby touches and picks up the heart.
      */
     public void gainPoints(){
-           if (isTouching(Toby.class)) {
+        if (isTouching(Toby.class)) {
+           MyWorld myWorld = (MyWorld)getWorld();
+           myWorld.lifeCount(+1);
+           getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
+           Greenfoot.playSound("Heart.wav");
+           getWorld().removeObject(this);
+
            counter2++;
            ((MyWorld)getWorld()).lifeCount(+1); 
            getWorld().showText("YOU GAINED 1 LIFE!",797, 350);
            getWorld().removeObject(this);
            Greenfoot.playSound("Heart.wav");
            if (counter2 == 8){
-           getWorld().showText("",797, 350);           
+               getWorld().showText("",797, 350);           
            }
 
         }
