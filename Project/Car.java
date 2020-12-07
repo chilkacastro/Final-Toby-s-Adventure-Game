@@ -57,8 +57,7 @@ public class Car extends Actor {
                 if (myWorld.getLifeCount() > 0) {
                     reviveToby();
                 }  
-                
-                
+
                 if (lineCounter > 0) {
                     if (getWorld() instanceof Level1) {
                         Level1 line = (Level1)getWorld();
