@@ -21,8 +21,8 @@ public class DogTreat extends Actor
             Greenfoot.playSound("Treats.wav");
             //getWorld().showText("You GAINED Points!",450, 350);
             if (lineCounter > 0) {
-                Level2 myLevel2 = (Level2)getWorld();
-                myLevel2.addObject(new PlusPoint(), 700, 400);
+                Level3 myLevel3 = (Level3)getWorld();
+                myLevel3.addObject(new PlusPoint(), 840, 400);
             }
             getWorld().removeObject(this);
         }
