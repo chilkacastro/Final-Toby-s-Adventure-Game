@@ -21,10 +21,10 @@ public class Start extends Actor
     {
       if (Greenfoot.mouseClicked(this)) {
           Greenfoot.playSound("Woof.wav");
-          //Greenfoot.setWorld(new MyWorld());
-          
+          Greenfoot.setWorld(new MyWorld());
           Greenfoot.setWorld(new Level1());
-
+          Greenfoot.setWorld(new Level1());
+          
           
         }    
     }
