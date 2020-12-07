@@ -6,17 +6,19 @@
      * @author (your name) 
      * @version (a version number or a date)
      */
-    public class Car2 extends Car
-    {  private int rotation;
+    public class Car2 extends Car {
+       private int rotation;
+       private int lineCounter = 0;
+        
        public Car2() {
-           
+           // do not remove
            
        }
        /**
         * Rotates the car
         */
        public Car2(int rotation) {
-               setRotation(rotation);
+           setRotation(rotation);
                
        }
         /**
@@ -38,16 +40,23 @@
          */
         public void removeToby() {
             if (isTouching(Toby.class)) {
+                lineCounter++;
                 getWorld().addObject(new Blood(), getX()-50, getY());
                 Greenfoot.playSound("tireSkid.wav");
                 removeTouching(Toby.class);
-                getWorld().showText("You lose a life!",500, 500);
+                //getWorld().showText("You lose a life!",500, 500);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();
                 if (myWorld.getLifeCount() > 0) {
                     reviveToby();
                 }   
-    
+                
+                if (lineCounter > 0) {
+                    Level1 line = (Level1)getWorld();
+                    line.addObject(new HitLine(), 850, 350); 
+                
+                
+                }
             }
         }
     

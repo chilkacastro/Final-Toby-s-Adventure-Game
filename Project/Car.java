@@ -23,7 +23,6 @@ public class Car extends Actor {
         * Constructor with one parameter
         */
         public Car(int rotation) {
-
            setRotation(rotation);
            
        }
@@ -47,17 +46,23 @@ public class Car extends Actor {
          */
         public void removeToby() {
              if (isTouching(Toby.class)) {
+                lineCounter++;
                 getWorld().addObject(new Blood(), getX()-80, getY());
                 Greenfoot.playSound("tireSkid.wav");
                 removeTouching(Toby.class);
-                
-                getWorld().showText("You lose a life!",500, 500);
+                //getWorld().showText("You lose a life!",500, 500);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();
                 if (myWorld.getLifeCount() > 0) {
                     reviveToby();
-                }   
-    
+                }  
+                
+                if (lineCounter > 0) {
+                    Level1 line = (Level1)getWorld();
+                    line.addObject(new HitLine(), 850, 350); 
+                
+                
+                }
             }
         }
     

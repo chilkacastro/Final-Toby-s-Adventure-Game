@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TrafficCone extends Actor
 {
+    private int lineCounter = 0;
     /**
      * Act - do whatever the TrafficCone wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
@@ -21,10 +22,18 @@ public class TrafficCone extends Actor
      */
      public void deductPoints() {
        if (isTouching(Toby.class)) {
+            lineCounter++;
             MyWorld myWorld = (MyWorld)getWorld();
             Greenfoot.playSound("Crying.wav");
-            myWorld.addScore(-50);
-            getWorld().showText("You lost some POINTS!",250, 250);
+            myWorld.addScore(-100);
+            //getWorld().showText("You lost some POINTS!",250, 250);
+            
+       }
+       if (lineCounter > 0) {
+            Level1 line = (Level1)getWorld();
+            line.addObject(new MinusLine(), 850, 350); 
+        
+                
        }
     
     }

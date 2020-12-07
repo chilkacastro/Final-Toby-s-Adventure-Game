@@ -15,6 +15,8 @@ public class DogCatcher extends Actor{
     private int counter2=0;
     private int counter3= 0;
     private int lineCounter = 0;
+    
+    
     public DogCatcher(){
         image1 = new GreenfootImage("dn_right1.png");
         image2 = new GreenfootImage("dn_right2.png");
@@ -29,8 +31,6 @@ public class DogCatcher extends Actor{
      */
     public void act() 
     {
-    
-
         movement();
         if(isTouching(Toby.class)) {
             lineCounter++;
@@ -53,7 +53,7 @@ public class DogCatcher extends Actor{
         //atEdge();
         //slowDown();
         rotateAtEdge();
-        }
+    }
     
     /**
 

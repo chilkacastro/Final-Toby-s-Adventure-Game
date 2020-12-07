@@ -15,6 +15,8 @@ public class DogCatcher2 extends Actor{
     private int counter2=0;
     private int counter3= 0;
     private int lineCounter = 0;
+    
+    
     public DogCatcher2(){
         image1 = new GreenfootImage("rightcatcher1.png");
         image2 = new GreenfootImage("rightcatcher2.png");

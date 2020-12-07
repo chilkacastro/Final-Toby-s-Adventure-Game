@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Hole1 extends Actor
 {   
+    private int lineCounter = 0;
     /**
      * Act - do whatever the Hole1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -23,6 +24,7 @@ public class Hole1 extends Actor
      */
     public void removeToby() {
         if (isTouching(Toby.class)) {
+            lineCounter++;
             Greenfoot.playSound("Crying.wav");
             removeTouching(Toby.class);
             getWorld().showText("You lose a life!",500, 500);
@@ -31,18 +33,21 @@ public class Hole1 extends Actor
             if (myWorld.getLifeCount() > 0) {
                 reviveToby();
             }   
-
+            
+            if (lineCounter > 0) {
+                Level1 line = (Level1)getWorld();
+                line.addObject(new HoleLine(), 850, 350); 
+            }
         }
     }
     
     /**
-     * deductPoints() - to remove points when Toby touches the holes.
+     * deductPoints() - to remove a life when Toby touches the holes.
      */
      public void deductPoints() {
         MyWorld myWorld = (MyWorld)getWorld();
         myWorld.lifeCount(-1);
-        myWorld.addScore(-1000);
-
+        
     }
     
     /**
