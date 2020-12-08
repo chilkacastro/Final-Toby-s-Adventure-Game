@@ -87,7 +87,7 @@ public class Bee extends Actor
                 Greenfoot.playSound("Bee.wav");
                 MyWorld myWorld = (MyWorld)getWorld();
                 myWorld.addScore(-100);
-            //getWorld().showText("You LOSE Points!",450, 350);
+              //getWorld().showText("You LOSE Points!",450, 350);
                if (lineCounter > 0) {
                    Level3 line = (Level3)getWorld();
                    line.addObject(new BeeLine(), 850, 350); 

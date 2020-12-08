@@ -23,6 +23,7 @@ public class TrafficCone extends Actor
      public void deductPoints() {
        if (isTouching(Toby.class)) {
             lineCounter++;
+            removeTouching(Toby.class);
             MyWorld myWorld = (MyWorld)getWorld();
             Greenfoot.playSound("Crying.wav");
             myWorld.addScore(-100);

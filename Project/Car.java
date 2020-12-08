@@ -64,8 +64,8 @@ public class Car extends Actor {
                        line.addObject(new HitLine(), 850, 350); 
                     }
                     else {
-                      Level3 line2 = (Level3)getWorld();
-                      line2.addObject(new HitLine(), 850, 350);   
+                      Level3 line3 = (Level3)getWorld();
+                      line3.addObject(new HitLine(), 850, 350);   
                      
                     }
                  }
