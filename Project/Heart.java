@@ -1,18 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-/**
- * Write a description of class Heart here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Heart extends Actor
 {
     private GreenfootImage image1;
     private GreenfootImage image2;
     private GreenfootImage image3;
     private int counter=0;
-    private int counter2=0;
     /**
      * Default constructor
      */
@@ -20,17 +11,17 @@ public class Heart extends Actor
         image1 = new GreenfootImage("heart2.png");
         image2 = new GreenfootImage("heart3.png");
         image3 = new GreenfootImage("heart1.png");
-        setImage(image1);
+        setImage(image1); 
     }
-    
+   
     /**
      * Act - do whatever the Heart wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() {
-        counter++;   
+        counter++;  
         getImage();
-        gainPoints();  
+        gainPoints();
         if (counter == 10) {
              setImage(image1);
         }
@@ -40,30 +31,19 @@ public class Heart extends Actor
         else if (counter == 20){
             setImage(image3);
             counter=0;
-        } 
-        
+        }
+       
     }
-    
+   
     /**
      * gainPoints() - to gain points if Toby touches and picks up the heart.
      */
     public void gainPoints(){
-        if (isTouching(Toby.class)) {
-           MyWorld myWorld = (MyWorld)getWorld();
-           myWorld.lifeCount(+1);
+            if (isTouching(Toby.class)) {
+           ((MyWorld)getWorld()).lifeCount(+1);
            getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
-           Greenfoot.playSound("Heart.wav");
            getWorld().removeObject(this);
-
-           counter2++;
-           ((MyWorld)getWorld()).lifeCount(+1); 
-           getWorld().showText("YOU GAINED 1 LIFE!",797, 350);
-           getWorld().removeObject(this);
-           Greenfoot.playSound("Heart.wav");
-           if (counter2 == 8){
-               getWorld().showText("",797, 350);           
-           }
-
         }
     }
 }
+ 

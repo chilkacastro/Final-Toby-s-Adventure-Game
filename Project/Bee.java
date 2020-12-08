@@ -1,12 +1,3 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
- /**
- * Write a description of class Bee here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 public class Bee extends Actor
 {
     private GreenfootImage image1;
@@ -16,6 +7,8 @@ public class Bee extends Actor
     /**
      * Default constructor
      */
+
+ 
 
     public Bee(){
         image1 =  new  GreenfootImage("bee1.png");
@@ -79,7 +72,7 @@ public class Bee extends Actor
      */
     public void decreasePoints(){
         if (isTouching(Toby.class)) {
-            Greenfoot.playSound("Bee.wav");
+            Greenfoot.playSound("Crying.wav");
             MyWorld myWorld = (MyWorld)getWorld();
             myWorld.addScore(-100);
             
