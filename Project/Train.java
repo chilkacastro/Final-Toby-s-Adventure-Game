@@ -17,6 +17,7 @@
         private GreenfootImage image6;
         private GreenfootImage image7;
         private GreenfootImage image8;
+        private int lineCounter = 0;
         
         public Train() {
             image1 = new GreenfootImage("Train3.png");
@@ -69,16 +70,18 @@
          */
             public void removeToby() {
             if (isTouching(Toby.class)) {
+                lineCounter++;
                 getWorld().addObject(new Blood(), getX()-80, getY());
                 Greenfoot.playSound("Train.wav");
                 removeTouching(Toby.class);
-                getWorld().showText("You lose a life!",500, 500);
+                //getWorld().showText("You lose a life!",500, 500);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();
                 if (myWorld.getLifeCount() > 0) {
                     reviveToby();
                 }   
-    
+                Level2 line = (Level2)getWorld();
+                line.addObject(new HitLine(), 850, 350); 
             }
         }
     
@@ -88,7 +91,7 @@
          public void deductPoints() {
             MyWorld myWorld = (MyWorld)getWorld();
             myWorld.lifeCount(-1);
-            myWorld.addScore(-1000);
+            
     
         }
     

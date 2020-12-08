@@ -10,7 +10,7 @@
             protected static int score = 10000; // initial points
             protected static int lifeCount = 3; // initial 3 lives   
             protected static boolean collectedKeys = false;
-            protected static boolean collectedKeys2 = false;
+            
             /**
              * Constructor for objects of class MyWorld.
              * 

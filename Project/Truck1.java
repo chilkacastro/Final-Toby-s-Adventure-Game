@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Truck1 extends Car
 {
+    private int lineCounter = 0;
     /**
      * Act - do whatever the Truck1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -26,15 +27,21 @@ public class Truck1 extends Car
          */
         public void removeToby() {
             if (isTouching(Toby.class)) {
+                lineCounter++;
                 Greenfoot.playSound("tireSkid.wav");
                 removeTouching(Toby.class);
-                getWorld().showText("You lose a life!",500, 500);
+                //getWorld().showText("You lose a life!",500, 500);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();
                 if (myWorld.getLifeCount() > 0) {
                     reviveToby();
                 }   
-    
+                
+                if (lineCounter > 0) {
+                   Level3 line = (Level3)getWorld();
+                   line.addObject(new HitLine(), 850, 350); 
+                    
+                }
             }
         }
     

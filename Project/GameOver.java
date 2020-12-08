@@ -26,7 +26,7 @@ public class GameOver extends World
      */
     private void prepare()
     {
-      addObject(new PlayAgain(), 790,622);
+      addObject(new PlayAgain(), 835,622);
       addObject(new Paw(),800,550);
     }
     

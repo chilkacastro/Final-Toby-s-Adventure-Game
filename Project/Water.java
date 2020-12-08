@@ -7,7 +7,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Water extends Actor
-{
+{   
+    private int lineCounter = 0;
     /**
      * Act - do whatever the Water wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -15,9 +16,21 @@ public class Water extends Actor
     public void act() 
     {
         if (isTouching(Toby.class)) {
-            ((MyWorld)getWorld()).addScore(-100); 
-            getWorld().showText("You LOSE Points!",450, 350);
-            
+            lineCounter++;
+            ((MyWorld)getWorld()).lifeCount(-1); 
+            removeTouching(Toby.class);
+            MyWorld myWorld = (MyWorld)getWorld();
+           if (myWorld.getLifeCount() > 0) {
+                Level3 myLevel3 = (Level3)getWorld();
+                myLevel3.addObject(new Toby(), 800, 640);
+ 
+           }  
+            //getWorld().showText("You LOSE Points!",450, 350);
+           if (lineCounter > 0) {
+               Level3 line = (Level3)getWorld();
+               line.addObject(new WaterLine(), 850, 350); 
+                
+            }
         }
-    }    
-}
+   }  
+}  

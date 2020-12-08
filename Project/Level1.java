@@ -24,8 +24,8 @@ public class Level1 extends MyWorld {
         
         //Plays music
         
-        //GreenfootSound bg = new GreenfootSound("Credit.mp3");
-        //bg.playLoop();  
+        GreenfootSound bg = new GreenfootSound("Credit.mp3");
+        bg.playLoop();  
         
     }
         
