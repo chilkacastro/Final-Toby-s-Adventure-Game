@@ -1,28 +1,39 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
- /**
- * Write a description of class Bee here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 public class Bee extends Actor
 {
     private GreenfootImage image1;
     private GreenfootImage image2;
     private int rotation;
+<<<<<<< HEAD
+=======
     private int lineCounter = 0;
    
         /**
          * Default constructor
          */
+>>>>>>> 9edf2d795e5827898d16c2d825993613b16445de
     
         public Bee(){
             image1 =  new  GreenfootImage("bee1.png");
             image2 =  new  GreenfootImage("bee2.png");
         }
 
+<<<<<<< HEAD
+ 
+
+    public Bee(){
+        image1 =  new  GreenfootImage("bee1.png");
+        image2 =  new  GreenfootImage("bee2.png");
+    }
+    
+    /**
+     * Constructor with one parameter
+     */
+    public Bee(int rotation){
+        image1 =  new GreenfootImage("bee1.png");
+        image2 =  new GreenfootImage("bee2.png");
+        setRotation(rotation);
+        setRotation(90);
+=======
         /**
          * Constructor with one parameter
     
@@ -34,6 +45,7 @@ public class Bee extends Actor
             setRotation(90);
             
         }
+>>>>>>> 9edf2d795e5827898d16c2d825993613b16445de
         
         /**
          * Act - do whatever the Bee wants to do. This method is called whenever
@@ -97,5 +109,23 @@ public class Bee extends Actor
                 
                 
         }
+<<<<<<< HEAD
+    }
+    
+    /**
+     * decreasePoints() - to decrease the points of Toby when the bee goes near him and to play a sound.
+     */
+    public void decreasePoints(){
+        if (isTouching(Toby.class)) {
+            Greenfoot.playSound("Crying.wav");
+            MyWorld myWorld = (MyWorld)getWorld();
+            myWorld.addScore(-100);
+            
+            
+        }
+    }
+}
+=======
     
 }
+>>>>>>> 9edf2d795e5827898d16c2d825993613b16445de
