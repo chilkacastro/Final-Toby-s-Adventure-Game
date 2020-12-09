@@ -8,11 +8,7 @@ comment2.target=void\ act()
 comment2.text=\r\n\ Act\ -\ the\ dog\ catcher\ moves\ horizontaly\ in\ order\ to\ catch\ Toby.\ If\ he\ captures\ him,\ the\ "Crying"\ sound\ should\ be\ \r\n\ played\ and\ a\ text\ should\ appear\ on\ screen.\ Toby\ should\ also\ be\ removed.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment3.params=
 comment3.target=void\ movement()
-<<<<<<< HEAD
-comment3.text=\r\n\ this\ method\ defines\ the\ movement\ of\ the\ dog\ cather.\ the\ animation\ is\ also\ included.\r\n
-=======
 comment3.text=\r\n\r\n\ Movement\ of\ dog\ catcher\r\n\r\n\ this\ method\ defines\ the\ movement\ of\ the\ dog\ cather.\ the\ animation\ is\ also\ included.\r\n\r\n
->>>>>>> 9edf2d795e5827898d16c2d825993613b16445de
 comment4.params=
 comment4.target=void\ rotateAtEdge()
 comment4.text=\r\n\ if\ the\ dog\ catcher\ is\ at\ the\ left\ edge,\ this\ method\ will\ make\ him\ appear\ at\ hte\ right\ edge.\r\n
