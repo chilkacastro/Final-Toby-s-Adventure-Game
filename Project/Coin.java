@@ -21,8 +21,7 @@ public class Coin extends Actor
             if (lineCounter > 0) {
                 Level2 myLevel2 = (Level2)getWorld();
                 myLevel2.addObject(new PlusPoint(), 700, 400); 
-                
-                
+
             }
   
             getWorld().removeObject(this);

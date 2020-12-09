@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DogTreats2 here.
+ * Write a description of class BallTreat here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class DogTreats2 extends Food
+public class BallTreat extends Food
 {
     private int lineCounter = 0;
     /**

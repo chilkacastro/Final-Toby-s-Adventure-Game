@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 
-public class Bee extends Actor
+public class Bee extends Obstacles
 {
     private GreenfootImage image1;
     private GreenfootImage image2;

@@ -14,7 +14,7 @@ public class Level2 extends MyWorld
      * 
      */
     public Level2() {
-        setPaintOrder(Stop.class , KeyPass.class, LeftBorder.class, RightBorder. class, DogCatcher.class, Coin.class, Cactus.class, Cactus2.class, Train.class, Train2.class);
+        setPaintOrder(Stop.class , KeyPass.class, LeftBorder.class, RightBorder. class, DogCatcher.class, Coin.class, Cactus.class, Cactus2.class, Train.class, Train2.class, BallTreat.class);
         prepare();
         showLife();
         showScore();
@@ -64,6 +64,12 @@ public class Level2 extends MyWorld
         addObject(new DogCatcher() ,1200, 130);
         addObject(new DogCatcher() ,500, 470);
 
+        for(int i = 0; i <= 7; i++) {
+            addObject(new BallTreat(), Greenfoot.getRandomNumber(1560) + 40, Greenfoot.getRandomNumber(580)+ 40); 
+
+        }
+        
+ 
         for(int i = 0; i <= 8; i++) {
             addObject(new Coin(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
 

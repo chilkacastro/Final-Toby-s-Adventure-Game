@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Cactus2 extends Actor
+public class Cactus2 extends Obstacles
 {
     private int lineCounter = 0;
     /**

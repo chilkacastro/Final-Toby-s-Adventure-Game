@@ -16,7 +16,6 @@ public class Hole1 extends Actor
     public void act() 
     {
        removeToby();
-       
     }
     
     /**
@@ -27,7 +26,7 @@ public class Hole1 extends Actor
             lineCounter++;
             Greenfoot.playSound("Crying.wav");
             removeTouching(Toby.class);
-            getWorld().showText("You lose a life!",500, 500);
+            //getWorld().showText("You lose a life!",500, 500);
             deductPoints();
             MyWorld myWorld = (MyWorld)getWorld();
             if (myWorld.getLifeCount() > 0) {

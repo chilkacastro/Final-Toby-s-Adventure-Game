@@ -31,7 +31,21 @@ public class Level3 extends MyWorld {
             addObject(new Truck2(), i * 350, 475); 
 
         }
+        
+        
+         for(int i = 0; i <= 7; i++) {
+            addObject(new Carrot(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
 
+        }
+        
+        for(int i = 0; i <= 5; i++) {
+            addObject(new Apple(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(550)+ 80); 
+
+        }
+        
+        
+        
+        
         Water water = new Water();
         addObject(water,1068,406);
         Water water2 = new Water();

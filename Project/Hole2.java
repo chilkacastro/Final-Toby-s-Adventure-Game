@@ -43,12 +43,11 @@ public class Hole2 extends Actor
     }
     
     /**
-     * deducPoints() - to remove a life when Toby touches the holes.
+     * deductPoints() - to remove a life when Toby touches the holes.
      */
      public void deductPoints() {
         MyWorld myWorld = (MyWorld)getWorld();
         myWorld.lifeCount(-1);
-        
 
     }
     

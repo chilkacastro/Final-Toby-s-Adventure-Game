@@ -1,7 +1,7 @@
      import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
     
     /**
-     * Write a description of class Toby here.
+     * A class of the main character, Toby.
      * 
      * @author (your name) 
      * @version (a version number or a date)
@@ -36,7 +36,7 @@
                 image8 = new GreenfootImage("Back2.png");
                 image9 = new GreenfootImage("Back3.png");
                 image10 = new GreenfootImage("Front1.png");
-                
+                image11 = new GreenfootImage("Front2.png");
                 image12 = new GreenfootImage("Front3.png");
                 setImage(image7);
                 
@@ -46,7 +46,6 @@
              * Act - do whatever the Toby wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
              */
              public void act() {
-                
                 checkKeyPressed();
                 nextLevel();
                 
@@ -134,7 +133,6 @@
                       
                 }
 
-                
                 // Helps Toby to move to the right side.
                 if (Greenfoot.isKeyDown("right")) {
                     setLocation(getX() + 3, getY());
@@ -184,7 +182,6 @@
                    
                 }
             }
-            
-           
+
     }
     

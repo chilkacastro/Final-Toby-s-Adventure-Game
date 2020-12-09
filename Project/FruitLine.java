@@ -1,26 +1,25 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Bee Class
- * This is a pop-up line that appears when Toby gets near the bee.
+ * Write a description of class FruitLine here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BeeLine extends Lines
+public class FruitLine extends Lines
 {
     private int counter = 0;
     /**
-     * Act - do whatever the HitLine wants to do. This method is called whenever
+     * Act - do whatever the FruitLine wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        counter++;
-        if (counter == 60) {
+      counter++;
+       if (counter == 60) {
             getWorld().removeObject(this);
             counter = 0; 
-        }
-  
-  }
+       }
+ 
+    }    
 }
