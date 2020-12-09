@@ -13,7 +13,7 @@ public class Level1 extends MyWorld {
     * 
     */
     public Level1() {
-        setPaintOrder(TrafficCone.class, Car2.class, Car.class, Bench.class, Toby.class);
+        setPaintOrder(TrafficCone.class, Car2.class, Car.class, Bench.class, Tree.class, Tree3.class, Tree2.class, Toby.class);
         prepare();
         showLife();
         showScore();
@@ -24,8 +24,8 @@ public class Level1 extends MyWorld {
         
         //Plays music
         
-        GreenfootSound bg = new GreenfootSound("Credit.mp3");
-        bg.playLoop();  
+        //GreenfootSound bg = new GreenfootSound("Credit.mp3");
+        //bg.playLoop();  
         
     }
         
@@ -123,28 +123,23 @@ public class Level1 extends MyWorld {
             addObject(new TrafficCone(), Greenfoot.getRandomNumber(1600) + 60, 70); 
         }
 
-
-       //if (!collectedKeys) {
-            // Keypass to next level(Level 2)
+        //if (!collectedKeys) {
+        // Keypass to next level(Level 2)
         for (int i = 1; i <= 3; i++) {
             KeyPass keypass = new KeyPass();
             addObject(keypass, (i * 400) + 40, 20);
             collectedKeys = true;
-            
-           
-        }
-        
-       //}
-       
-       //int keyCount = getObjects(KeyPass.class).size();
-       //if ((collectedKeys) && keyCount == 0) {
-          /*  collectedKeys = false;
-            addObject(new Door() , 1400, 620);
-            collectedKeys = true; */
 
-       //}
-       
-        
+        }
+        //}
+        //int keyCount = getObjects(KeyPass.class).size();
+        //if ((collectedKeys) && keyCount == 0) {
+        /*  collectedKeys = false;
+        addObject(new Door() , 1400, 620);
+        collectedKeys = true; */
+
+        //}
+
         // Toby
         addObject(new Toby(), 792, 630); 
 
@@ -188,7 +183,7 @@ public class Level1 extends MyWorld {
 
         Stop stop1 = new Stop();
         addObject(stop1,62,623);
-        
+
     }
 }
 
