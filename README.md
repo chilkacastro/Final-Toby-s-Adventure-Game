@@ -16,6 +16,12 @@ Semester: Fall 2020
 You are welcomed to clone this repository through GitHub app or Git Bash to test this project and it is 
 recommended that you let us know of bugs or undesired that can appear in the game by opening an issue.
 
+# VERSION or DATE: Gold Master (December 10, 2020)
+HOW TO START THIS PROJECT: 
+        Download/Copy/Clone (or download the rc-alpha tag in GitHub) this project and then open your Greenfoot. Once, you have done all these, you can now enjoy the game by             clicking the 'Run' button located at the bottom of the open scenario. Start playing by clicking the left paw or the start button.
+        For instructions, clicking the middle paw or the instruction word. And, for credits, click the right paw or 
+        the credit word. If you encounter any issue just click the 'Reset' on Greenfoot or 'Quit' button in-game to leave game.
+
 # License
 . MIT license
 https://choosealicense.com/licenses/mit/
