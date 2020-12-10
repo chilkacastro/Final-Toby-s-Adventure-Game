@@ -2,10 +2,21 @@
 Final Project
 
 # The Team
-. Chilka Castro
-. Madalina Turcan
-. Nicolas Nguyen
-. Jose Samayoa
+* Chilka: Project Manager, Game Developer, Game/Level Designer, Game Art Manager 
+
+-> Design the sources screen, designed and implemented the 3 main levels, winner screen (w/ Madalina), added features to the multiple screens in the game (w/Nicolas and Madalina) code the pop-up lines, helped coordinate communication between team members by hosting video/chat meetings and finding the time for meeting with teacher, edited the game rules, took charges of most information in Greenfoot README, fixed errors and helped clean indentation 
+
+* Madalina: Project Manager, Game Developer, Game/ Level Designer, Game Art Manager 
+
+-> Design the game-over screen, designed and implemented the 3 main levels, winner screen(w/Chilka), did most of the documentation of dog catchers, fixed errors and helped with documentation, helped coordinate communication between team members by hosting video/chat meetings. 
+
+* José: Game Developer, Sounds 
+
+-> Helped implement placeholder sounds for car and train, helped implement features for 3 main levels, added more information for documentation. 
+
+* Nicolas: Project Manager, Game/Level Designer, Game Developer, Sound Engineer 
+
+-> Took charge of all in-game sounds present in all the game and screens, designed and implemented the bonus Level 4, added features to the multiple screens in the game (w/Chilka and Madalina), helped implement features for 3 main levels, added features to the multiple screens in the game (w/Chilka and Nicolas), helped complete documentation, coded some placeholder pop-up messages, took charge of most changes in GitHub README, fixed errors and helped clean indentation. 
 
 # Class
 Professor: Tassia Camoes Araujo
@@ -16,8 +27,14 @@ Semester: Fall 2020
 You are welcomed to clone this repository through GitHub app or Git Bash to test this project and it is 
 recommended that you let us know of bugs or undesired that can appear in the game by opening an issue.
 
+# VERSION or DATE: Gold Master (December 10, 2020)
+HOW TO START THIS PROJECT: 
+        Download/Copy/Clone (or download the rc-alpha tag in GitHub) this project and then open your Greenfoot. Once, you have done all these, you can now enjoy the game by             clicking the 'Run' button located at the bottom of the open scenario. Start playing by clicking the left paw or the start button.
+        For instructions, clicking the middle paw or the instruction word. And, for credits, click the right paw or 
+        the credit word. If you encounter any issue just click the 'Reset' on Greenfoot or 'Quit' button in-game to leave game.
+
 # License
-. MIT license
+* MIT license
 https://choosealicense.com/licenses/mit/
 
 # Description

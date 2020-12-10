@@ -26,6 +26,26 @@ public class Level3 extends MyWorld {
      */
     private void prepare()
     {
+        // Bottom of 4th road
+        for(int i = 1; i <= 2; i++) {
+            addObject(new Truck2(), i * 350, 475); 
+
+        }
+        
+        
+         for(int i = 0; i <= 7; i++) {
+            addObject(new Carrot(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
+
+        }
+        
+        for(int i = 0; i <= 5; i++) {
+            addObject(new Apple(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(550)+ 80); 
+
+        }
+        
+        
+        
+        
         Water water = new Water();
         addObject(water,1068,406);
         Water water2 = new Water();
@@ -340,9 +360,16 @@ public class Level3 extends MyWorld {
         dogTreats2.setLocation(1212,138);
         removeObject(dogTreats2);
 
-        
         Door door = new Door();
         addObject(door,415,627);
         door.setLocation(288,631);
+        Stop stop = new Stop();
+        addObject(stop,84,626);
+        Bee bee3 = new Bee();
+        addObject(bee3,1236,610);
+        removeObject(truck213);
+        removeObject(truck211);
+        removeObject(truck217);
+        removeObject(truck220);
     }
 }

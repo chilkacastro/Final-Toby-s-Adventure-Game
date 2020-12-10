@@ -7,11 +7,11 @@ import greenfoot.*;
 public class Counter extends Actor
 { 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
-    protected int lifescore = 0;
+    protected int lifescore = 1000;
     
     public Counter() {
          
-         setImage( new  GreenfootImage("Final scoreboard : " + lifescore, 30, Color.YELLOW, Color.BLACK));
+         setImage( new  GreenfootImage("Touch key to replay Level 2: Desert Trains", 30, Color.YELLOW, Color.BLACK));
          
     }
     /**

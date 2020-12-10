@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class GameOver extends World
+public class GameOver extends MyWorld
 {
 
     /**
@@ -16,7 +16,6 @@ public class GameOver extends World
     public GameOver()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1600, 650, 1); 
         prepare();
     }
 
@@ -26,9 +25,9 @@ public class GameOver extends World
      */
     private void prepare()
     {
-      addObject(new PlayAgain(), 790,622);
-      addObject(new Paw(),800,550);
+        addObject(new PlaySecond(), 180,622);
+        addObject(new Paw(),120,570);
+        addObject(new Rectangle(score, lifeCount, 60), 950, 400);
     }
-    
 
 }

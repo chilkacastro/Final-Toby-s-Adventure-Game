@@ -30,5 +30,10 @@ public class Sources extends World
         addObject(returnToStart,1467,54);
         Paw paw = new Paw();
         addObject(paw,1280,53);
+        returnToStart.setLocation(1381,65);
+        removeObject(returnToStart);
+
+        ReturnToStart returnToStart2 = new ReturnToStart();
+        addObject(returnToStart2,1426,52);
     }
 }

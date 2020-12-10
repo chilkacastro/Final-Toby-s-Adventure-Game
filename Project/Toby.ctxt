@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Toby
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Toby\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ A\ class\ of\ the\ main\ character,\ Toby.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Toby()
 comment1.text=\r\n\ Default\ Constructor-\ To\ create\ objects.\r\n
@@ -13,7 +13,4 @@ comment3.text=\r\n\ nextLevel()\ -\ to\ bring\ Toby\ to\ next\ level.\r\n
 comment4.params=
 comment4.target=void\ checkKeyPressed()
 comment4.text=\r\n\ checkKeyPressed\ -\ to\ move\ or\ control\ Toby\ whenever\ a\ key\ is\ pressed.\r\n
-comment5.params=
-comment5.target=void\ slowDown()
-comment5.text=\r\n\ slowDown\ -\ to\ slow\ down\ Toby's\ movement.\r\n
-numComments=6
+numComments=5

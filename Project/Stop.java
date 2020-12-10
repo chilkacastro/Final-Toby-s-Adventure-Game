@@ -15,19 +15,13 @@ public class Stop extends Actor
     public void act() 
     { 
         if (Greenfoot.mouseClicked(this)) {
-            
-            for (int i = 1; i <= 3; i++) {
-               KeyPass keypass = new KeyPass();
-               getWorld().addObject(keypass, (i * 400) + 40, 20);  
+               Greenfoot.playSound("Woof.wav");
+               Greenfoot.setWorld(new MyWorld());
                Greenfoot.setWorld(new StartScreen());
-               
-
-            }
-        
+ 
         }
         
-        
-           
-       } 
-    }
+
+    } 
+}
 

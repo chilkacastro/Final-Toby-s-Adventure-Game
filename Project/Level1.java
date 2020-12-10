@@ -13,20 +13,14 @@ public class Level1 extends MyWorld {
     * 
     */
     public Level1() {
-        setPaintOrder(TrafficCone.class, Car2.class, Car.class, Bench.class, Toby.class);
+        setPaintOrder(TrafficCone.class, Car2.class, Car.class, Bench.class,Strawberry.class, StarTreat.class, Tree.class, Tree3.class, Tree2.class, Toby.class );
         prepare();
         showLife();
         showScore();
         stopGame();
-        score = 10000;
+        playMusic();
+        score = 500;
         lifeCount = 3;
-        
-        
-        //Plays music
-        
-        //GreenfootSound bg = new GreenfootSound("Credit.mp3");
-        //bg.playLoop();  
-        
     }
         
     /**
@@ -40,7 +34,6 @@ public class Level1 extends MyWorld {
             addObject(new Car2(), i * 500, 63); 
 
         }
-
         for(int i = 1; i <= 4; i++) {
             addObject(new Car(), i * 350, 95); 
 
@@ -51,7 +44,6 @@ public class Level1 extends MyWorld {
             addObject(new Car(-180), i * 385, 180); 
 
         }
-
         for(int i = 1; i < 5; i++) {
             addObject(new Car2(180), (i * 235), 216); 
 
@@ -66,12 +58,10 @@ public class Level1 extends MyWorld {
             addObject(new Motorcycle2(), (i * 300), 295); 
 
         }
-
         for(int i = 0; i < 2; i++) {
             addObject(new Car3(), (i * 600), 335); 
 
         }
-
         for(int i = 1; i <= 2; i++) {
             addObject(new Car4(180), (i * 500), 335); 
 
@@ -82,7 +72,6 @@ public class Level1 extends MyWorld {
             addObject(new Car2(), i * 430, 420); 
 
         }
-
         for(int i = 1; i <= 2; i++) {
             addObject(new Car(), i * 350, 455); 
 
@@ -94,7 +83,6 @@ public class Level1 extends MyWorld {
             addObject(new Car(180), i * 500, 550); 
 
         }
-
         for(int i = 1; i <= 4; i++) {
             addObject(new Car2(180), i * 350, 585); 
 
@@ -110,10 +98,16 @@ public class Level1 extends MyWorld {
 
         }
 
-        // Bench
-        addObject(new Bench(), 1200, 490); 
-        addObject(new Bench(), 350, 630); 
-        addObject(new Bench(), 590, 250); 
+        // Strawberry
+        for(int i = 0; i <= 7; i++) {
+            addObject(new Strawberry(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
+
+        }
+
+        for(int i = 0; i <= 5; i++) {
+            addObject(new StarTreat(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(550)+ 80); 
+
+        }
 
         // Traffic Cones
         for(int i = 1; i <= 4; i++) {
@@ -123,31 +117,37 @@ public class Level1 extends MyWorld {
             addObject(new TrafficCone(), Greenfoot.getRandomNumber(1600) + 60, 70); 
         }
 
-
-       //if (!collectedKeys) {
-            // Keypass to next level(Level 2)
+        //Keys
+        /* if (!collectedKeys) {
+        // Keypass to next level(Level 2) */
         for (int i = 1; i <= 3; i++) {
             KeyPass keypass = new KeyPass();
             addObject(keypass, (i * 400) + 40, 20);
             collectedKeys = true;
-            
-           
-        }
-        
-       //}
-       
-       //int keyCount = getObjects(KeyPass.class).size();
-       //if ((collectedKeys) && keyCount == 0) {
-          /*  collectedKeys = false;
-            addObject(new Door() , 1400, 620);
-            collectedKeys = true; */
 
-       //}
-       
-        
+        }
+        /* }
+        //int keyCount = getObjects(KeyPass.class).size();
+        //if ((collectedKeys) && keyCount == 0) {
+        collectedKeys = false;
+        addObject(new Door() , 1400, 620);
+        collectedKeys = true; 
+        }
+         */
+
         // Toby
         addObject(new Toby(), 792, 630); 
 
+        // Bench
+        addObject(new Bench(), 1200, 490); 
+        addObject(new Bench(), 350, 630); 
+        addObject(new Bench(), 590, 250); 
+
+        // Quit Line
+        Stop stop1 = new Stop();
+        addObject(stop1,62,623);
+
+        // Trees
         Tree tree = new Tree();
         addObject(tree,1089,496);
         Tree tree2 = new Tree();
@@ -185,10 +185,15 @@ public class Level1 extends MyWorld {
         Tree3 tree36 = new Tree3();
         addObject(tree36,189,498);
         tree36.setLocation(34,502);
-
-        Stop stop1 = new Stop();
-        addObject(stop1,62,623);
-        
+    }
+    
+    /**
+     * playMusic() - play a music that is in a loop
+     */
+    private static void playMusic() {
+        //GreenfootSound bg = new GreenfootSound("Credit.mp3");
+        //Greenfoot.playSound("Credit.mp3");
+        //bg.playLoop();
     }
 }
 
