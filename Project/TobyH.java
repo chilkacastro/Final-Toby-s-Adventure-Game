@@ -53,6 +53,7 @@ public class TobyH extends Actor {
         //Gives Toby power to shoot fireballs
         if(Greenfoot.isKeyDown("space"))
         {
+            Greenfoot.playSound("Fire.wav");
             numShot++;
             if(numShot == 1)
             {
