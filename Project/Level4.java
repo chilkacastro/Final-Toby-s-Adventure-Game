@@ -204,6 +204,42 @@ public class Level4 extends MyWorld
         addObject(keyPass23,1401,77);
         keyPass22.setLocation(1401,79);
         addObject(keyPass24,1401,79);
+        Spider spider = new Spider();
+        addObject(spider,249,166);
+        Spider spider2 = new Spider();
+        addObject(spider2,498,264);
+        Spider spider3 = new Spider();
+        addObject(spider3,559,133);
+        Spider spider4 = new Spider();
+        addObject(spider4,1231,249);
+        Spider spider5 = new Spider();
+        addObject(spider5,926,218);
+        Spider spider6 = new Spider();
+        addObject(spider6,1034,146);
+        Spider spider7 = new Spider();
+        addObject(spider7,1398,195);
+        Spider spider8 = new Spider();
+        addObject(spider8,1336,360);
+        Spider spider9 = new Spider();
+        addObject(spider9,716,188);
+        Spider spider10 = new Spider();
+        addObject(spider10,305,271);
+        Spider spider11 = new Spider();
+        addObject(spider11,418,111);
+        Spider spider12 = new Spider();
+        addObject(spider12,1440,295);
+        Spider spider13 = new Spider();
+        addObject(spider13,1072,321);
+        Spider spider14 = new Spider();
+        addObject(spider14,1102,245);
+        Spider spider15 = new Spider();
+        addObject(spider15,807,309);
+        Spider spider16 = new Spider();
+        addObject(spider16,850,114);
+        Spider spider17 = new Spider();
+        addObject(spider17,622,339);
+        Spider spider18 = new Spider();
+        addObject(spider18,410,335);
     }
 }
 
