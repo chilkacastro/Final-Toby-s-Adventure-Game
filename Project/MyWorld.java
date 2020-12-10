@@ -12,6 +12,7 @@
             protected static boolean collectedKeys = false;
             public static int score1 = score;
             public static int lifeCount1 = lifeCount;
+            protected static GreenfootSound myMusic = new GreenfootSound("Credit.mp3");
             /**
              * Constructor for objects of class MyWorld.
              * 
@@ -90,6 +91,12 @@
                 }
             }  
             
-        }
+            // MUSIC
+            public void act()
+            {
+                myMusic.play();
+                
+            }
+    }
     
     

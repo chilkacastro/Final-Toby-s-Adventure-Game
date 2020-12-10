@@ -15,7 +15,7 @@ public class Level4 extends MyWorld
     public Level4()
     {
         prepare();
-        GreenfootImage gg = new GreenfootImage("Bonus Sandbox Level: Use special powers to defeat enemies and retrieve the Dog Bowl", 30, Color.PINK, new Color(0, 0, 0, 0));        gg.setColor(Color.YELLOW);
+        GreenfootImage gg = new GreenfootImage("Bonus Sandbox Level: Use special powers & defeat all enemies to clean the house!", 30, Color.PINK, new Color(0, 0, 0, 0)); gg.setColor(Color.YELLOW);
         getBackground().drawImage(gg, (getWidth()-gg.getWidth())/1, (getHeight()-gg.getHeight())/1);
 
     }
@@ -153,10 +153,10 @@ public class Level4 extends MyWorld
         addObject(toby,735,556);
         StarTreat starTreat = new StarTreat();
         addObject(starTreat,947,238);
-        Spider spider = new Spider();
-        addObject(spider,1344,283);
         PawTreat pawTreat = new PawTreat();
         addObject(pawTreat,1153,366);
+        removeObject(pawTreat);
+        removeObject(starTreat);
     }
 }
 

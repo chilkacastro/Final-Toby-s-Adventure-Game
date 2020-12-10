@@ -103,7 +103,7 @@ public class Level1 extends MyWorld {
             addObject(new Strawberry(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
 
         }
-        
+
         for(int i = 0; i <= 5; i++) {
             addObject(new StarTreat(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(550)+ 80); 
 
@@ -116,7 +116,7 @@ public class Level1 extends MyWorld {
             addObject(new TrafficCone(), Greenfoot.getRandomNumber(1600) + 60, 430); 
             addObject(new TrafficCone(), Greenfoot.getRandomNumber(1600) + 60, 70); 
         }
-        
+
         //Keys
         /* if (!collectedKeys) {
         // Keypass to next level(Level 2) */
@@ -129,24 +129,24 @@ public class Level1 extends MyWorld {
         /* }
         //int keyCount = getObjects(KeyPass.class).size();
         //if ((collectedKeys) && keyCount == 0) {
-         collectedKeys = false;
+        collectedKeys = false;
         addObject(new Door() , 1400, 620);
         collectedKeys = true; 
         }
-        */
-       
-       // Toby
+         */
+
+        // Toby
         addObject(new Toby(), 792, 630); 
-        
-       // Bench
+
+        // Bench
         addObject(new Bench(), 1200, 490); 
         addObject(new Bench(), 350, 630); 
         addObject(new Bench(), 590, 250); 
-        
+
         // Quit Line
         Stop stop1 = new Stop();
         addObject(stop1,62,623);
-        
+
         // Trees
         Tree tree = new Tree();
         addObject(tree,1089,496);
@@ -185,17 +185,15 @@ public class Level1 extends MyWorld {
         Tree3 tree36 = new Tree3();
         addObject(tree36,189,498);
         tree36.setLocation(34,502);
-
     }
     
     /**
      * playMusic() - play a music that is in a loop
      */
-    public void playMusic() {
+    private static void playMusic() {
         //GreenfootSound bg = new GreenfootSound("Credit.mp3");
         //Greenfoot.playSound("Credit.mp3");
-        //bg.playLoop();  
-        
+        //bg.playLoop();
     }
 }
 
