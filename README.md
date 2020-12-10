@@ -4,11 +4,11 @@ Final Project
 # The Team
 * Chilka: Project Manager, Game Developer, Game/Level Designer, Game Art Manager 
 
--> Design the sources screen, designed and implemented the 3 main levels, winner screen (w/ Madalina), code the pop-up lines, edited the game rules, fixed errors and helped clean indentation 
+-> Design the sources screen, designed and implemented the 3 main levels, winner screen (w/ Madalina), added features to the multiple screens in the game (w/Nicolas and Madalina) code the pop-up lines, helped coordinate communication between team members by hosting video/chat meetings and finding the time for meeting with teacher, edited the game rules, took charges of most information in Greenfoot README, fixed errors and helped clean indentation 
 
 * Madalina: Project Manager, Game Developer, Game/ Level Designer, Game Art Manager 
 
--> Design the game-over screen, designed and implemented the 3 main levels, winner screen(w/Chilka), documentation of dog catchers, fixed errors and helped with documentation. 
+-> Design the game-over screen, designed and implemented the 3 main levels, winner screen(w/Chilka), did most of the documentation of dog catchers, fixed errors and helped with documentation, helped coordinate communication between team members by hosting video/chat meetings. 
 
 * José: Game Developer, Sounds 
 
@@ -16,7 +16,7 @@ Final Project
 
 * Nicolas: Project Manager, Game/Level Designer, Game Developer, Sound Engineer 
 
--> Took charge of all in-game sounds present in all the game and screens, designed and implemented the bonus Level 4, added features to the multiple screens in the game (w/Chilka and Madalina), helped implement features for 3 main levels, helped complete documentation, coded some placeholder pop-up messages, fixed errors and helped clean indentation. 
+-> Took charge of all in-game sounds present in all the game and screens, designed and implemented the bonus Level 4, added features to the multiple screens in the game (w/Chilka and Madalina), helped implement features for 3 main levels, added features to the multiple screens in the game (w/Chilka and Nicolas), helped complete documentation, coded some placeholder pop-up messages, took charge of most changes in GitHub README, fixed errors and helped clean indentation. 
 
 # Class
 Professor: Tassia Camoes Araujo
