@@ -19,7 +19,7 @@ public class StarTreat extends Food
       if (isTouching(Toby.class)) {
             lineCounter++;
             ((MyWorld)getWorld()).addScore(50); 
-            Greenfoot.playSound("Coin.wav");
+            Greenfoot.playSound("Treats.wav");
             if (lineCounter > 0) {
                 Level1 myLevel1 = (Level1)getWorld();
                 myLevel1.addObject(new PlusPoint(), 750, 450); 
