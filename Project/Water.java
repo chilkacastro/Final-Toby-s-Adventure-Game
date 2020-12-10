@@ -17,7 +17,8 @@ public class Water extends Actor
     {
         if (isTouching(Toby.class)) {
             lineCounter++;
-            ((MyWorld)getWorld()).lifeCount(-1); 
+            ((MyWorld)getWorld()).lifeCount(-1);
+            Greenfoot.playSound("Crying.wav");
             removeTouching(Toby.class);
             MyWorld myWorld = (MyWorld)getWorld();
            if (myWorld.getLifeCount() > 0) {

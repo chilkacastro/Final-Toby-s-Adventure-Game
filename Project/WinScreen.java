@@ -40,6 +40,11 @@ public class WinScreen extends MyWorld
         startF.setLocation(1428,585);
         Paw paw2 = new Paw();
         addObject(paw2,1332,578);
+        startF.setLocation(1428,587);
+        removeObject(startF);
+        addObject(startF,1425,578);
+        startF.setLocation(1414,582);
+        startF.setLocation(1451,585);
     }
 
     /**
