@@ -41,7 +41,6 @@ public class Paw extends Actor
             if (getWorld() instanceof Instruction) {
                 Greenfoot.setWorld(new StartScreen());
             }
-             
         }
          
         if (Greenfoot.mouseClicked(this)) {
@@ -54,9 +53,8 @@ public class Paw extends Actor
         if (Greenfoot.mouseClicked(this) && getX() == 340) {
             Greenfoot.playSound("Woof.wav");
             if (getWorld() instanceof Credit) {
-                
                 Greenfoot.setWorld(new StartScreen());
-            }
+           }
 
         }
 

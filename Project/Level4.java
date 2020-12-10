@@ -149,14 +149,7 @@ public class Level4 extends MyWorld
         electric.setLocation(1366,128);
         KeyPass2 keyPass29 = new KeyPass2();
         addObject(keyPass29,1366,128); */
-        Toby toby = new Toby();
-        addObject(toby,735,556);
-        StarTreat starTreat = new StarTreat();
-        addObject(starTreat,947,238);
-        Spider spider = new Spider();
-        addObject(spider,1344,283);
-        PawTreat pawTreat = new PawTreat();
-        addObject(pawTreat,1153,366);
+        
     }
 }
 
