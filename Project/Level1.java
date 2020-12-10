@@ -190,18 +190,11 @@ public class Level1 extends MyWorld {
     /**
      * playMusic() - play a music that is in a loop
      */
-<<<<<<< HEAD
-    public void playMusic() {
-        GreenfootSound bg = new GreenfootSound("Credit.mp3");
-        Greenfoot.playSound("Credit.mp3");
-        bg.playLoop();  
-        
-=======
     private static void playMusic() {
         //GreenfootSound bg = new GreenfootSound("Credit.mp3");
         //Greenfoot.playSound("Credit.mp3");
         //bg.playLoop();
->>>>>>> 7c7b8678990a93d8a088746ad3091eebf635aa53
+
     }
 }
 

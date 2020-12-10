@@ -32,9 +32,7 @@ public class WinScreen extends MyWorld
         addObject(playSecond, 625,120);
         addObject(new Paw(), 580,70);
         addObject(new Rectangle(score, lifeCount), 950, 420);
-<<<<<<< HEAD
-        
-=======
+
 
         StartF startF = new StartF();
         addObject(startF,1163,625);
@@ -58,6 +56,6 @@ public class WinScreen extends MyWorld
         Paw pawStart = new Paw();
         addObject(pawStart, 320, 555);
         addObject(new Start(), 420, 560);
->>>>>>> 7c7b8678990a93d8a088746ad3091eebf635aa53
+
     }
 }

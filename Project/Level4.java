@@ -161,9 +161,7 @@ public class Level4 extends MyWorld
         electric.setLocation(1366,128);
         KeyPass2 keyPass29 = new KeyPass2();
         addObject(keyPass29,1366,128); */
-<<<<<<< HEAD
-        
-=======
+
         Toby toby = new Toby();
         addObject(toby,735,556);
         StarTreat starTreat = new StarTreat();
@@ -263,7 +261,9 @@ public class Level4 extends MyWorld
         power.setLocation(765,421);
         removeObject(power);
         addObject(power,763,449);
->>>>>>> 7c7b8678990a93d8a088746ad3091eebf635aa53
+
+        PlayAgain playAgain = new PlayAgain();
+        addObject(playAgain,196,556);
     }
 }
 
