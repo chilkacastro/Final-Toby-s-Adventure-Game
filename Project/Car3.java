@@ -68,7 +68,6 @@ public class Car3 extends Car
          */
          public void deductPoints() {
             MyWorld myWorld = (MyWorld)getWorld();
-            myWorld.addScore(-1000);
             myWorld.lifeCount(-1);
     
         }

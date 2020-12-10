@@ -84,7 +84,7 @@
             public void stopGame() {
                 if (lifeCount <= 0 || score <= 0){
                     Greenfoot.setWorld(new GameOver());
-                    score = 1000;
+                    score = 500;
                     lifeCount = 3;
 
                 }

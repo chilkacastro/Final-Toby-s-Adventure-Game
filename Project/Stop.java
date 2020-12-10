@@ -15,6 +15,7 @@ public class Stop extends Actor
     public void act() 
     { 
         if (Greenfoot.mouseClicked(this)) {
+               Greenfoot.playSound("Woof.wav");
                Greenfoot.setWorld(new MyWorld());
                Greenfoot.setWorld(new StartScreen());
  

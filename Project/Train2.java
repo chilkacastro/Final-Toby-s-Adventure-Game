@@ -103,7 +103,6 @@ public class Train2 extends Actor
            
             }
         
-
         }
     }
     

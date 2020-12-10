@@ -21,7 +21,7 @@ public class BallTreat extends Food
             Greenfoot.playSound("Treats.wav");
             if (lineCounter > 0) {
                 Level2 myLevel2 = (Level2)getWorld();
-                myLevel2.addObject(new PlusPoint(), 700, 400);
+                myLevel2.addObject(new PlusPoint(), 810, 420);
             }
             getWorld().removeObject(this);
         }

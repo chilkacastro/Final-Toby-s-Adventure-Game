@@ -13,7 +13,7 @@ public class Level1 extends MyWorld {
     * 
     */
     public Level1() {
-        setPaintOrder(TrafficCone.class, Car2.class, Car.class, Bench.class, Tree.class, Tree3.class, Tree2.class, Toby.class, Strawberry.class, StarTreat.class);
+        setPaintOrder(TrafficCone.class, Car2.class, Car.class, Bench.class,Strawberry.class, StarTreat.class, Tree.class, Tree3.class, Tree2.class, Toby.class );
         prepare();
         showLife();
         showScore();
