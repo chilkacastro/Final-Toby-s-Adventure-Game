@@ -21,9 +21,10 @@ public class Spider extends Actor
      */
     public void act()
     {        
-        Actor toby = getOneObjectAtOffset(0, 0, Toby.class);
+        Actor toby = getOneObjectAtOffset(0, 0, TobyH.class);
         if (toby != null) {
             World theWorld = getWorld();
+            getWorld().addObject(new Blood(), getX()-80, getY());
             theWorld.removeObject(toby);
             Greenfoot.playSound("Crying.wav");
             Greenfoot.stop();

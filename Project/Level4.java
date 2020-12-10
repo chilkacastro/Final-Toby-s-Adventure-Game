@@ -19,7 +19,19 @@ public class Level4 extends MyWorld
         getBackground().drawImage(gg, (getWidth()-gg.getWidth())/1, (getHeight()-gg.getHeight())/1);
 
     }
-
+    /**
+     * Constructor for objects of class Level4.
+     * 
+     */
+    public void act()
+    {
+        if (getObjects(Spider.class).isEmpty())
+        {
+           Greenfoot.playSound("House.wav");
+           Greenfoot.setWorld(new WinScreen());
+        }
+    }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -240,6 +252,14 @@ public class Level4 extends MyWorld
         addObject(spider17,622,339);
         Spider spider18 = new Spider();
         addObject(spider18,410,335);
+        removeObject(toby);
+        TobyH tobyH = new TobyH();
+        addObject(tobyH,762,576);
+        Power power = new Power();
+        addObject(power,769,479);
+        power.setLocation(765,421);
+        removeObject(power);
+        addObject(power,763,449);
     }
 }
 
