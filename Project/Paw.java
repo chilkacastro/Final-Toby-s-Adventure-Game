@@ -59,5 +59,12 @@ public class Paw extends Actor
             }
 
         }
+        
+        if (Greenfoot.mouseClicked(this) && getX() == 580) { 
+            if (getWorld() instanceof WinScreen) {
+                Greenfoot.setWorld(new StartScreen());
+            }
+
+        }
     }
 }

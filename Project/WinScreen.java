@@ -27,6 +27,7 @@ public class WinScreen extends World
     private void prepare()
     {
         PlaySecond playSecond = new PlaySecond();
-        addObject(playSecond,1257,280);
+        addObject(playSecond, 625,120);
+        addObject(new Paw(), 580,70);
     }
 }
