@@ -14,7 +14,7 @@ public class Level2 extends MyWorld
      * 
      */
     public Level2() {
-        setPaintOrder(Stop.class , KeyPass.class, LeftBorder.class, RightBorder. class, DogCatcher.class, Coin.class, Cactus.class, Cactus2.class, Train.class, Train2.class, BallTreat.class);
+        setPaintOrder(Stop.class , KeyPass.class, LeftBorder.class, RightBorder. class, DogCatcher.class, Coin.class, BallTreat.class, Cactus.class, Cactus2.class, Train.class, Train2.class);
         prepare();
         showLife();
         showScore();
@@ -68,8 +68,7 @@ public class Level2 extends MyWorld
             addObject(new BallTreat(), Greenfoot.getRandomNumber(1560) + 40, Greenfoot.getRandomNumber(580)+ 40); 
 
         }
-        
- 
+
         for(int i = 0; i <= 8; i++) {
             addObject(new Coin(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
 
@@ -86,11 +85,12 @@ public class Level2 extends MyWorld
         // } 
         //int keyCount2 = getObjects(KeyPass2.class).size();
         /* if ((collectedKeys2) && keyCount2 == 0) {
-        
+
         } */
         addObject(new LeftBorder(), 200,323);
         RightBorder rightBorder = new RightBorder();
         addObject(rightBorder,1400,320);
+       
         DogTreats2 dogTreats2 = new DogTreats2();
         addObject(dogTreats2,1072,146);
         DogTreats2 dogTreats22 = new DogTreats2();
@@ -100,10 +100,9 @@ public class Level2 extends MyWorld
 
         Stop stop = new Stop();
         addObject(stop,99,614);
-        
+
         //Trap Door
         addObject(new Door(), 400,625);
 
-        
-    }
+    } 
   }

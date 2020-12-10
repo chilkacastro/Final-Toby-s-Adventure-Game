@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class WinScreen extends World
+public class WinScreen extends MyWorld
 {
 
     /**
@@ -16,7 +16,6 @@ public class WinScreen extends World
     public WinScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1600, 650, 1); 
         prepare();
     }
 
@@ -29,5 +28,7 @@ public class WinScreen extends World
         PlaySecond playSecond = new PlaySecond();
         addObject(playSecond, 625,120);
         addObject(new Paw(), 580,70);
+        addObject(new Rectangle(score, lifeCount), 950, 420);
+        
     }
 }
