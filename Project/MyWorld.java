@@ -18,6 +18,7 @@
              */
             public MyWorld() {
                 super(1600, 650, 1); 
+                  
             }
                       
             // GETTERS

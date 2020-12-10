@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class TrafficCone extends Actor
+public class TrafficCone extends Obstacles
 {
     private int lineCounter = 0;
     /**

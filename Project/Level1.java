@@ -18,7 +18,7 @@ public class Level1 extends MyWorld {
         showLife();
         showScore();
         stopGame();
-        playMusic();
+        //playMusic();
         score = 500;
         lifeCount = 3;
     }
@@ -76,7 +76,7 @@ public class Level1 extends MyWorld {
             addObject(new Car(), i * 350, 455); 
 
         }
-        addObject(new Car3(), 150, 455); 
+        addObject(new Car3(), 900, 455); 
 
         // Last- 5th road bellow
         for(int i = 0; i < 4; i++) {
@@ -192,9 +192,9 @@ public class Level1 extends MyWorld {
      * playMusic() - play a music that is in a loop
      */
     public void playMusic() {
-        //GreenfootSound bg = new GreenfootSound("Credit.mp3");
-        //Greenfoot.playSound("Credit.mp3");
-        //bg.playLoop();  
+        GreenfootSound bg = new GreenfootSound("Credit.mp3");
+        Greenfoot.playSound("Credit.mp3");
+        bg.playLoop();  
         
     }
 }

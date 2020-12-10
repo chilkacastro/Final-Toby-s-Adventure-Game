@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ReturnToStart extends Actor
+public class ReturnToStart extends ClickLines
 {
     /**
      * Act - do whatever the ReturnToStart wants to do. This method is called whenever

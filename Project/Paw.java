@@ -50,7 +50,7 @@ public class Paw extends Actor
             }
         }
          
-        if (Greenfoot.mouseClicked(this) && getX() == 340) {
+        if (Greenfoot.mouseClicked(this) && getX() == 860) {
             Greenfoot.playSound("Woof.wav");
             if (getWorld() instanceof Credit) {
                 Greenfoot.setWorld(new StartScreen());
@@ -58,7 +58,7 @@ public class Paw extends Actor
 
         }
 
-        if (Greenfoot.mouseClicked(this) && getX() == 195) {
+        if (Greenfoot.mouseClicked(this) && getX() == 700) {
             Greenfoot.playSound("Woof.wav");
             if (getWorld() instanceof Credit) {
                 Greenfoot.setWorld(new Sources());
