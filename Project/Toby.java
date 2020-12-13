@@ -1,9 +1,9 @@
-     import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+    import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
     
     /**
      * A class of the main character, Toby.
      * 
-     * @author (your name) 
+     * @author 
      * @version (a version number or a date)
      */
     public class Toby extends Actor {
@@ -76,17 +76,17 @@
   
                     }
                 
-                }
+               }
  
-                if (isTouching(Door.class) && getWorld() instanceof Level3) {
+               if (isTouching(Door.class) && getWorld() instanceof Level3) {
                     Greenfoot.setWorld(new Level2());
                     
-                } 
-            }
+               } 
+           }
         
             
             /**
-             * checkKeyPressed - to move or control Toby whenever a key is pressed.
+             * checkKeyPressed() - to move or control Toby whenever a key is pressed.
              */
              public void checkKeyPressed() {
                 // Helps Toby to move forward

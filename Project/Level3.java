@@ -7,6 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Level3 extends MyWorld {
+    
     /**
      * Constructor for objects of class Level3.
      * 
@@ -367,9 +368,6 @@ public class Level3 extends MyWorld {
         addObject(stop,84,626);
         Bee bee3 = new Bee();
         addObject(bee3,1236,610);
-        removeObject(truck213);
-        removeObject(truck211);
-        removeObject(truck217);
-        removeObject(truck220);
+
     }
 }

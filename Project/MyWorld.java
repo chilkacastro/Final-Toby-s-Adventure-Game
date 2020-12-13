@@ -7,7 +7,7 @@
       * @version (a version number or a date)
       */
         public class MyWorld extends World {
-            protected static int score = 500;              // initial points
+            protected static int score = 500;               // initial points
             protected static int lifeCount = 3;             // initial 3 lives   
             protected static boolean collectedKeys = false;
             public static int score1 = score;
@@ -19,11 +19,11 @@
              */
             public MyWorld() {
                 super(1600, 650, 1); 
-                  
+                 
             }
                       
             // GETTERS
-            public void setCollectedKeys( boolean collectedKeys) {
+            public void setCollectedKeys(boolean collectedKeys) {
                 this.collectedKeys = collectedKeys;
             }
             

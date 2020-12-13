@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Blood extends Actor
 {
-    private int counter;
+    private int counter = 0;
     /**
      * Act - do whatever the Blood wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
