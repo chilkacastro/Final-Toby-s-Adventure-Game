@@ -1,32 +1,24 @@
         import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
         import java.util.*;
      /**
-      * Write a description of class MyWorld here.
+      * Superclass of Level 1, Level 2, Level 3, Level 4, Winner Screen and Game Over Screen
       * 
-      * @author (your name) 
-      * @version (a version number or a date)
+      * @author Chilka, Madalina, Nicolas, Jose
+      * @version Gold Master(December 14, 2020)
       */
         public class MyWorld extends World {
             protected static int score = 500;               // initial points
             protected static int lifeCount = 3;             // initial 3 lives   
-            protected static boolean collectedKeys = false;
-            public static int score1 = score;
-            public static int lifeCount1 = lifeCount;
-            //protected static GreenfootSound myMusic = new GreenfootSound("Theme.mp3");
+            protected static GreenfootSound myMusic = new GreenfootSound("Theme.mp3");
             /**
              * Constructor for objects of class MyWorld.
              * 
              */
             public MyWorld() {
                 super(1600, 650, 1); 
-                 
-            }
-                      
-            // GETTERS
-            public void setCollectedKeys(boolean collectedKeys) {
-                this.collectedKeys = collectedKeys;
             }
             
+            // GETTERS
             /**
              * getScore() - To allow the actor classes to access the score.
              */
@@ -34,7 +26,6 @@
              public int getScore() {
                 return score;
             } 
-           
             /**
              * getLifeCount() - To allow the actor classes to access the lifeCount.
              */
@@ -51,8 +42,6 @@
                 showScore();
                 stopGame();
             }
-            
-        
             /**
              * showScore() - To print the score.
              */
@@ -69,8 +58,6 @@
                 showLife();
                 stopGame();
             }
-            
-            
             /**
              * showLife() - To show how many lives does Toby has and if player lost.
              */
@@ -93,11 +80,13 @@
             }  
             
             // MUSIC
-            public void act()
+            /**
+             * playMusic() - To play a background music when game starts.
+             */
+            public void playMusic()
             {
-                //myMusic.play();
-                
+                myMusic.play();
             }
-    }
+     }
     
     

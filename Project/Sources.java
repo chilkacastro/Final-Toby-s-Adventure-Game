@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Sources here.
+ * Sources Screen Class (Credits to Images and Sounds used in making the game)
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose)
+ * @version Gold Master(December 14, 2020)
  */
 public class Sources extends World
 {
@@ -28,12 +28,6 @@ public class Sources extends World
     {
         ReturnToStart returnToStart = new ReturnToStart();
         addObject(returnToStart,1467,54);
-        Paw paw = new Paw();
-        addObject(paw,1280,53);
-        returnToStart.setLocation(1381,65);
-        removeObject(returnToStart);
-
-        ReturnToStart returnToStart2 = new ReturnToStart();
-        addObject(returnToStart2,1426,52);
+        addObject(new Paw(),1310,53);
     }
 }

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class WinScreen here.
+ * Winner Screen Class- shows the score of the player and allows player to return to menu screen or to play the bonus level(Level 4)
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class WinScreen extends MyWorld
 {
@@ -18,7 +18,8 @@ public class WinScreen extends MyWorld
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         prepare();
         //Prompt for Level 4
-        GreenfootImage gg = new GreenfootImage("Click here to play the Bonus Level!", 30, Color.BLUE, new Color(0, 0, 0, 0));        gg.setColor(Color.YELLOW);
+        GreenfootImage gg = new GreenfootImage("Click here to play the Bonus Level!", 30, Color.BLUE, new Color(0, 0, 0, 0));
+        gg.setColor(Color.YELLOW);
         getBackground().drawImage(gg, (getWidth()-gg.getWidth())/1, (getHeight()-gg.getHeight())/1);
     }
 
@@ -32,8 +33,6 @@ public class WinScreen extends MyWorld
         addObject(playSecond, 625,120);
         addObject(new Paw(), 580,70);
         addObject(new Rectangle(score, lifeCount), 950, 420);
-
-
         StartF startF = new StartF();
         addObject(startF,1163,625);
         startF.setLocation(1807,608);
@@ -42,7 +41,6 @@ public class WinScreen extends MyWorld
         Paw paw2 = new Paw();
         addObject(paw2,1332,578);
         startF.setLocation(1428,587);
-        removeObject(startF);
         addObject(startF,1425,578);
         startF.setLocation(1414,582);
         startF.setLocation(1451,585);
@@ -54,7 +52,7 @@ public class WinScreen extends MyWorld
     private void mouseClicked() {
         // Level 4
         Paw pawStart = new Paw();
-        addObject(pawStart, 320, 555);
+        addObject(new Paw(), 320, 555);
         addObject(new Start(), 420, 560);
 
     }

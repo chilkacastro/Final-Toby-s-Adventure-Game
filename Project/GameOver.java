@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class GameOver here.
+ * Game Over Screen Class
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose)
+ * @version Gold Master(December 14, 2020)
  */
 public class GameOver extends MyWorld
 {
@@ -25,8 +25,10 @@ public class GameOver extends MyWorld
      */
     private void prepare()
     {
+        // Play Again
         addObject(new PlaySecond(), 180,622);
         addObject(new Paw(),120,570);
+        // Scoreboard
         addObject(new Rectangle(score, lifeCount, 60), 950, 400);
     }
 

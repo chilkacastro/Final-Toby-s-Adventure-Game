@@ -1,7 +1,16 @@
 #BlueJ class context
 comment0.target=Water
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Water\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Deep\ Water\ Class-\ a\ third\ level\ obstacle\ that\ reduces\ life\ count.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Water\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment2.params=
+comment2.target=void\ deductLife()
+comment2.text=\r\n\ deductLife()\ -\ To\ decrease\ life\ count\ when\ Toby\ touches\ the\ deep\ water.\r\n
+comment3.params=
+comment3.target=void\ reviveToby()
+comment3.text=\r\n\ reviveToby()\ -\ To\ revive\ Toby\ if\ life\ count\ is\ higher\ than\ 0.\r\n
+comment4.params=
+comment4.target=void\ printMessage()
+comment4.text=\r\n\ printMessage()\ -\ To\ print\ a\ message\ when\ Toby\ is\ touching\ the\ deep\ water.\r\n
+numComments=5

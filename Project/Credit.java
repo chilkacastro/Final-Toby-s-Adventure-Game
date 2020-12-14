@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Credit here.
+ * Credit Screen of the game
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Chilka, Madalina, Nicolas, Jose 
+ * @version Gold Master(December 14, 2020)
  */
 public class Credit extends MyWorld
 {
@@ -25,9 +25,12 @@ public class Credit extends MyWorld
      */
     private void prepare()
     {
+        // Return to Menu
         addObject(new ReturnToStart(),1000,630);
         addObject(new Paw(),860, 610);
-        addObject(new Paw(),700, 610);
+        // Go too Sources Screen
         addObject(new SourceWord(), 590 ,640);
+        addObject(new Paw(),700, 610);
+        
     }
 }

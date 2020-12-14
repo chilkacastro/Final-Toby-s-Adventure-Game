@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Instruction here.
+ * Instruction Screen Class
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose)
+ * @version Gold Master(December 14, 2020)
  */
 public class Instruction extends World
 {
@@ -26,9 +26,8 @@ public class Instruction extends World
      */
     private void prepare()
     {
+        // Return to Menu
         addObject(new Paw(),80,615);
         addObject(new ReturnToStart(),250,625);
-        //return.setLocation(247,530);
-        //removeObject(return);
     }
 }

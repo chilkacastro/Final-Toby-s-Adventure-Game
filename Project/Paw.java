@@ -66,6 +66,11 @@ public class Paw extends Actor
 
         }
         
+        if (Greenfoot.mouseClicked(this) && getX() == 1310) {
+          Greenfoot.playSound("Woof.wav");
+          Greenfoot.setWorld(new StartScreen());
+        }
+
         if (Greenfoot.mouseClicked(this) && getX() == 580) { 
             Greenfoot.playSound("Woof.wav");
             if (getWorld() instanceof WinScreen) {

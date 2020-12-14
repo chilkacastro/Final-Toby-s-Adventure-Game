@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Level3 here.
+ * Third Level of the game which is suburban style
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Chilka, Madalina, Nicolas, Jose 
+ * @version Gold Master (December 14, 2020)
  */
 public class Level3 extends MyWorld {
     
@@ -18,7 +18,6 @@ public class Level3 extends MyWorld {
         prepare();
         showScore();
         showLife();
-
     }
 
     /**
@@ -44,9 +43,7 @@ public class Level3 extends MyWorld {
 
         }
         
-        
-        
-        
+        // Deep Water
         Water water = new Water();
         addObject(water,1068,406);
         Water water2 = new Water();
@@ -79,9 +76,11 @@ public class Level3 extends MyWorld {
         addObject(water15,1028,294);
         Water water16 = new Water();
         addObject(water16,1170,182);
-        Toby toby = new Toby();
-        addObject(toby,820,618);
-        toby.setLocation(814,631);
+        
+        // Toby
+        addObject(new Toby(),820,618);
+        
+        // Cars
         Car2 car2 = new Car2();
         addObject(car2,342,554);
         Car2 car22 = new Car2();
@@ -102,24 +101,6 @@ public class Level3 extends MyWorld {
         addObject(car29,1528,551);
         Car2 car210 = new Car2();
         addObject(car210,198,552);
-        toby.setLocation(805,629);
-        removeObject(toby);
-        addObject(toby,844,625);
-        toby.setLocation(841,621);
-        toby.setLocation(828,614);
-        House house = new House();
-        addObject(house,797,27);
-        house.setLocation(851,29);
-        house.setLocation(815,63);
-        house.setLocation(790,42);
-        House house2 = new House();
-        addObject(house2,983,42);
-        house.setLocation(840,39);
-        house.setLocation(811,45);
-        removeObject(house);
-        house2.setLocation(800,40);
-        house2.setLocation(769,37);
-        removeObject(car25);
         car26.setLocation(990,563);
         car26.setLocation(1047,553);
         removeObject(car23);
@@ -259,52 +240,11 @@ public class Level3 extends MyWorld {
         addObject(car216,1270,335);
         Car2 car217 = new Car2();
         addObject(car217,1492,336);
-        removeObject(toby);
-
         Toby toby2 = new Toby();
         addObject(toby2,849,626);
         Owner owner = new Owner();
         addObject(owner,854,49);
-        owner.setLocation(851,53);
-        removeObject(truck118);
-        removeObject(truck216);
-        removeObject(truck218);
-        removeObject(truck219);
-        removeObject(truck120);
-        removeObject(truck116);
-        removeObject(truck214);
-        removeObject(truck212);
-        removeObject(car2);
-        removeObject(car12);
-        removeObject(car9);
-        removeObject(car13);
-        removeObject(car27);
-        removeObject(car29);
-        removeObject(truck115);
-        removeObject(truck215);
-        removeObject(car212);
-        removeObject(car213);
-        removeObject(car215);
-        removeObject(car7);
-        removeObject(car6);
-        removeObject(car3);
-        removeObject(car5);
-        removeObject(truck18);
-        removeObject(truck13);
-        removeObject(truck15);
-        removeObject(truck26);
-        removeObject(truck28);
-        removeObject(truck24);
-        removeObject(truck112);
-        removeObject(truck29);
-        removeObject(truck22);
-        DogCatcher dogCatcher = new DogCatcher();
-        addObject(dogCatcher,514,39);
-        DogCatcher dogCatcher2 = new DogCatcher();
-        addObject(dogCatcher2,1034,38);
-        removeObject(dogCatcher);
-        removeObject(dogCatcher2);
-        removeObject(truck16);
+     
         truck117.setLocation(412,437);
         truck117.setLocation(416,453);
         truck14.setLocation(594,250);
@@ -325,41 +265,17 @@ public class Level3 extends MyWorld {
         truck217.setLocation(606,471);
         truck27.setLocation(627,140);
         truck211.setLocation(1502,479);
-        water4.setLocation(333,289);
-        removeObject(water4);
-        removeObject(water11);
-        removeObject(water15);
-        removeObject(water3);
+  
         DogCatcher2 dogCatcher22 = new DogCatcher2();
         addObject(dogCatcher22,790,283);
-        owner.setLocation(879,59);
-        removeObject(owner);
-        house2.setLocation(772,63);
-        addObject(owner,772,63);
-        house2.setLocation(790,48);
-        house2.setLocation(814,73);
-        house2.setLocation(786,42);
-        house2.setLocation(787,36);
-        owner.setLocation(741,65);
-        house2.setLocation(791,82);
-        house2.setLocation(762,46);
-        owner.setLocation(792,74);
-        house2.setLocation(767,54);
-        owner.setLocation(788,81);
-        house2.setLocation(758,36);
-        house2.setLocation(951,70);
-        house2.setLocation(768,16);
-        house2.setLocation(761,41);
-        owner.setLocation(792,41);
-        house2.setLocation(792,13);
+        
         DogTreat dogTreat = new DogTreat();
         addObject(dogTreat,161,453);
         DogTreat dogTreat2 = new DogTreat();
         addObject(dogTreat2,1382,336);
         DogTreats2 dogTreats2 = new DogTreats2();
         addObject(dogTreats2,1212,140);
-        dogTreats2.setLocation(1212,138);
-        removeObject(dogTreats2);
+  
 
         Door door = new Door();
         addObject(door,415,627);

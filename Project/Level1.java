@@ -1,29 +1,25 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Level1 here.
+ * First Level of the game which is city-themed
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Chilka, Madalina, Nicolas, Jose 
+ * @version Gold Master (December 14, 2020)
  */
 public class Level1 extends MyWorld {
-    private int keyCount;
+   
    /**
     * Constructor for objects of class Level1.
     * 
     */
     public Level1() {
-        
         setPaintOrder(TrafficCone.class, Car2.class, Car.class, Bench.class,Strawberry.class, StarTreat.class, Tree.class, Tree3.class, Tree2.class, Toby.class );
         prepare();
         showLife();
         showScore();
         stopGame();
-        //playMusic();
         score = 500;
         lifeCount = 3;
-        
-        
    }
         
     /**
@@ -31,28 +27,23 @@ public class Level1 extends MyWorld {
      * That is: create the initial objects and add them to the world.
      */
     private void prepare() {
-        // 1st road - above
-
+        // 1st road - top
         for(int i = 0; i < 3; i++) {
             addObject(new Car2(), i * 500, 63); 
-
         }
         for(int i = 1; i <= 4; i++) {
             addObject(new Car(), i * 350, 95); 
-
         }
 
-        // 2nd road - above
+        // 2nd road - top
         for(int i = 0; i < 5; i++) {
             addObject(new Car(-180), i * 385, 180); 
-
         }
         for(int i = 1; i < 5; i++) {
             addObject(new Car2(180), (i * 235), 216); 
-
         }
 
-        // 3rd road - middle one
+        // 3rd road - middle 
         for(int i = 1; i <= 3; i++) {
             addObject(new Motorcycle(), (i * 385), 305); 
 
@@ -70,46 +61,38 @@ public class Level1 extends MyWorld {
 
         }        
 
-        //4th road - below
+        //4th road - bottom
         for(int i = 0; i < 3; i++) {
             addObject(new Car2(), i * 430, 420); 
-
         }
         for(int i = 1; i <= 2; i++) {
             addObject(new Car(), i * 350, 455); 
-
         }
         addObject(new Car3(), 900, 455); 
 
-        // Last- 5th road bellow
+        // 5th road - bottom (last)
         for(int i = 0; i < 4; i++) {
             addObject(new Car(180), i * 500, 550); 
-
         }
         for(int i = 1; i <= 4; i++) {
             addObject(new Car2(180), i * 350, 585); 
-
         }
 
         // Holes
         for(int i = 1; i <= 8; i++) {
             addObject(new Hole2(), Greenfoot.getRandomNumber(1590)+ 20, Greenfoot.getRandomNumber(450)+80); 
-
         }
         for(int i = 1; i <= 9; i++) {
             addObject(new Hole1(), Greenfoot.getRandomNumber(1590) + 40, Greenfoot.getRandomNumber(300)+120); 
-
         }
 
         // Strawberry
         for(int i = 0; i <= 7; i++) {
             addObject(new Strawberry(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
-
         }
 
         for(int i = 0; i <= 5; i++) {
             addObject(new StarTreat(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(550)+ 80); 
-
         }
 
         // Traffic Cones
@@ -121,17 +104,10 @@ public class Level1 extends MyWorld {
         }
 
         //Keys
-        keyCount = getObjects(KeyPass.class).size();
-        if (!collectedKeys && keyCount == 0) {
-            // Keypass to next level(Level 2) */
-            for (int i = 1; i <= 3; i++) {
-                KeyPass keypass = new KeyPass();
-                addObject(keypass, (i * 400) + 40, 20);
-
-            }
+        for (int i = 1; i <= 3; i++) {
+            KeyPass keypass = new KeyPass();
+            addObject(keypass, (i * 400) + 40, 20);
         }
-      
-        //int keyCount = getObjects(KeyPass.class).size();
 
         // Toby
         addObject(new Toby(), 792, 630); 
@@ -183,16 +159,7 @@ public class Level1 extends MyWorld {
         Tree3 tree36 = new Tree3();
         addObject(tree36,189,498);
         tree36.setLocation(34,502);
-    }
+   }
     
-    /**
-     * playMusic() - play a music that is in a loop
-     */
-    private static void playMusic() {
-        //GreenfootSound bg = new GreenfootSound("Credit.mp3");
-        //Greenfoot.playSound("Credit.mp3");
-        //bg.playLoop();
-
-    }
 }
 

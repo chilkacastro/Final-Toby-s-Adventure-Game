@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Level2 here.
+ * Second Level of the game which is desert-themed
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Chilka, Madalina, Nicolas, Jose 
+ * @version Gold Master (December 14, 2020)
  */
 public class Level2 extends MyWorld
 {
@@ -19,7 +19,6 @@ public class Level2 extends MyWorld
         showLife();
         showScore();
         stopGame();
-
     }  
     
     /**
@@ -27,31 +26,29 @@ public class Level2 extends MyWorld
      * That is: create the initial objects and add them to the world.
      */
     private void prepare() {
+        // Trains
         for(int i = 0; i < 2; i++) {
             addObject(new Train(), i * 1200, 205); 
 
         }
-
         for(int i = 1; i <= 2; i++) {
             addObject(new Train(), i * 980, 438); 
 
         }
-
         for(int i = 0; i <= 1; i++) {
             addObject(new Train2(), i * 650, 90); 
 
         }
-
         for(int i = 0; i <= 1; i++) {
             addObject(new Train2(), i * 850, 320); 
 
         }
-
         for(int i = 1; i <= 2; i++) {
             addObject(new Train2(), i * 750, 564); 
 
         }
 
+        // Cactuses
         for(int i = 0; i < 3; i++) {
             addObject(new Cactus(),(i * 450) + 100, 110); 
 
@@ -60,38 +57,42 @@ public class Level2 extends MyWorld
             addObject(new Cactus2(), i * 500,360); 
 
         }
-        addObject(new DogCatcher() ,1200, 130);
-        addObject(new DogCatcher() ,500, 470);
-
+        
+        // Dog Foods
         for(int i = 0; i <= 7; i++) {
             addObject(new BallTreat(), Greenfoot.getRandomNumber(1560) + 40, Greenfoot.getRandomNumber(580)+ 40); 
-
         }
-
-        for(int i = 0; i <= 8; i++) {
-            addObject(new Coin(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
-
-        }
-        addObject(new Toby(), 792, 630); 
-
-        for (int i = 1; i <= 3; i++) {
-            KeyPass2 keypass2 = new KeyPass2();
-            addObject(keypass2, (i * 400) + 40, 20);
-            addObject(new Door(),400,625);
-        }
-        
-        addObject(new LeftBorder(), 200,323);
-        RightBorder rightBorder = new RightBorder();
-        addObject(rightBorder,1400,320);
-       
         for(int i = 0; i < 5; i++) {
             addObject(new DogTreats2(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
         }   
-        Stop stop = new Stop();
-        addObject(stop,99,614);
+        
+        // Coins
+        for(int i = 0; i <= 8; i++) {
+            addObject(new Coin(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
+        }
+       
+        // Level 2 Keys
+        for (int i = 1; i <= 3; i++) {
+            addObject(new KeyPass2(), (i * 400) + 40, 20);
+            addObject(new Door(),400,625);
+        }
+        
+        // Toby
+        addObject(new Toby(), 792, 630); 
+        
+        // Borders(Left and Right)
+        addObject(new LeftBorder(), 200,323);
+        addObject(new RightBorder(),1400,320);
+       
+        // Dog Catchers
+        addObject(new DogCatcher() ,1200, 130);
+        addObject(new DogCatcher() ,500, 470);
+        
+        // Quit Word
+        addObject(new Stop(),99,614);
 
         //Trap Door
         addObject(new Door(), 400,625);
 
     } 
-  }
+ }
