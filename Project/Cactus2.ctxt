@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Cactus2
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Cactus2\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Whenever\ Toby\ touches\ the\ Cactus2\ class,\ 100\ points\ will\ be\ removed\ from\ his\ score.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ (1)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Cactus2\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

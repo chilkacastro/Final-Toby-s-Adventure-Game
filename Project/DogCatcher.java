@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
  * This class represents one of the obstacles for Toby. It is the dognapper. He moves randomly and in the horizontal direction in order
@@ -38,7 +38,6 @@ public class DogCatcher extends Actor{
         rotateAtEdge();
     }
     
-    
     /**
      * touchToby()- if catcher meets Toby, player loses a life, a sound is played and a pop-up line appears.
      */
@@ -49,7 +48,6 @@ public class DogCatcher extends Actor{
             removeTouching(Toby.class);
             MyWorld myWorld = (MyWorld)getWorld();
             myWorld.lifeCount(-1);
-            //getWorld().showText("You have been CAPTURED AND ENSLAVED BY THE DOG CATCHER!", 500, 500);
             if (myWorld.getLifeCount() > 0) {
                 Level2 myLevel2 = (Level2)getWorld();
                 myLevel2.addObject(new Toby(), 800, 640);
@@ -62,8 +60,7 @@ public class DogCatcher extends Actor{
     }
   
     /**
-     * 
-     * movement() - this method defines the movement of the dog catche including the animation.
+     * movement() - this method defines the movement of the dog catcher including the animation.
      */
     public void movement() {
         counter1++;    
@@ -83,7 +80,7 @@ public class DogCatcher extends Actor{
         else if (counter1<80) {
             setLocation(getX() - Greenfoot.getRandomNumber(5), getY());
             counter2++; 
-                    if (counter2 < 4){
+             if (counter2 < 4){
                 setImage (image3);
             }
              else if ( counter2 > 8){
@@ -107,7 +104,6 @@ public class DogCatcher extends Actor{
         if (getX() == 0) {
           setLocation(1590, getY()); 
         }
-
     }
 
 }

@@ -1,10 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DogTreats2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * The DogTreats2 class is a treat class to increase the score of Toby by 100 points.
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version (1)
  */
 public class DogTreats2 extends Food
 {
@@ -25,7 +24,5 @@ public class DogTreats2 extends Food
             }
             getWorld().removeObject(this);
         }
-
-        
     }    
 }

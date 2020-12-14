@@ -1,10 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class BallTreat here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * The BallTreat class is a treat class to increase the score of Toby by 100 points.
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version (1)
  */
 public class BallTreat extends Food
 {
@@ -24,8 +23,6 @@ public class BallTreat extends Food
                 myLevel2.addObject(new PlusPoint(), 810, 420);
             }
             getWorld().removeObject(this);
-        }
-
-        
+        }        
     }    
 }

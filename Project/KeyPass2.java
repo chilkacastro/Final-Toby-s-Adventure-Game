@@ -1,10 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; 
 
 /**
- * Write a description of class KeyPass2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * The KeyPass2 class helps you to get to the next level once you collect all 3 objects from the Level2 class.
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version (1)
  */
 public class KeyPass2 extends Actor
 {

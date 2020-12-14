@@ -1,10 +1,10 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class Cactus2 here.
+ * Whenever Toby touches the Cactus2 class, 100 points will be removed from his score.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version (1)
  */
 public class Cactus2 extends Obstacles
 {
@@ -21,7 +21,6 @@ public class Cactus2 extends Obstacles
            MyWorld myWorld = (MyWorld)getWorld();
            myWorld.addScore(-100);
            Greenfoot.playSound("Spike.wav");
-           
                       
            if (myWorld.getLifeCount() > 0) {
                 Level2 myLevel2 = (Level2)getWorld();
@@ -33,7 +32,6 @@ public class Cactus2 extends Obstacles
                 Level2 myLevel2 = (Level2)getWorld();
                 myLevel2.addObject(new MinusLine(), 850, 350);
            }
-  
            
        }
     }    

@@ -38,18 +38,12 @@ class.LeftBorder.image=leftborder.png
 class.Level1.image=RoadLevel1.png
 class.Level2.image=TrainLevel.png
 class.Level3.image=Road2.png
-<<<<<<< HEAD
-=======
 class.Level4.image=Level4.png
 class.MinusLine.image=minus100pts.png
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 class.Motorcycle.image=motor1.png
 class.Motorcycle2.image=motor2.png
 class.Owner.image=student.png
 class.Paw.image=paw.png
-<<<<<<< HEAD
-class.RightBorder.image=rightborder.png
-=======
 class.PlayAgain.image=return.png
 class.PlaySecond.image=playAgAIN.png
 class.PlusLifeLine.image=pluslife.png
@@ -61,7 +55,6 @@ class.SourceWord.image=sourceline.png
 class.Sources.image=edit.png
 class.Spider.image=spider.png
 class.StarTreat.image=startreat.png
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 class.Start.image=start.png
 class.StartF.image=again.png
 class.StartScreen.image=menu.png
@@ -81,19 +74,11 @@ class.WinScreen.image=winnew.png
 dependency1.from=Instruction
 dependency1.to=Paw
 dependency1.type=UsesDependency
-<<<<<<< HEAD
-dependency10.from=Level2
-dependency10.to=LeftBorder
-dependency10.type=UsesDependency
-dependency100.from=Car2
-dependency100.to=MyWorld
-=======
 dependency10.from=Level4
 dependency10.to=Toby
 dependency10.type=UsesDependency
 dependency100.from=Stop
 dependency100.to=StartScreen
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 dependency100.type=UsesDependency
 dependency101.from=TobyH
 dependency101.to=Gun
@@ -116,19 +101,6 @@ dependency106.type=UsesDependency
 dependency107.from=TobyH
 dependency107.to=Door
 dependency107.type=UsesDependency
-<<<<<<< HEAD
-dependency108.from=Motorcycle
-dependency108.to=Level3
-dependency108.type=UsesDependency
-dependency109.from=Train
-dependency109.to=Blood
-dependency109.type=UsesDependency
-dependency11.from=Level2
-dependency11.to=RightBorder
-dependency11.type=UsesDependency
-dependency110.from=Train
-dependency110.to=MyWorld
-=======
 dependency108.from=Paw
 dependency108.to=Level1
 dependency108.type=UsesDependency
@@ -140,7 +112,6 @@ dependency11.to=StarTreat
 dependency11.type=UsesDependency
 dependency110.from=Paw
 dependency110.to=Credit
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 dependency110.type=UsesDependency
 dependency111.from=Paw
 dependency111.to=StartScreen
@@ -166,16 +137,6 @@ dependency117.type=UsesDependency
 dependency118.from=Coin
 dependency118.to=Toby
 dependency118.type=UsesDependency
-<<<<<<< HEAD
-dependency119.from=DogTreat
-dependency119.to=MyWorld
-dependency119.type=UsesDependency
-dependency12.from=Level2
-dependency12.to=DogTreats2
-dependency12.type=UsesDependency
-dependency120.from=DogTreat
-dependency120.to=Toby
-=======
 dependency119.from=Cactus
 dependency119.to=MyWorld
 dependency119.type=UsesDependency
@@ -184,7 +145,6 @@ dependency12.to=PawTreat
 dependency12.type=UsesDependency
 dependency120.from=Cactus
 dependency120.to=Level2
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 dependency120.type=UsesDependency
 dependency121.from=Cactus
 dependency121.to=Toby
@@ -192,94 +152,6 @@ dependency121.type=UsesDependency
 dependency122.from=Cactus
 dependency122.to=MinusLine
 dependency122.type=UsesDependency
-<<<<<<< HEAD
-dependency123.from=Credits
-dependency123.to=Credit
-dependency123.type=UsesDependency
-dependency124.from=Cactus2
-dependency124.to=MyWorld
-dependency124.type=UsesDependency
-dependency125.from=Cactus2
-dependency125.to=Toby
-dependency125.type=UsesDependency
-dependency126.from=Hole2
-dependency126.to=MyWorld
-dependency126.type=UsesDependency
-dependency127.from=Hole2
-dependency127.to=Level1
-dependency127.type=UsesDependency
-dependency128.from=Hole2
-dependency128.to=Toby
-dependency128.type=UsesDependency
-dependency129.from=Hole2
-dependency129.to=Level3
-dependency129.type=UsesDependency
-dependency13.from=Level2
-dependency13.to=Door
-dependency13.type=UsesDependency
-dependency130.from=Hole1
-dependency130.to=MyWorld
-dependency130.type=UsesDependency
-dependency131.from=Hole1
-dependency131.to=Level1
-dependency131.type=UsesDependency
-dependency132.from=Hole1
-dependency132.to=Toby
-dependency132.type=UsesDependency
-dependency133.from=Hole1
-dependency133.to=Level3
-dependency133.type=UsesDependency
-dependency14.from=Level3
-dependency14.to=Water
-dependency14.type=UsesDependency
-dependency15.from=Level3
-dependency15.to=Toby
-dependency15.type=UsesDependency
-dependency16.from=Level3
-dependency16.to=Car2
-dependency16.type=UsesDependency
-dependency17.from=Level3
-dependency17.to=House
-dependency17.type=UsesDependency
-dependency18.from=Level3
-dependency18.to=Car
-dependency18.type=UsesDependency
-dependency19.from=Level3
-dependency19.to=Truck1
-dependency19.type=UsesDependency
-dependency2.from=Level2
-dependency2.to=Train
-dependency2.type=UsesDependency
-dependency20.from=Level3
-dependency20.to=Truck2
-dependency20.type=UsesDependency
-dependency21.from=Level3
-dependency21.to=Owner
-dependency21.type=UsesDependency
-dependency22.from=Level3
-dependency22.to=DogCatcher
-dependency22.type=UsesDependency
-dependency23.from=Level3
-dependency23.to=Heart
-dependency23.type=UsesDependency
-dependency24.from=Level3
-dependency24.to=Bee
-dependency24.type=UsesDependency
-dependency25.from=Level3
-dependency25.to=DogCatcher2
-dependency25.type=UsesDependency
-dependency26.from=Level3
-dependency26.to=DogTreat
-dependency26.type=UsesDependency
-dependency27.from=Level3
-dependency27.to=DogTreats2
-dependency27.type=UsesDependency
-dependency28.from=Level1
-dependency28.to=Car2
-dependency28.type=UsesDependency
-dependency29.from=Level1
-dependency29.to=Car
-=======
 dependency123.from=Bee
 dependency123.to=MyWorld
 dependency123.type=UsesDependency
@@ -732,248 +604,10 @@ dependency28.to=KeyPass2
 dependency28.type=UsesDependency
 dependency29.from=Level2
 dependency29.to=LeftBorder
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 dependency29.type=UsesDependency
-dependency3.from=Level2
-dependency3.to=Train2
+dependency3.from=MyWorld
+dependency3.to=GameOver
 dependency3.type=UsesDependency
-<<<<<<< HEAD
-dependency30.from=Level1
-dependency30.to=Motorcycle
-dependency30.type=UsesDependency
-dependency31.from=Level1
-dependency31.to=Motorcycle2
-dependency31.type=UsesDependency
-dependency32.from=Level1
-dependency32.to=Car3
-dependency32.type=UsesDependency
-dependency33.from=Level1
-dependency33.to=Car4
-dependency33.type=UsesDependency
-dependency34.from=Level1
-dependency34.to=Hole2
-dependency34.type=UsesDependency
-dependency35.from=Level1
-dependency35.to=Hole1
-dependency35.type=UsesDependency
-dependency36.from=Level1
-dependency36.to=Bench
-dependency36.type=UsesDependency
-dependency37.from=Level1
-dependency37.to=TrafficCone
-dependency37.type=UsesDependency
-dependency38.from=Level1
-dependency38.to=KeyPass
-dependency38.type=UsesDependency
-dependency39.from=Level1
-dependency39.to=Toby
-dependency39.type=UsesDependency
-dependency4.from=Level2
-dependency4.to=Cactus
-dependency4.type=UsesDependency
-dependency40.from=Level1
-dependency40.to=Tree
-dependency40.type=UsesDependency
-dependency41.from=Level1
-dependency41.to=Tree2
-dependency41.type=UsesDependency
-dependency42.from=Level1
-dependency42.to=Tree3
-dependency42.type=UsesDependency
-dependency43.from=GameOver
-dependency43.to=Paw
-dependency43.type=UsesDependency
-dependency44.from=StartScreen
-dependency44.to=Paw
-dependency44.type=UsesDependency
-dependency45.from=StartScreen
-dependency45.to=Start
-dependency45.type=UsesDependency
-dependency46.from=StartScreen
-dependency46.to=Instructions
-dependency46.type=UsesDependency
-dependency47.from=StartScreen
-dependency47.to=Credits
-dependency47.type=UsesDependency
-dependency48.from=Heart
-dependency48.to=MyWorld
-dependency48.type=UsesDependency
-dependency49.from=Heart
-dependency49.to=Toby
-dependency49.type=UsesDependency
-dependency5.from=Level2
-dependency5.to=Cactus2
-dependency5.type=UsesDependency
-dependency50.from=Train2
-dependency50.to=Blood
-dependency50.type=UsesDependency
-dependency51.from=Train2
-dependency51.to=MyWorld
-dependency51.type=UsesDependency
-dependency52.from=Train2
-dependency52.to=Level2
-dependency52.type=UsesDependency
-dependency53.from=Train2
-dependency53.to=Toby
-dependency53.type=UsesDependency
-dependency54.from=Start
-dependency54.to=Level1
-dependency54.type=UsesDependency
-dependency55.from=Paw
-dependency55.to=Level1
-dependency55.type=UsesDependency
-dependency56.from=Paw
-dependency56.to=Instruction
-dependency56.type=UsesDependency
-dependency57.from=Paw
-dependency57.to=Credit
-dependency57.type=UsesDependency
-dependency58.from=Paw
-dependency58.to=StartScreen
-dependency58.type=UsesDependency
-dependency59.from=Paw
-dependency59.to=GameOver
-dependency59.type=UsesDependency
-dependency6.from=Level2
-dependency6.to=DogCatcher
-dependency6.type=UsesDependency
-dependency60.from=Coin
-dependency60.to=MyWorld
-dependency60.type=UsesDependency
-dependency61.from=Coin
-dependency61.to=Toby
-dependency61.type=UsesDependency
-dependency62.from=Toby
-dependency62.to=Level2
-dependency62.type=UsesDependency
-dependency63.from=Toby
-dependency63.to=Level3
-dependency63.type=UsesDependency
-dependency64.from=Toby
-dependency64.to=Level1
-dependency64.type=UsesDependency
-dependency65.from=Toby
-dependency65.to=KeyPass
-dependency65.type=UsesDependency
-dependency66.from=Toby
-dependency66.to=KeyPass2
-dependency66.type=UsesDependency
-dependency67.from=Toby
-dependency67.to=Door
-dependency67.type=UsesDependency
-dependency68.from=Cactus
-dependency68.to=MyWorld
-dependency68.type=UsesDependency
-dependency69.from=Cactus
-dependency69.to=Toby
-dependency69.type=UsesDependency
-dependency7.from=Level2
-dependency7.to=Coin
-dependency7.type=UsesDependency
-dependency70.from=KeyPass2
-dependency70.to=Level2
-dependency70.type=UsesDependency
-dependency71.from=DogCatcher2
-dependency71.to=Toby
-dependency71.type=UsesDependency
-dependency72.from=Instructions
-dependency72.to=Instruction
-dependency72.type=UsesDependency
-dependency73.from=Car
-dependency73.to=Blood
-dependency73.type=UsesDependency
-dependency74.from=Car
-dependency74.to=MyWorld
-dependency74.type=UsesDependency
-dependency75.from=Car
-dependency75.to=Level1
-dependency75.type=UsesDependency
-dependency76.from=Car
-dependency76.to=Toby
-dependency76.type=UsesDependency
-dependency77.from=Car
-dependency77.to=Level3
-dependency77.type=UsesDependency
-dependency78.from=Truck1
-dependency78.to=MyWorld
-dependency78.type=UsesDependency
-dependency79.from=Truck1
-dependency79.to=Level3
-dependency79.type=UsesDependency
-dependency8.from=Level2
-dependency8.to=Toby
-dependency8.type=UsesDependency
-dependency80.from=Truck1
-dependency80.to=Toby
-dependency80.type=UsesDependency
-dependency81.from=Truck2
-dependency81.to=MyWorld
-dependency81.type=UsesDependency
-dependency82.from=Truck2
-dependency82.to=Level3
-dependency82.type=UsesDependency
-dependency83.from=Truck2
-dependency83.to=Toby
-dependency83.type=UsesDependency
-dependency84.from=Car4
-dependency84.to=Blood
-dependency84.type=UsesDependency
-dependency85.from=Car4
-dependency85.to=MyWorld
-dependency85.type=UsesDependency
-dependency86.from=Car4
-dependency86.to=Level1
-dependency86.type=UsesDependency
-dependency87.from=Car4
-dependency87.to=Toby
-dependency87.type=UsesDependency
-dependency88.from=Car4
-dependency88.to=Level3
-dependency88.type=UsesDependency
-dependency89.from=Motorcycle2
-dependency89.to=Blood
-dependency89.type=UsesDependency
-dependency9.from=Level2
-dependency9.to=KeyPass2
-dependency9.type=UsesDependency
-dependency90.from=Motorcycle2
-dependency90.to=MyWorld
-dependency90.type=UsesDependency
-dependency91.from=Motorcycle2
-dependency91.to=Level1
-dependency91.type=UsesDependency
-dependency92.from=Motorcycle2
-dependency92.to=Toby
-dependency92.type=UsesDependency
-dependency93.from=Motorcycle2
-dependency93.to=Level3
-dependency93.type=UsesDependency
-dependency94.from=Car3
-dependency94.to=Blood
-dependency94.type=UsesDependency
-dependency95.from=Car3
-dependency95.to=MyWorld
-dependency95.type=UsesDependency
-dependency96.from=Car3
-dependency96.to=Level1
-dependency96.type=UsesDependency
-dependency97.from=Car3
-dependency97.to=Toby
-dependency97.type=UsesDependency
-dependency98.from=Car3
-dependency98.to=Level3
-dependency98.type=UsesDependency
-dependency99.from=Car2
-dependency99.to=Blood
-dependency99.type=UsesDependency
-editor.fx.0.height=744
-editor.fx.0.width=1382
-editor.fx.0.x=-8
-editor.fx.0.y=-8
-height=28
-package.numDependencies=133
-package.numTargets=52
-=======
 dependency30.from=Level2
 dependency30.to=RightBorder
 dependency30.type=UsesDependency
@@ -1202,14 +836,13 @@ dependency98.type=UsesDependency
 dependency99.from=Stop
 dependency99.to=MyWorld
 dependency99.type=UsesDependency
-editor.fx.0.height=739
-editor.fx.0.width=1131
-editor.fx.0.x=552
-editor.fx.0.y=114
-height=1096
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=744
 package.numDependencies=255
 package.numTargets=88
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -1232,522 +865,334 @@ target1.width=80
 target1.x=0
 target1.y=0
 target10.height=50
-<<<<<<< HEAD
-target10.name=Blood
-=======
 target10.name=Stop
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target10.showInterface=false
 target10.type=ClassTarget
 target10.width=80
 target10.x=0
 target10.y=0
 target11.height=50
-<<<<<<< HEAD
-target11.name=Coin
-=======
 target11.name=TobyH
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target11.showInterface=false
 target11.type=ClassTarget
 target11.width=80
 target11.x=0
 target11.y=0
 target12.height=50
-<<<<<<< HEAD
-target12.name=Counter
-=======
 target12.name=Truck1
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target12.showInterface=false
 target12.type=ClassTarget
 target12.width=80
 target12.x=0
 target12.y=0
 target13.height=50
-<<<<<<< HEAD
-target13.name=Toby
-=======
 target13.name=Paw
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=80
 target13.x=0
 target13.y=0
 target14.height=50
-<<<<<<< HEAD
-target14.name=Cactus
-=======
 target14.name=Truck2
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=80
 target14.x=0
 target14.y=0
 target15.height=50
-<<<<<<< HEAD
-target15.name=Tree
-=======
 target15.name=Rectangle
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=80
 target15.x=0
 target15.y=0
 target16.height=50
-<<<<<<< HEAD
-target16.name=MyWorld
-=======
 target16.name=Instruction
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target16.showInterface=false
 target16.type=ClassTarget
 target16.width=80
 target16.x=0
 target16.y=0
 target17.height=50
-<<<<<<< HEAD
-target17.name=Car4
-=======
 target17.name=CatcherLine
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target17.showInterface=false
 target17.type=ClassTarget
 target17.width=90
 target17.x=0
 target17.y=0
 target18.height=50
-<<<<<<< HEAD
-target18.name=KeyPass2
-=======
 target18.name=Blood
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=90
 target18.x=0
 target18.y=0
 target19.height=50
-<<<<<<< HEAD
-target19.name=Level4
-=======
 target19.name=Coin
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=80
 target19.x=0
 target19.y=0
 target2.height=50
-target2.name=Water
+target2.name=ReturnToStart
 target2.showInterface=false
 target2.type=ClassTarget
-target2.width=80
+target2.width=100
 target2.x=0
 target2.y=0
 target20.height=50
-<<<<<<< HEAD
-target20.name=DogCatcher2
-=======
 target20.name=Obstacles
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target20.showInterface=false
 target20.type=ClassTarget
 target20.width=90
 target20.x=0
 target20.y=0
 target21.height=50
-<<<<<<< HEAD
-target21.name=House
-=======
 target21.name=Counter
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target21.showInterface=false
 target21.type=ClassTarget
 target21.width=80
 target21.x=0
 target21.y=0
 target22.height=50
-<<<<<<< HEAD
-target22.name=Instructions
-=======
 target22.name=Toby
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target22.showInterface=false
 target22.type=ClassTarget
 target22.width=90
 target22.x=0
 target22.y=0
 target23.height=50
-<<<<<<< HEAD
-target23.name=Sources
-=======
 target23.name=Strawberry
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target23.showInterface=false
 target23.type=ClassTarget
 target23.width=80
 target23.x=0
 target23.y=0
 target24.height=50
-<<<<<<< HEAD
-target24.name=Car
-=======
 target24.name=Cactus
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target24.showInterface=false
 target24.type=ClassTarget
 target24.width=80
 target24.x=0
 target24.y=0
 target25.height=50
-<<<<<<< HEAD
-target25.name=Motorcycle2
-=======
 target25.name=MinusLine
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target25.showInterface=false
 target25.type=ClassTarget
 target25.width=80
 target25.x=0
 target25.y=0
 target26.height=50
-<<<<<<< HEAD
-target26.name=Level2
-=======
 target26.name=Tree
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target26.showInterface=false
 target26.type=ClassTarget
 target26.width=80
 target26.x=0
 target26.y=0
 target27.height=50
-<<<<<<< HEAD
-target27.name=Level3
-=======
 target27.name=StarTreat
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target27.showInterface=false
 target27.type=ClassTarget
 target27.width=80
 target27.x=0
 target27.y=0
 target28.height=50
-<<<<<<< HEAD
-target28.name=Level1
-=======
 target28.name=WinScreen
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target28.showInterface=false
 target28.type=ClassTarget
 target28.width=80
 target28.x=0
 target28.y=0
 target29.height=50
-<<<<<<< HEAD
-target29.name=Train
-=======
 target29.name=BeeLine
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target29.showInterface=false
 target29.type=ClassTarget
 target29.width=80
 target29.x=0
 target29.y=0
 target3.height=50
-<<<<<<< HEAD
-target3.name=Train2
-=======
 target3.name=Train3
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 target3.x=0
 target3.y=0
 target30.height=50
-<<<<<<< HEAD
-target30.name=TrafficCone
-=======
 target30.name=MyWorld
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target30.showInterface=false
 target30.type=ClassTarget
 target30.width=80
 target30.x=0
 target30.y=0
 target31.height=50
-<<<<<<< HEAD
-target31.name=Bench
-=======
 target31.name=Car4
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target31.showInterface=false
 target31.type=ClassTarget
 target31.width=80
 target31.x=0
 target31.y=0
 target32.height=50
-<<<<<<< HEAD
-target32.name=Placeholder
-=======
 target32.name=KeyPass2
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target32.showInterface=false
 target32.type=ClassTarget
 target32.width=90
 target32.x=0
 target32.y=0
 target33.height=50
-<<<<<<< HEAD
-target33.name=DogCatcher
-=======
 target33.name=Gun
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target33.showInterface=false
 target33.type=ClassTarget
 target33.width=90
 target33.x=0
 target33.y=0
 target34.height=50
-<<<<<<< HEAD
-target34.name=Credit
-=======
 target34.name=WaterLine
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target34.showInterface=false
 target34.type=ClassTarget
 target34.width=80
 target34.x=0
 target34.y=0
 target35.height=50
-<<<<<<< HEAD
-target35.name=Car3
-=======
 target35.name=Level4
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target35.showInterface=false
 target35.type=ClassTarget
 target35.width=80
 target35.x=0
 target35.y=0
 target36.height=50
-<<<<<<< HEAD
-target36.name=Tree3
-=======
 target36.name=DogCatcher2
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target36.showInterface=false
 target36.type=ClassTarget
 target36.width=80
 target36.x=0
 target36.y=0
 target37.height=50
-<<<<<<< HEAD
-target37.name=Car2
-=======
 target37.name=House
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target37.showInterface=false
 target37.type=ClassTarget
 target37.width=80
 target37.x=0
 target37.y=0
 target38.height=50
-<<<<<<< HEAD
-target38.name=Tree2
-=======
 target38.name=Instructions
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target38.showInterface=false
 target38.type=ClassTarget
 target38.width=80
 target38.x=0
 target38.y=0
 target39.height=50
-<<<<<<< HEAD
-target39.name=Motorcycle
-=======
 target39.name=Sources
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target39.showInterface=false
 target39.type=ClassTarget
 target39.width=80
 target39.x=0
 target39.y=0
 target4.height=50
-<<<<<<< HEAD
-target4.name=Owner
-=======
 target4.name=Water
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
 target40.height=50
-<<<<<<< HEAD
-target40.name=Bee
-=======
 target40.name=PlayAgain
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target40.showInterface=false
 target40.type=ClassTarget
 target40.width=90
 target40.x=0
 target40.y=0
 target41.height=50
-<<<<<<< HEAD
-target41.name=GameOver
-=======
 target41.name=Grapes
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target41.showInterface=false
 target41.type=ClassTarget
 target41.width=80
 target41.x=0
 target41.y=0
 target42.height=50
-<<<<<<< HEAD
-target42.name=DogTreat
-=======
 target42.name=PawTreat
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target42.showInterface=false
 target42.type=ClassTarget
 target42.width=80
 target42.x=0
 target42.y=0
 target43.height=50
-<<<<<<< HEAD
-target43.name=DogTreats2
-=======
 target43.name=Car
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target43.showInterface=false
 target43.type=ClassTarget
 target43.width=80
 target43.x=0
 target43.y=0
 target44.height=50
-<<<<<<< HEAD
-target44.name=KeyPass
-=======
 target44.name=Motorcycle2
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target44.showInterface=false
 target44.type=ClassTarget
 target44.width=80
 target44.x=0
 target44.y=0
 target45.height=50
-<<<<<<< HEAD
-target45.name=Door
-=======
 target45.name=Level2
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target45.showInterface=false
 target45.type=ClassTarget
 target45.width=80
 target45.x=0
 target45.y=0
 target46.height=50
-<<<<<<< HEAD
-target46.name=RightBorder
-=======
 target46.name=Level3
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target46.showInterface=false
 target46.type=ClassTarget
 target46.width=90
 target46.x=0
 target46.y=0
 target47.height=50
-<<<<<<< HEAD
-target47.name=StartScreen
-=======
 target47.name=Level1
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target47.showInterface=false
 target47.type=ClassTarget
 target47.width=80
 target47.x=0
 target47.y=0
 target48.height=50
-<<<<<<< HEAD
-target48.name=Credits
-=======
 target48.name=PlusLifeLine
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target48.showInterface=false
 target48.type=ClassTarget
 target48.width=90
 target48.x=0
 target48.y=0
 target49.height=50
-<<<<<<< HEAD
-target49.name=Cactus2
-=======
 target49.name=Train
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target49.showInterface=false
 target49.type=ClassTarget
 target49.width=90
 target49.x=0
 target49.y=0
 target5.height=50
-<<<<<<< HEAD
-target5.name=Start
-=======
 target5.name=Train2
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
 target50.height=50
-<<<<<<< HEAD
-target50.name=Hole2
-=======
 target50.name=PlaySecond
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target50.showInterface=false
 target50.type=ClassTarget
 target50.width=80
 target50.x=0
 target50.y=0
 target51.height=50
-<<<<<<< HEAD
-target51.name=LeftBorder
-=======
 target51.name=Lines
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target51.showInterface=false
 target51.type=ClassTarget
 target51.width=80
 target51.x=0
 target51.y=0
 target52.height=50
-<<<<<<< HEAD
-target52.name=Hole1
-=======
 target52.name=TrafficCone
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target52.showInterface=false
 target52.type=ClassTarget
 target52.width=80
 target52.x=0
 target52.y=0
-<<<<<<< HEAD
-target6.height=50
-target6.name=Truck1
-=======
 target53.height=50
 target53.name=Bench
 target53.showInterface=false
@@ -1799,16 +1244,11 @@ target59.x=0
 target59.y=0
 target6.height=50
 target6.name=Owner
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=80
 target6.x=0
 target6.y=0
-<<<<<<< HEAD
-target7.height=50
-target7.name=Paw
-=======
 target60.height=50
 target60.name=HoleLine
 target60.showInterface=false
@@ -1881,7 +1321,6 @@ target69.x=0
 target69.y=0
 target7.height=50
 target7.name=BallTreat
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=80
@@ -1958,11 +1397,7 @@ target79.width=80
 target79.x=0
 target79.y=0
 target8.height=50
-<<<<<<< HEAD
-target8.name=Truck2
-=======
 target8.name=PlusPoint
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target8.showInterface=false
 target8.type=ClassTarget
 target8.width=80
@@ -2032,22 +1467,14 @@ target88.width=80
 target88.x=0
 target88.y=0
 target9.height=50
-<<<<<<< HEAD
-target9.name=Instruction
-=======
 target9.name=Start
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
-<<<<<<< HEAD
-width=160
-=======
-width=1936
->>>>>>> 38f174b00aa471402330bb15b5a54af627cafb48
-world.lastInstantiated=StartScreen
+width=1382
+world.lastInstantiated=Level1
 xPosition=0
 yPosition=0

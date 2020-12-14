@@ -1,10 +1,10 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class Coin here.
+ * The class Coin helps Toby gain points in the game. Each coin equals 100 points.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas & Jose) 
+ * @version (1)
  */
 public class Coin extends Actor
 {   private int lineCounter = 0;
@@ -31,7 +31,6 @@ public class Coin extends Actor
     public void act() 
     {
         counter++;
-        
         if(counter == 8) {
             switchImage();
             counter = 0;
@@ -48,10 +47,11 @@ public class Coin extends Actor
   
             getWorld().removeObject(this);
         }
-
-        
     }
     
+    /**
+     * switchImage() - this method is implemented in order to do the animation of the coins.
+     */
     public void switchImage() {
         if (getImage() == image1) {
             setImage(image2);

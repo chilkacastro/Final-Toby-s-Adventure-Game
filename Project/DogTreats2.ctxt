@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=DogTreats2
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ DogTreats2\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ DogTreats2\ class\ is\ a\ treat\ class\ to\ increase\ the\ score\ of\ Toby\ by\ 100\ points.\r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ (1)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ DogTreats2\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

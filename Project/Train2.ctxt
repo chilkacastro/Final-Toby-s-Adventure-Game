@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Train2
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Train2\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ Train2\ class\ is\ one\ of\ the\ main\ objects\ from\ the\ level\ 2.\ Whenever\ Toby\ touches\ a\ train,\ this\ will\ automatically\ remove\ one\ life.\r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ (1)\r\n
 comment1.params=
 comment1.target=Train2()
 comment2.params=

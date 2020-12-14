@@ -1,10 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class Door here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * The Door class is implemented to allw Toby get to the previous level.
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version (1)
  */
 public class Door extends Actor
 {
@@ -18,14 +17,7 @@ public class Door extends Actor
           Greenfoot.setWorld(new Level2());     
           Greenfoot.setWorld(new Level2());  
        }
-        
-        /* int keyCount2 = getWorld().getObjects(KeyPass2.class).size();
-         if (getX() == 1200 && (getWorld() instanceof Level2) && (isTouching(Toby.class)) && keyCount2 == 0) {
-          Greenfoot.setWorld(new Level3());
-          Greenfoot.setWorld(new Level3());
-        } */
-        
-        
+
        if (getX() == 400 && (isTouching(Toby.class) && getWorld() instanceof Level2)) {
           Greenfoot.setWorld(new Level1());
           

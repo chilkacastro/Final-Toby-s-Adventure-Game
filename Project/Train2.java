@@ -1,10 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class Train2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * The Train2 class is one of the main objects from the level 2. Whenever Toby touches a train, this will automatically remove one life.
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version (1)
  */
 public class Train2 extends Actor
 {   private int trainCounter = 0;
@@ -18,93 +17,89 @@ public class Train2 extends Actor
     private GreenfootImage image8;
     private int lineCounter = 0;
     
-        public Train2() {
-            image1 = new GreenfootImage("Train2.png");
-            image2 = new GreenfootImage("rotateend1.png");
-            image3 = new GreenfootImage("rotateend2.png");
-            image4 = new GreenfootImage("rotateend3.png");
-            image5 = new GreenfootImage("rotateend4.png");
-            image6 = new GreenfootImage("rotateend5.png");
-            image7 = new GreenfootImage("rotateend6.png");
-            setImage(image1);
+    public Train2() {
+        image1 = new GreenfootImage("Train2.png");
+        image2 = new GreenfootImage("rotateend1.png");
+        image3 = new GreenfootImage("rotateend2.png");
+        image4 = new GreenfootImage("rotateend3.png");
+        image5 = new GreenfootImage("rotateend4.png");
+        image6 = new GreenfootImage("rotateend5.png");
+        image7 = new GreenfootImage("rotateend6.png");
+        setImage(image1);
         }
   
-        /**
-         * Act - do whatever the Train wants to do. This method is called whenever
-         * the 'Act' or 'Run' button gets pressed in the environment.
-         */
-        public void act() 
-            {
-                setLocation(getX() + 6, getY());
-                if (isAtEdge()) {
-                    trainCounter++;
-                    if (trainCounter == 8) {
-                        setImage(image1);
-                    }
-                    if (trainCounter == 16 ) {
-                        setImage(image2);
-                    }
-                    if (trainCounter == 24) {
-                        setImage(image3);
-                    }
-                    if (trainCounter == 32) {
-                        setImage(image4);
-                    }
-                    if (trainCounter == 40) {
-                        setImage(image5);
-                    }
-                    if (trainCounter == 48) {
-                        setImage(image6);
-                    }
-                    if(trainCounter == 56){
-                        setImage("Train2.png");
-                        setLocation(0,getY());
-                        trainCounter = 0;
-                    }
-                }
-                removeToby();
-        }    
-        /**
-         * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
-         */
-            public void removeToby() {
-            if (isTouching(Toby.class)) {
-                lineCounter++;
-                getWorld().addObject(new Blood(), getX()-80, getY());
-                Greenfoot.playSound("Train.wav");
-                removeTouching(Toby.class);
-                //getWorld().showText("You lose a life!",500, 500);
-                deductPoints();
-                MyWorld myWorld = (MyWorld)getWorld();
-                if (myWorld.getLifeCount() > 0) {
-                    reviveToby();
-                }   
-                Level2 line = (Level2)getWorld();
-                line.addObject(new HitLine(), 850, 350); 
+    /**
+     * Act - do whatever the Train wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act() {
+        setLocation(getX() + 6, getY());
+        if (isAtEdge()) {
+            trainCounter++;
+            if (trainCounter == 8) {
+                setImage(image1);
+            }
+            if (trainCounter == 16 ) {
+                setImage(image2);
+            }
+            if (trainCounter == 24) {
+                setImage(image3);
+            }
+            if (trainCounter == 32) {
+                setImage(image4);
+            }
+            if (trainCounter == 40) {
+                setImage(image5);
+            }
+            if (trainCounter == 48) {
+                setImage(image6);
+            }
+            if(trainCounter == 56){
+                setImage("Train2.png");
+                setLocation(0,getY());
+                trainCounter = 0;
             }
         }
+        removeToby();
+    } 
     
-        /**
-         * deducPoints() - to remove points when Toby touches the traffic cones.
-         */
-         public void deductPoints() {
+    /**
+     * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
+     */
+        public void removeToby() {
+        if (isTouching(Toby.class)) {
+            lineCounter++;
+            getWorld().addObject(new Blood(), getX()-80, getY());
+            Greenfoot.playSound("Train.wav");
+            removeTouching(Toby.class);
+            deductPoints();
             MyWorld myWorld = (MyWorld)getWorld();
-            myWorld.lifeCount(-1);
-
-        }
-    
-        /**
-         * reviveToby() - bring back Toby
-         */
-        public void reviveToby() {
-            if (getWorld() instanceof Level2) {
-                Level2 myLevel2 = (Level2)getWorld();
-                myLevel2.addObject(new Toby(), 800, 640);
-           
-            }
-        
+            if (myWorld.getLifeCount() > 0) {
+                reviveToby();
+            }   
+            Level2 line = (Level2)getWorld();
+            line.addObject(new HitLine(), 850, 350); 
         }
     }
+
+    /**
+     * deducPoints() - to remove points when Toby touches the traffic cones.
+     */
+     public void deductPoints() {
+        MyWorld myWorld = (MyWorld)getWorld();
+        myWorld.lifeCount(-1);
+    }
+    
+    /**
+     * reviveToby() - bring back Toby
+     */
+    public void reviveToby() {
+        if (getWorld() instanceof Level2) {
+            Level2 myLevel2 = (Level2)getWorld();
+            myLevel2.addObject(new Toby(), 800, 640);
+        }
+    }
+}
     
       
 
