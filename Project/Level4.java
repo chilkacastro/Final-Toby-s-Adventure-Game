@@ -161,15 +161,6 @@ public class Level4 extends MyWorld
         electric.setLocation(1366,128);
         KeyPass2 keyPass29 = new KeyPass2();
         addObject(keyPass29,1366,128); */
-
-        Toby toby = new Toby();
-        addObject(toby,735,556);
-        StarTreat starTreat = new StarTreat();
-        addObject(starTreat,947,238);
-        PawTreat pawTreat = new PawTreat();
-        addObject(pawTreat,1153,366);
-        removeObject(pawTreat);
-        removeObject(starTreat);
         Counter counter = new Counter();
         addObject(counter,67,43);
         counter.setLocation(244,33);
@@ -253,7 +244,7 @@ public class Level4 extends MyWorld
         addObject(spider17,622,339);
         Spider spider18 = new Spider();
         addObject(spider18,410,335);
-        removeObject(toby);
+
         TobyH tobyH = new TobyH();
         addObject(tobyH,762,576);
         Power power = new Power();
