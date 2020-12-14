@@ -79,7 +79,7 @@ public class TobyH extends Actor {
         Actor power = getOneObjectAtOffset(0, 0, Power.class);
         if (power != null) {
             World myWorld = getWorld();
-            getWorld().showText("You have obtained the power to shoot Fireballs! Press Space to use it", 500, 500);
+            getWorld().showText("You have obtained the power to shoot Fireballs! Press Space to use it", 800,40);
             Greenfoot.playSound("Heart.wav");
             myWorld.removeObject(power);
         }

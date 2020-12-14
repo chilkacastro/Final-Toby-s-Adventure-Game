@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Power Class - to inform player to pick up the fireball so that Toby could gain fire ability.
+ * Power Class - Toby's fireball ability.
  * 
  * @author (Chilka, Madalina, Nicolas, Jose) 
  * @version Gold Master(December 14, 2020)

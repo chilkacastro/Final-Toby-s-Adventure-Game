@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Power
-comment0.text=\r\n\ Power\ Class\ -\ to\ inform\ player\ to\ pick\ up\ the\ fireball\ so\ that\ Toby\ could\ gain\ fire\ ability.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
+comment0.text=\r\n\ Power\ Class\ -\ Toby's\ fireball\ ability.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Power\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
