@@ -1,7 +1,10 @@
 #BlueJ class context
 comment0.target=DogTreats2
-comment0.text=\r\n\ The\ DogTreats2\ class\ is\ a\ treat\ class\ to\ increase\ the\ score\ of\ Toby\ by\ 100\ points.\r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ (1)\r\n
+comment0.text=\r\n\ DogTreats2\ Class\ -\ increases\ the\ player\ points\ by\ 100\r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ DogTreats2\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment2.params=
+comment2.target=void\ printMessage()
+comment2.text=\r\n\ printMessage()\ -\ to\ print\ a\ message\ whenever\ Toby\ touches\ a\ dog\ treat.\r\n
+numComments=3

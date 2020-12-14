@@ -1,10 +1,10 @@
 import greenfoot.*;
 
 /**
- * The class Coin helps Toby gain points in the game. Each coin equals 100 points.
+ * Coin Class - to help Toby gain points in the game. Each coin equals 100 points.
  * 
- * @author (Chilka, Madalina, Nicolas & Jose) 
- * @version (1)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Coin extends Actor
 {   private int lineCounter = 0;
@@ -36,16 +36,10 @@ public class Coin extends Actor
             counter = 0;
         }
         if (isTouching(Toby.class)) {
-            lineCounter++;
             ((MyWorld)getWorld()).addScore(100); 
             Greenfoot.playSound("Coin.wav");
-            if (lineCounter > 0) {
-                Level2 myLevel2 = (Level2)getWorld();
-                myLevel2.addObject(new PlusPoint(), 840, 420); 
-
-            }
-  
-            getWorld().removeObject(this);
+            printMessage();
+            getWorld().removeObject(this);      
         }
     }
     
@@ -66,4 +60,16 @@ public class Coin extends Actor
             setImage(image1);
         }
     }
+    
+    /**
+     * printMessage() - To print a message when Toby touches a coin.
+     */
+    public void printMessage() {
+       lineCounter++;
+       if (lineCounter > 0) {
+            Level2 myLevel2 = (Level2)getWorld();
+            myLevel2.addObject(new PlusPoint(), 840, 420); 
+
+       } 
+    }   
 }

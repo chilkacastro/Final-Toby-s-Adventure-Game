@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class SourceWord here.
+ * SourceWord Class - sources word to click 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class SourceWord extends ClickLines
 {
@@ -17,7 +17,6 @@ public class SourceWord extends ClickLines
         if (Greenfoot.mouseClicked(this)) {
           Greenfoot.playSound("Woof.wav");
           Greenfoot.setWorld(new Sources());
-  
         }    
     }    
 }

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DogTreat here.
+ * DogTreat Class - increases player's points by 100 in Level 3
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class DogTreat extends Actor
 {
@@ -15,17 +15,23 @@ public class DogTreat extends Actor
      */
     public void act() 
     {
-        if (isTouching(Toby.class)) {
-            lineCounter++;
+      if (isTouching(Toby.class)) {
            ((MyWorld)getWorld()).addScore(100); 
-            Greenfoot.playSound("Treats.wav");
-            //getWorld().showText("You GAINED Points!",450, 350);
-            if (lineCounter > 0) {
-                Level3 myLevel3 = (Level3)getWorld();
-                myLevel3.addObject(new PlusPoint(), 840, 400);
-            }
-            getWorld().removeObject(this);
-        }
+           Greenfoot.playSound("Treats.wav");
+           printMessage();
+           getWorld().removeObject(this);
+      }
 
     }    
+    
+    /**
+     * printMessage() - to print a message whenever Toby touches a dog treat.
+     */
+    public void printMessage() {
+       lineCounter++;
+       if (lineCounter > 0) {
+            Level3 myLevel3 = (Level3)getWorld();
+            myLevel3.addObject(new PlusPoint(), 840, 400);
+       }
+    }
 }

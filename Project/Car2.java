@@ -55,7 +55,7 @@
        }
     
        /**
-         * deductPoints() - to remove points when Toby touches the red car.
+         * deductPoints() - to remove points when Toby touches the blue car.
          */
          public void deductLife() {
             MyWorld myWorld = (MyWorld)getWorld();
@@ -80,19 +80,26 @@
        }
 
        /**
-        * printMessage() - to print a message when Toby touches the red car.
+        * printMessage() - to print a message when Toby touches the blue car.
         */
         public void printMessage() {
              lineCounter++;
              if (lineCounter > 0) {
-                   if (getWorld() instanceof Level1) {
-                      Level1 line = (Level1)getWorld();
-                      line.addObject(new HitLine(), 850, 350); 
-                   }
-                   
-             }
+                 if (getWorld() instanceof Level1) {
+                        Level1 line1 = (Level1)getWorld();
+                        line1.addObject(new HitLine(), 850, 350); 
+    
+                 }
+                 
+                 if (getWorld() instanceof Level3) {
+                        Level3 line3 = (Level3)getWorld();
+                        line3.addObject(new HitLine(), 850, 350); 
+    
+                 }
+
+             }  
        }
-  }
+   }
         
         
 

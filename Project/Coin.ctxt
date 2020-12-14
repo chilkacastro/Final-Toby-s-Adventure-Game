@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Coin
-comment0.text=\r\n\ The\ class\ Coin\ helps\ Toby\ gain\ points\ in\ the\ game.\ Each\ coin\ equals\ 100\ points.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas\ &\ Jose)\ \r\n\ @version\ (1)\r\n
+comment0.text=\r\n\ Coin\ Class\ -\ to\ help\ Toby\ gain\ points\ in\ the\ game.\ Each\ coin\ equals\ 100\ points.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=Coin()
 comment1.text=\r\n\ Default\ Constructor-\ To\ create\ objects.\r\n
@@ -10,4 +10,7 @@ comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Coin\ wants\ to\ do.\ This\ metho
 comment3.params=
 comment3.target=void\ switchImage()
 comment3.text=\r\n\ switchImage()\ -\ this\ method\ is\ implemented\ in\ order\ to\ do\ the\ animation\ of\ the\ coins.\r\n
-numComments=4
+comment4.params=
+comment4.target=void\ printMessage()
+comment4.text=\r\n\ printMessage()\ -\ To\ print\ a\ message\ when\ Toby\ touches\ a\ coin.\r\n
+numComments=5

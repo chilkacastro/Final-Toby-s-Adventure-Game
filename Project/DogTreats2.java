@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The DogTreats2 class is a treat class to increase the score of Toby by 100 points.
+ * DogTreats2 Class - increases the player points by 100
  * @author (Chilka, Madalina, Nicolas, Jose) 
- * @version (1)
+ * @version Gold Master(December 14, 2020)
  */
 public class DogTreats2 extends Food
 {
@@ -14,15 +14,22 @@ public class DogTreats2 extends Food
      */
     public void act() 
     {
-        if (isTouching(Toby.class)) {
-            lineCounter++;
-            ((MyWorld)getWorld()).addScore(100); 
-            Greenfoot.playSound("Treats.wav");
-            if (lineCounter > 0) {
-                Level2 myLevel2 = (Level2)getWorld();
-                myLevel2.addObject(new PlusPoint(), 700, 400);
-            }
-            getWorld().removeObject(this);
-        }
+         if (isTouching(Toby.class)) {
+           ((MyWorld)getWorld()).addScore(100); 
+           Greenfoot.playSound("Treats.wav");
+           printMessage();
+           getWorld().removeObject(this);
+      }
     }    
+    
+    /**
+     * printMessage() - to print a message whenever Toby touches a dog treat.
+     */
+    public void printMessage() {
+       lineCounter++;
+       if (lineCounter > 0) {
+            Level3 myLevel3 = (Level3)getWorld();
+            myLevel3.addObject(new PlusPoint(), 700, 400);
+       }
+    }
 }

@@ -1,10 +1,10 @@
 import greenfoot.*;
 
 /**
- * This class represents one of the obstacles for Toby. It is the dognapper. He moves randomly and in the horizontal direction in order
- * to catch Toby. Whenever the dog is touching the dognapper, one life will be removed.
+ * DogCatcher Class - represents one of Toby's obstacle. He moves randomly in the horizontal direction in order to catch Toby. Whenever the dog is 
+ * touching the dog catcher, one life will be removed.
  * @author (Chilka, Madalina, Nicolas, Jose) 
- * @version (Golden Master)
+ * @version Gold Master(December 14, 2020)
  */
 public class DogCatcher extends Actor{
     private GreenfootImage image1;
@@ -34,29 +34,42 @@ public class DogCatcher extends Actor{
     public void act() 
     {
         movement();
-        touchToby();
+        removeToby();
         rotateAtEdge();
     }
     
     /**
-     * touchToby()- if catcher meets Toby, player loses a life, a sound is played and a pop-up line appears.
+     * removeToby()- if catcher meets Toby, player loses a life, a sound is played and a pop-up line appears.
      */
-    public void touchToby() {
+    public void removeToby() {
         if(isTouching(Toby.class)) {
-            lineCounter++;
-            Greenfoot.playSound("Crying.wav");
+            deductLife();
             removeTouching(Toby.class);
-            MyWorld myWorld = (MyWorld)getWorld();
-            myWorld.lifeCount(-1);
-            if (myWorld.getLifeCount() > 0) {
-                Level2 myLevel2 = (Level2)getWorld();
-                myLevel2.addObject(new Toby(), 800, 640);
-            }   
-            if (lineCounter > 0) {
-                Level2 myLevel2 = (Level2)getWorld();
-                myLevel2.addObject(new CatcherLine(), 700, 400); 
-            }
+            reviveToby();
+            printMessage();
+
         }
+    }
+  
+    /**
+     * deductLife() - to remove a life when Toby touches the Dog Catcher
+     */
+    public void deductLife() {
+       Greenfoot.playSound("Crying.wav");
+       MyWorld myWorld = (MyWorld)getWorld();
+       myWorld.lifeCount(-1);
+        
+    }
+    
+    /**
+     * reviveToby() - to revive Toby when life count is higher than 0.
+     */
+    public void reviveToby() {
+        MyWorld myWorld = (MyWorld)getWorld();
+        if (myWorld.getLifeCount() > 0) {
+            Level2 myLevel2 = (Level2)getWorld();
+            myLevel2.addObject(new Toby(), 800, 640);
+        }   
     }
   
     /**
@@ -64,35 +77,35 @@ public class DogCatcher extends Actor{
      */
     public void movement() {
         counter1++;    
-        if (counter1>80) {
+        if (counter1 > 80) {
             setLocation(getX() + Greenfoot.getRandomNumber(5), getY());
             counter3++;
-            if (counter3 <4) {
+            if (counter3 < 4) {
                 setImage(image1);
             } 
-            else if (counter3 >8){
+            else if (counter3 > 8){
                 setImage(image2);
-                if (counter3 ==12){
-                    counter3=0;
+                if (counter3 == 12){
+                    counter3 = 0;
                 }
             } 
         }
-        else if (counter1<80) {
+        else if (counter1 < 80) {
             setLocation(getX() - Greenfoot.getRandomNumber(5), getY());
             counter2++; 
-             if (counter2 < 4){
-                setImage (image3);
+            if (counter2 < 4){
+                setImage(image3);
             }
-             else if ( counter2 > 8){
-                setImage (image4); 
-                if (counter2==12){
-                 counter2= 0;
+            else if ( counter2 > 8){
+                setImage(image4); 
+                if (counter2 == 12){
+                 counter2 = 0;
                 }
             }
 
         }
-        if (counter1==100) {
-            counter1=0;
+        if (counter1 == 100) {
+            counter1 = 0;
         }
     }    
 
@@ -106,4 +119,14 @@ public class DogCatcher extends Actor{
         }
     }
 
+    /**
+     * printMessage() - to print a message when Toby touches the Dog Catcher
+     */
+    public void printMessage() {
+      lineCounter++;
+      if (lineCounter > 0) {
+           Level2 myLevel2 = (Level2)getWorld();
+           myLevel2.addObject(new CatcherLine(), 700, 400); 
+      }
+    }
 }

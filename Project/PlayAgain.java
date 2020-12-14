@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class PlayAgain here.
+ * PlayAgain Class - play again word to click
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class PlayAgain extends ClickLines
 {
@@ -15,7 +15,8 @@ public class PlayAgain extends ClickLines
     public void act() 
     {
       if (Greenfoot.mouseClicked(this)) {
-        Greenfoot.setWorld(new StartScreen());
+         Greenfoot.playSound("Woof.wav"); 
+         Greenfoot.setWorld(new StartScreen());
       }    
     }
 }

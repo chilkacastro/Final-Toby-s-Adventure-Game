@@ -1,7 +1,13 @@
 #BlueJ class context
 comment0.target=Door
-comment0.text=\r\n\ The\ Door\ class\ is\ implemented\ to\ allw\ Toby\ get\ to\ the\ previous\ level.\r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ (1)\r\n
+comment0.text=\r\n\ The\ Door\ class\ is\ implemented\ to\ allow\ Toby\ go\ back\ to\ a\ previous\ level\ and\ collect\ points.\r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Door\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment2.params=
+comment2.target=void\ returnLevel1()
+comment2.text=\r\n\ returnLevel1\ -\ to\ return\ to\ previous\ level(level\ 2)\ if\ player\ is\ in\ level\ 2.\r\n
+comment3.params=
+comment3.target=void\ returnLevel2()
+comment3.text=\r\n\ returnLevel2\ -\ to\ return\ to\ previous\ level(level\ 2)\ if\ player\ is\ in\ level\ 3.\r\n
+numComments=4

@@ -31,18 +31,17 @@ public class Level3 extends MyWorld {
             addObject(new Truck2(), i * 350, 475); 
 
         }
-        
-        
-         for(int i = 0; i <= 7; i++) {
+
+        for(int i = 0; i <= 7; i++) {
             addObject(new Carrot(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
 
         }
-        
+
         for(int i = 0; i <= 5; i++) {
             addObject(new Apple(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(550)+ 80); 
 
         }
-        
+
         // Deep Water
         Water water = new Water();
         addObject(water,1068,406);
@@ -76,10 +75,10 @@ public class Level3 extends MyWorld {
         addObject(water15,1028,294);
         Water water16 = new Water();
         addObject(water16,1170,182);
-        
+
         // Toby
         addObject(new Toby(),820,618);
-        
+
         // Cars
         Car2 car2 = new Car2();
         addObject(car2,342,554);
@@ -244,7 +243,7 @@ public class Level3 extends MyWorld {
         addObject(toby2,849,626);
         Owner owner = new Owner();
         addObject(owner,854,49);
-     
+
         truck117.setLocation(412,437);
         truck117.setLocation(416,453);
         truck14.setLocation(594,250);
@@ -265,17 +264,16 @@ public class Level3 extends MyWorld {
         truck217.setLocation(606,471);
         truck27.setLocation(627,140);
         truck211.setLocation(1502,479);
-  
+
         DogCatcher2 dogCatcher22 = new DogCatcher2();
         addObject(dogCatcher22,790,283);
-        
+
         DogTreat dogTreat = new DogTreat();
         addObject(dogTreat,161,453);
         DogTreat dogTreat2 = new DogTreat();
         addObject(dogTreat2,1382,336);
         DogTreats2 dogTreats2 = new DogTreats2();
         addObject(dogTreats2,1212,140);
-  
 
         Door door = new Door();
         addObject(door,415,627);
@@ -284,6 +282,7 @@ public class Level3 extends MyWorld {
         addObject(stop,84,626);
         Bee bee3 = new Bee();
         addObject(bee3,1236,610);
+
 
     }
 }

@@ -1,74 +1,105 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Truck2 here.
+ * Small Yellow Truck Class
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Truck2 extends Car {
-        private int lineCounter = 0;
+     private int rotation;
+     private int lineCounter = 0;
+    
+       /**
+        * Default constructor
+        */
+       public Truck2() {
+          // default truck direction
+           
+       }
+       
+       /**
+        * Constructor with one parameter(rotation) - rotates the small yellow truck to opposite direction
+        */
+        public Truck2(int rotation) {
+          setRotation(rotation);
+       }
+
         /**
          * Act - do whatever the Truck2 wants to do. This method is called whenever
          * the 'Act' or 'Run' button gets pressed in the environment.
          */
           public void act() {
-           setLocation(getX()-6, getY());   
            removeToby();
-           if (getX() == 0) {
+           setLocation(getX()-6, getY());   
+                      if (getX() == 0) {
                setLocation(1650,getY());
            }
-            
-             if(isTouching(Toby.class)) {
-                  MyWorld myWorld = (MyWorld)getWorld();
-                  myWorld.addScore(-100);
-                  
-             }
-             removeToby();
-        }
+
+       }
     
-          
-        /**
-         * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
-         */
+       /**
+        * removeToby() - to remove Toby from the World and replace health Toby with Toby with blood.
+        */
         public void removeToby() {
-            if (isTouching(Toby.class)) {
-                lineCounter++;
+             if (isTouching(Toby.class)) {
                 Greenfoot.playSound("tireSkid.wav");
+                getWorld().addObject(new Blood(), getX()-80, getY());
                 removeTouching(Toby.class);
-                //getWorld().showText("You lose a life!",500, 500);
-                deductPoints();
-                MyWorld myWorld = (MyWorld)getWorld();
-                if (myWorld.getLifeCount() > 0) {
-                    reviveToby();
-                }   
-                
-                if (lineCounter > 0) {
-                   Level3 line = (Level3)getWorld();
-                   line.addObject(new HitLine(), 850, 350); 
-                    
-                }
-            }
-        }
+                deductLife();
+                reviveToby();
+                printMessage();
+     
+           }
+       }
     
         /**
-         * deducPoints() - to remove points when Toby touches the traffic cones.
+         * deductPoints() - to remove points when Toby touches the small yellow truck.
          */
-         public void deductPoints() {
+         public void deductLife() {
             MyWorld myWorld = (MyWorld)getWorld();
             myWorld.lifeCount(-1);
-    
-        }
+       }
     
         /**
-         * reviveToby() - bring back Toby
+         * reviveToby() - to bring back Toby if life count is higher than 0.
          */
         public void reviveToby() {
-            Level3 myLevel3 = (Level3)getWorld();
-            myLevel3.addObject(new Toby(), 800, 640);
-           
-        }
-    }
+             MyWorld myWorld = (MyWorld)getWorld();
+             if (myWorld.getLifeCount() > 0) {
+                 if (getWorld() instanceof Level1) {
+                    Level1 myLevel1 = (Level1)getWorld();
+                    myLevel1.addObject(new Toby(), 800, 640);
+                 }
+                 else {
+                    Level3 myLevel3 = (Level3)getWorld();
+                    myLevel3.addObject(new Toby(), 800, 640);
+                 }
+             }
+       }
+       
+        /**
+         * printMessage() - to print a message when Toby touches the small yellow truck.
+         */
+         public void printMessage() {
+              lineCounter++;
+              if (lineCounter > 0) {
+                 if (getWorld() instanceof Level1) {
+                        Level1 line1 = (Level1)getWorld();
+                        line1.addObject(new HitLine(), 850, 350); 
+    
+                 }
+                 
+                 if (getWorld() instanceof Level3) {
+                        Level3 line3 = (Level3)getWorld();
+                        line3.addObject(new HitLine(), 850, 350); 
+    
+                 }
+    
+              }
+       }
+}
+        
       
 
   

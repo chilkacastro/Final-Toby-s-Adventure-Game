@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Stop here.
+ * Stop Class - to quit the game and return to the menu
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Stop extends ClickLines
 {
@@ -18,7 +18,6 @@ public class Stop extends ClickLines
                Greenfoot.playSound("Woof.wav");
                Greenfoot.setWorld(new MyWorld());
                Greenfoot.setWorld(new StartScreen());
- 
         }
     } 
 }

@@ -1,18 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Start here.
+ * Start Class - start word to click
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Start extends ClickLines
-{
-    public Start() {
-        /*GreenfootImage textImage = new GreenfootImage(text.length()* 50, 600);
-        textImage.drawString(text, 10, 300);
-        setImage(textImage); */
-    }
+{ 
     /**
      * Act - do whatever the Start wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -23,9 +18,6 @@ public class Start extends ClickLines
           Greenfoot.playSound("Woof.wav");
           Greenfoot.setWorld(new MyWorld());
           Greenfoot.setWorld(new Level1());
-          Greenfoot.setWorld(new Level1());
-          
-          
-        }    
-    }
+     }    
+   }
 }
