@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Grapes here.
+ * Write a description of class ClickLines here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Grapes extends Actor
+public class ClickLines extends Actor
 {
     /**
-     * Act - do whatever the Grapes wants to do. This method is called whenever
+     * Act - do whatever the ClickLines wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 

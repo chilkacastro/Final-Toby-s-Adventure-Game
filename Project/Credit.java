@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Credit extends World
+public class Credit extends MyWorld
 {
 
     /**
@@ -16,8 +16,6 @@ public class Credit extends World
     public Credit()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1000, 560, 1); 
-
         prepare();
     }
 
@@ -27,13 +25,9 @@ public class Credit extends World
      */
     private void prepare()
     {
-        /*ReturnToStart returnToStart = new ReturnToStart();
-        
-        Paw paw = new Paw();
-        addObject(paw,257,302); */
-        addObject(new ReturnToStart(),350,308);
-        addObject(new Paw(),340, 250);
-        addObject(new Paw(),195, 510);
-        addObject(new SourceWord(), 90,520);
+        addObject(new ReturnToStart(),1000,630);
+        addObject(new Paw(),860, 610);
+        addObject(new Paw(),700, 610);
+        addObject(new SourceWord(), 590 ,640);
     }
 }

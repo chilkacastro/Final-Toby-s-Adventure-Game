@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Instructions extends Actor
+public class Instructions extends ClickLines
 {
     /**
      * Act - do whatever the Instructions wants to do. This method is called whenever

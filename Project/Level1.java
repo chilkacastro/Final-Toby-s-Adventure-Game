@@ -7,21 +7,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Level1 extends MyWorld {
-
+    private int keyCount;
    /**
     * Constructor for objects of class Level1.
     * 
     */
     public Level1() {
+        
         setPaintOrder(TrafficCone.class, Car2.class, Car.class, Bench.class,Strawberry.class, StarTreat.class, Tree.class, Tree3.class, Tree2.class, Toby.class );
         prepare();
         showLife();
         showScore();
         stopGame();
-        playMusic();
+        //playMusic();
         score = 500;
         lifeCount = 3;
-    }
+        
+        
+   }
         
     /**
      * Prepare the world for the start of the program.
@@ -76,7 +79,7 @@ public class Level1 extends MyWorld {
             addObject(new Car(), i * 350, 455); 
 
         }
-        addObject(new Car3(), 150, 455); 
+        addObject(new Car3(), 900, 455); 
 
         // Last- 5th road bellow
         for(int i = 0; i < 4; i++) {
@@ -118,22 +121,17 @@ public class Level1 extends MyWorld {
         }
 
         //Keys
-        /* if (!collectedKeys) {
-        // Keypass to next level(Level 2) */
-        for (int i = 1; i <= 3; i++) {
-            KeyPass keypass = new KeyPass();
-            addObject(keypass, (i * 400) + 40, 20);
-            collectedKeys = true;
+        keyCount = getObjects(KeyPass.class).size();
+        if (!collectedKeys && keyCount == 0) {
+            // Keypass to next level(Level 2) */
+            for (int i = 1; i <= 3; i++) {
+                KeyPass keypass = new KeyPass();
+                addObject(keypass, (i * 400) + 40, 20);
 
+            }
         }
-        /* }
+      
         //int keyCount = getObjects(KeyPass.class).size();
-        //if ((collectedKeys) && keyCount == 0) {
-        collectedKeys = false;
-        addObject(new Door() , 1400, 620);
-        collectedKeys = true; 
-        }
-         */
 
         // Toby
         addObject(new Toby(), 792, 630); 
@@ -194,6 +192,7 @@ public class Level1 extends MyWorld {
         //GreenfootSound bg = new GreenfootSound("Credit.mp3");
         //Greenfoot.playSound("Credit.mp3");
         //bg.playLoop();
+
     }
 }
 

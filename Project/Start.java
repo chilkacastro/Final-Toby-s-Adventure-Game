@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Start extends Actor
+public class Start extends ClickLines
 {
     public Start() {
         /*GreenfootImage textImage = new GreenfootImage(text.length()* 50, 600);

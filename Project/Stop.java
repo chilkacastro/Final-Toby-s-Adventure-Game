@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Stop extends Actor
+public class Stop extends ClickLines
 {
     /**
      * Act - do whatever the Stop wants to do. This method is called whenever
@@ -20,8 +20,6 @@ public class Stop extends Actor
                Greenfoot.setWorld(new StartScreen());
  
         }
-        
-
     } 
 }
 

@@ -15,10 +15,9 @@ public class Car extends Actor {
         * Default constructor
         */
        public Car() {
-          // do not remove default constructor
+          // used to add object in level 1
            
        }
-
 
        /**
         * Constructor with one parameter
@@ -51,7 +50,6 @@ public class Car extends Actor {
                 getWorld().addObject(new Blood(), getX()-80, getY());
                 Greenfoot.playSound("tireSkid.wav");
                 removeTouching(Toby.class);
-                //getWorld().showText("You lose a life!",500, 500);
                 deductPoints();
                 MyWorld myWorld = (MyWorld)getWorld();
                 if (myWorld.getLifeCount() > 0) {

@@ -34,8 +34,7 @@ public class Car3 extends Car
            if(isAtEdge()) {
                setLocation(1640, getY());
            }
-
-
+           
         }
         
         /**

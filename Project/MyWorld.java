@@ -7,22 +7,23 @@
       * @version (a version number or a date)
       */
         public class MyWorld extends World {
-            protected static int score = 500;              // initial points
+            protected static int score = 500;               // initial points
             protected static int lifeCount = 3;             // initial 3 lives   
             protected static boolean collectedKeys = false;
             public static int score1 = score;
             public static int lifeCount1 = lifeCount;
-            protected static GreenfootSound myMusic = new GreenfootSound("Theme.mp3");
+            //protected static GreenfootSound myMusic = new GreenfootSound("Theme.mp3");
             /**
              * Constructor for objects of class MyWorld.
              * 
              */
             public MyWorld() {
                 super(1600, 650, 1); 
+                 
             }
                       
             // GETTERS
-            public void setCollectedKeys( boolean collectedKeys) {
+            public void setCollectedKeys(boolean collectedKeys) {
                 this.collectedKeys = collectedKeys;
             }
             
@@ -94,7 +95,7 @@
             // MUSIC
             public void act()
             {
-                myMusic.play();
+                //myMusic.play();
                 
             }
     }

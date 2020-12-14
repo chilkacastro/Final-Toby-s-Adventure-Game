@@ -77,24 +77,30 @@ public class Bee extends Obstacles
             }
         }
 
-
         /**
          * decreasePoints() - to decrease the points of Toby when the bee goes near him and to play a sound.
          */
         public void decreasePoints(){
           if (isTouching(Toby.class)) {
                 lineCounter++;
+                removeTouching(Toby.class);
                 Greenfoot.playSound("Bee.wav");
                 MyWorld myWorld = (MyWorld)getWorld();
-                myWorld.addScore(-100);
+                myWorld.addScore(-500);
+               
+               if (myWorld.getLifeCount() > 0) {
+                    Level3 myLevel3 = (Level3)getWorld();
+                    myLevel3.addObject(new Toby(), 800, 640);
+               }   
                if (lineCounter > 0) {
                    Level3 line = (Level3)getWorld();
                    line.addObject(new BeeLine(), 850, 350); 
                     
                }
           }
-                
-                
+
         }
     
+       
+        
 }

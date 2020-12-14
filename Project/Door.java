@@ -13,14 +13,22 @@ public class Door extends Actor
      */
     public void act() 
     {
+<<<<<<< HEAD
        if ((isTouching(Toby.class) && getX() == 1400 && (getWorld() instanceof Level1))) {
           Greenfoot.setWorld(new Level2());     
           Greenfoot.setWorld(new Level2());  
        }
 
        if (getX() == 400 && (isTouching(Toby.class) && getWorld() instanceof Level2)) {
+=======
+       if ((isTouching(Toby.class) && getX() == 1400 && (getWorld() instanceof Level1))) {   
+           Greenfoot.setWorld(new Level2());  
+      }
+
+      if (getX() == 400 && (isTouching(Toby.class) && getWorld() instanceof Level2)) {
+>>>>>>> 8ea8d6866e161677888552063a2c9ad707c09850
           Greenfoot.setWorld(new Level1());
           
-       }
+      }
     }
 }
