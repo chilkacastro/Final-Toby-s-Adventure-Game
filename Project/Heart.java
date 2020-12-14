@@ -70,7 +70,7 @@ public class Heart extends Actor
        lineCounter++;
        if (lineCounter > 0) {
             Level3 myLevel3 = (Level3)getWorld();
-            myLevel3.addObject(new PlusLifeLine(), 840, 400);
+            myLevel3.addObject(new PlusLifeLine(), 840, 450);
        }
     }
  }

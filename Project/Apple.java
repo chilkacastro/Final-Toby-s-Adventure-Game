@@ -17,7 +17,7 @@ public class Apple extends Food
     {
       if (isTouching(Toby.class)) {
            ((MyWorld)getWorld()).addScore(50); 
-           Greenfoot.playSound("treats.wav");
+           Greenfoot.playSound("Treats.wav");
            printMessage();
            getWorld().removeObject(this);
       }  

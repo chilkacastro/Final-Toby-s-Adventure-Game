@@ -28,8 +28,8 @@ public class DogTreats2 extends Food
     public void printMessage() {
        lineCounter++;
        if (lineCounter > 0) {
-            Level3 myLevel3 = (Level3)getWorld();
-            myLevel3.addObject(new PlusPoint(), 700, 400);
+            Level2 myLevel2 = (Level2)getWorld();
+            myLevel2.addObject(new PlusPoint(), 700, 400);
        }
     }
 }

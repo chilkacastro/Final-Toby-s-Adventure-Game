@@ -25,6 +25,7 @@ public class Hole1 extends Actor
         if (isTouching(Toby.class)) {
             Greenfoot.playSound("Crying.wav");
             printMessage();
+            reviveToby();
             deductLife();
             removeTouching(Toby.class);
         }

@@ -39,30 +39,33 @@ public class Level4 extends MyWorld
      */
     private void prepare()
     {
-       // Texts written above
+        // Texts written above
         addObject(new Counter(),244, 40);
         addObject(new CounterT(),1345,40);
-       // Silver Keys
-       for (int i = 0; i < 3; i++) {
-          addObject(new KeyPass2(), 1380, 100); 
-       }
-       // Gold Keys
-       for (int i = 0; i < 3; i++) {
-          addObject(new KeyPass(), 200, 100); 
-       }
-       //Spiders
-       for (int i = 0; i < 19; i++) {
-          addObject(new Spider(), Greenfoot.getRandomNumber(1600) + 40, Greenfoot.getRandomNumber(300) + 50);
-       }
-       
-       //TobyH
-       addObject(new TobyH(), 770, 580);
+        // Silver Keys
+        for (int i = 0; i < 3; i++) {
+            addObject(new KeyPass2(), 1380, 100); 
+        }
+        // Gold Keys
+        for (int i = 0; i < 3; i++) {
+            addObject(new KeyPass(), 200, 100); 
+        }
+        //Spiders
+        for (int i = 0; i < 19; i++) {
+            addObject(new Spider(), Greenfoot.getRandomNumber(1600) + 40, Greenfoot.getRandomNumber(300) + 50);
+        }
 
-       // Fireball
-       addObject(new Power(),765,450);
+        //TobyH
+        addObject(new TobyH(), 770, 580);
 
-       // Return to Menu
-       addObject(new PlayAgain(),196,556);
+        // Fireball
+        addObject(new Power(),765,450);
+
+        // Return to Menu
+        addObject(new PlayAgain(),250,556);
+        // Paw
+        addObject(new Paw(),75,552);
+        
     }
 }
 

@@ -26,263 +26,106 @@ public class Level3 extends MyWorld {
      */
     private void prepare()
     {
-        // Bottom of 4th road
-        for(int i = 1; i <= 2; i++) {
+       // 1st road - top
+       for(int i = 1; i <= 5; i++) {
+            addObject(new Car3(), i * 380, 110); 
+       }
+       for(int i = 1; i <= 4; i++) {
+            addObject(new Car4(180), i * 350, 150); 
+       }
+
+        // 2nd road - top
+       for(int i = 1; i <= 3; i++) {
+            addObject(new Truck2(), i * 350, 222); 
+       }
+       for(int i = 0; i <= 3; i++) {
+            addObject(new Truck1(), i * 550, 252); 
+       }
+        
+         // 3rd road - middle
+       for(int i = 0; i < 5; i++) {
+            addObject(new Car(-180), i * 380, 340); 
+       }
+       for(int i = 1; i < 5; i++) {
+            addObject(new Car2(180), (i * 240), 365); 
+       }
+
+        // 4th road - bottom
+       for(int i = 1; i <= 3; i++) {
             addObject(new Truck2(), i * 350, 475); 
-
-        }
-
-        for(int i = 0; i <= 7; i++) {
+       }
+       for(int i = 0; i <= 3; i++) {
+            addObject(new Truck1(), i * 550, 448); 
+       }
+       
+       // 5th road - bottom
+       for(int i = 0; i < 4; i++) {
+            addObject(new Car(180), i * 500, 550); 
+       }
+       for(int i = 1; i <= 4; i++) {
+            addObject(new Car2(180), i * 350, 585); 
+       }
+   
+       // Carrots
+       for(int i = 0; i <= 7; i++) {
             addObject(new Carrot(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(510)+ 40); 
+       }
 
-        }
+       // Apples
+       for(int i = 0; i <= 5; i++) {
+            addObject(new Apple(), Greenfoot.getRandomNumber(1430)+ 90, Greenfoot.getRandomNumber(550)+ 80); 
+       }
 
-        for(int i = 0; i <= 5; i++) {
-            addObject(new Apple(), Greenfoot.getRandomNumber(1500)+ 60, Greenfoot.getRandomNumber(550)+ 80); 
+       // Dog Treats
+       for (int i = 0; i < 4; i++) {
+        addObject(new DogTreat(),Greenfoot.getRandomNumber(1300) + 100, Greenfoot.getRandomNumber(600) + 40);
+       }
+       
+       // Hearts
+       addObject(new Heart(),Greenfoot.getRandomNumber(1300) + 50, 245); 
+       addObject(new Heart(),Greenfoot.getRandomNumber(1400) + 100, 470);
+     
+       
+       // Deep Water
+       addObject(new Water(),1068,406);
+       addObject(new Water(),302,512);
+       addObject(new Water(),1431,288);
+       addObject(new Water(),344,290);
+       addObject(new Water(),141,179);
+       addObject(new Water(),902,179);
+       addObject(new Water(),1419,182);
+       addObject(new Water(),72,407);
+       addObject(new Water(),598,402);
+       addObject(new Water(),1376,516);
+       addObject(new Water(),701,289);
+       addObject(new Water(),878,515);
+       addObject(new Water(),456,181);
+       addObject(new Water(),1295,404);
+       addObject(new Water(),1028,294);
+       addObject(new Water(),1170,182);
 
-        }
+       // Toby
+       addObject(new Toby(),820, 630);
 
-        // Deep Water
-        Water water = new Water();
-        addObject(water,1068,406);
-        Water water2 = new Water();
-        addObject(water2,302,512);
-        Water water3 = new Water();
-        addObject(water3,1431,288);
-        Water water4 = new Water();
-        addObject(water4,344,290);
-        Water water5 = new Water();
-        addObject(water5,141,179);
-        Water water6 = new Water();
-        addObject(water6,902,179);
-        Water water7 = new Water();
-        addObject(water7,1419,182);
-        Water water8 = new Water();
-        addObject(water8,72,407);
-        Water water9 = new Water();
-        addObject(water9,598,402);
-        Water water10 = new Water();
-        addObject(water10,1376,516);
-        Water water11 = new Water();
-        addObject(water11,701,289);
-        Water water12 = new Water();
-        addObject(water12,878,515);
-        Water water13 = new Water();
-        addObject(water13,456,181);
-        Water water14 = new Water();
-        addObject(water14,1295,404);
-        Water water15 = new Water();
-        addObject(water15,1028,294);
-        Water water16 = new Water();
-        addObject(water16,1170,182);
+       // House
+       addObject(new House(), 850, 30);
 
-        // Toby
-        addObject(new Toby(),820,618);
+       // Owner
+       addObject(new Owner(),854,49);
 
-        // Cars
-        Car2 car2 = new Car2();
-        addObject(car2,342,554);
-        Car2 car22 = new Car2();
-        addObject(car22,510,554);
-        Car2 car23 = new Car2();
-        addObject(car23,657,554);
-        Car2 car24 = new Car2();
-        addObject(car24,805,551);
-        Car2 car25 = new Car2();
-        addObject(car25,923,551);
-        Car2 car26 = new Car2();
-        addObject(car26,1105,553);
-        Car2 car27 = new Car2();
-        addObject(car27,1237,552);
-        Car2 car28 = new Car2();
-        addObject(car28,1398,556);
-        Car2 car29 = new Car2();
-        addObject(car29,1528,551);
-        Car2 car210 = new Car2();
-        addObject(car210,198,552);
-        car26.setLocation(990,563);
-        car26.setLocation(1047,553);
-        removeObject(car23);
-        Car car = new Car();
-        addObject(car,1382,368);
-        Car car3 = new Car();
-        addObject(car3,768,372);
-        Car car4 = new Car();
-        addObject(car4,313,367);
-        Car car5 = new Car();
-        addObject(car5,117,372);
-        Car car6 = new Car();
-        addObject(car6,1164,369);
-        Car car7 = new Car();
-        addObject(car7,543,371);
-        Car car8 = new Car();
-        addObject(car8,965,367);
-        Truck1 truck1 = new Truck1();
-        addObject(truck1,1528,249);
-        Truck1 truck12 = new Truck1();
-        addObject(truck12,1206,251);
-        Truck1 truck13 = new Truck1();
-        addObject(truck13,675,250);
-        Truck1 truck14 = new Truck1();
-        addObject(truck14,274,254);
-        Truck1 truck15 = new Truck1();
-        addObject(truck15,38,253);
-        Truck1 truck16 = new Truck1();
-        addObject(truck16,1355,221);
-        Truck1 truck17 = new Truck1();
-        addObject(truck17,993,221);
-        Truck1 truck18 = new Truck1();
-        addObject(truck18,560,219);
-        Truck1 truck19 = new Truck1();
-        addObject(truck19,181,220);
-        Truck1 truck110 = new Truck1();
-        addObject(truck110,1507,332);
-        Truck2 truck2 = new Truck2();
-        addObject(truck2,1280,333);
-        Truck2 truck22 = new Truck2();
-        addObject(truck22,1538,146);
-        Truck2 truck23 = new Truck2();
-        addObject(truck23,1350,147);
-        Truck2 truck24 = new Truck2();
-        addObject(truck24,1193,144);
-        Truck2 truck25 = new Truck2();
-        addObject(truck25,961,144);
-        Truck2 truck26 = new Truck2();
-        addObject(truck26,790,146);
-        Truck2 truck27 = new Truck2();
-        addObject(truck27,616,148);
-        Truck2 truck28 = new Truck2();
-        addObject(truck28,418,148);
-        Truck2 truck29 = new Truck2();
-        addObject(truck29,271,146);
-        Truck2 truck210 = new Truck2();
-        addObject(truck210,110,144);
-        Truck2 truck211 = new Truck2();
-        addObject(truck211,1505,482);
-        Truck2 truck212 = new Truck2();
-        addObject(truck212,1357,481);
-        Truck2 truck213 = new Truck2();
-        addObject(truck213,1189,481);
-        Truck2 truck214 = new Truck2();
-        addObject(truck214,1039,481);
-        Truck2 truck215 = new Truck2();
-        addObject(truck215,885,482);
-        Truck2 truck216 = new Truck2();
-        addObject(truck216,756,483);
-        Truck2 truck217 = new Truck2();
-        addObject(truck217,602,485);
-        Truck2 truck218 = new Truck2();
-        addObject(truck218,447,484);
-        Truck2 truck219 = new Truck2();
-        addObject(truck219,293,475);
-        Truck2 truck220 = new Truck2();
-        addObject(truck220,87,480);
-        Truck1 truck111 = new Truck1();
-        addObject(truck111,1503,108);
-        Truck1 truck112 = new Truck1();
-        addObject(truck112,1241,106);
-        Truck1 truck113 = new Truck1();
-        addObject(truck113,751,107);
-        Truck1 truck114 = new Truck1();
-        addObject(truck114,229,107);
-        Truck1 truck115 = new Truck1();
-        addObject(truck115,1412,446);
-        Truck1 truck116 = new Truck1();
-        addObject(truck116,979,444);
-        Truck1 truck117 = new Truck1();
-        addObject(truck117,623,441);
-        Truck1 truck118 = new Truck1();
-        addObject(truck118,243,446);
-        Truck1 truck119 = new Truck1();
-        addObject(truck119,52,445);
-        Truck1 truck120 = new Truck1();
-        addObject(truck120,822,448);
-        Truck1 truck121 = new Truck1();
-        addObject(truck121,1221,447);
-        Truck1 truck122 = new Truck1();
-        addObject(truck122,889,331);
-        Car car9 = new Car();
-        addObject(car9,439,330);
-        car9.setLocation(447,333);
-        removeObject(car9);
-        truck122.setLocation(860,334);
-        removeObject(truck122);
-        truck110.setLocation(1469,328);
-        removeObject(truck110);
-        truck2.setLocation(1290,333);
-        removeObject(truck2);
+       // Bees
+       addObject(new Bee(),1000,150);
+       addObject(new Bee(90),300, 350);
+       addObject(new Bee(),1236,610);
 
-        addObject(car9,1555,583);
-        Car car10 = new Car();
-        addObject(car10,1370,587);
-        Car car11 = new Car();
-        addObject(car11,1129,588);
-        Car car12 = new Car();
-        addObject(car12,741,586);
-        Car car13 = new Car();
-        addObject(car13,279,584);
-        Car car14 = new Car();
-        addObject(car14,66,588);
-        Car car15 = new Car();
-        addObject(car15,571,587);
-        Car2 car211 = new Car2();
-        addObject(car211,149,338);
-        Car2 car212 = new Car2();
-        addObject(car212,309,335);
-        Car2 car213 = new Car2();
-        addObject(car213,526,332);
-        Car2 car214 = new Car2();
-        addObject(car214,737,332);
-        Car2 car215 = new Car2();
-        addObject(car215,1033,333);
-        Car2 car216 = new Car2();
-        addObject(car216,1270,335);
-        Car2 car217 = new Car2();
-        addObject(car217,1492,336);
-        Toby toby2 = new Toby();
-        addObject(toby2,849,626);
-        Owner owner = new Owner();
-        addObject(owner,854,49);
+       // Green Dog Catcher
+       addObject(new DogCatcher2(),790,283);
 
-        truck117.setLocation(412,437);
-        truck117.setLocation(416,453);
-        truck14.setLocation(594,250);
-        car15.setLocation(673,588);
-        truck213.setLocation(951,476);
-        Heart heart = new Heart();
-        addObject(heart,864,347);
-        Heart heart2 = new Heart();
-        addObject(heart2,221,464);
-        heart2.setLocation(221,404);
-        heart.setLocation(863,269);
+       //Door
+       addObject(new Door(), 290, 630);
 
-        Bee bee1 = new Bee();
-        addObject(bee1,1000,150);
-        addObject(new Bee(90),300, 350);
-
-        truck217.setLocation(606,469);
-        truck217.setLocation(606,471);
-        truck27.setLocation(627,140);
-        truck211.setLocation(1502,479);
-
-        DogCatcher2 dogCatcher22 = new DogCatcher2();
-        addObject(dogCatcher22,790,283);
-
-        DogTreat dogTreat = new DogTreat();
-        addObject(dogTreat,161,453);
-        DogTreat dogTreat2 = new DogTreat();
-        addObject(dogTreat2,1382,336);
-        DogTreats2 dogTreats2 = new DogTreats2();
-        addObject(dogTreats2,1212,140);
-
-        Door door = new Door();
-        addObject(door,415,627);
-        door.setLocation(288,631);
-        Stop stop = new Stop();
-        addObject(stop,84,626);
-        Bee bee3 = new Bee();
-        addObject(bee3,1236,610);
-
-
+       // Quit 
+       addObject(new Stop(), 84,626);
+     
     }
 }

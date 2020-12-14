@@ -31,8 +31,8 @@ public class StarTreat extends Food
     public void printMessage() {
        lineCounter++;
        if (lineCounter > 0) {
-            Level3 myLevel3 = (Level3)getWorld();
-            myLevel3.addObject(new PlusPoint(), 750, 450);
+            Level1 myLevel1 = (Level1)getWorld();
+            myLevel1.addObject(new PlusPoint(), 750, 450);
        }
    }
 }

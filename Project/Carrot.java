@@ -17,7 +17,7 @@ public class Carrot extends Food
     {
       if (isTouching(Toby.class)) {
            ((MyWorld)getWorld()).addScore(50); 
-           Greenfoot.playSound("treats.wav");
+           Greenfoot.playSound("Treats.wav");
            printMessage();
            getWorld().removeObject(this);
       }  
@@ -30,7 +30,7 @@ public class Carrot extends Food
        lineCounter++;
        if (lineCounter > 0) {
             Level3 myLevel3 = (Level3)getWorld();
-            myLevel3.addObject(new FruitLine(), 750, 450);
+            myLevel3.addObject(new FruitLine(), 850, 470);
        }
    }
 }

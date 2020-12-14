@@ -13,7 +13,7 @@ public class Level1 extends MyWorld {
     * 
     */
     public Level1() {
-        setPaintOrder(TrafficCone.class, Car2.class, Car.class, Bench.class,Strawberry.class, StarTreat.class, Tree.class, Tree3.class, Tree2.class, Toby.class );
+        setPaintOrder( Strawberry.class, StarTreat.class, TrafficCone.class, Car2.class, Car.class, Bench.class, Tree.class, Tree3.class, Tree2.class, Toby.class );
         prepare();
         showLife();
         showScore();
@@ -72,7 +72,7 @@ public class Level1 extends MyWorld {
 
         // 5th road - bottom (last)
         for(int i = 0; i < 4; i++) {
-            addObject(new Car(180), i * 500, 550); 
+            addObject(new Car(180), i * 300, 550); 
         }
         for(int i = 1; i <= 4; i++) {
             addObject(new Car2(180), i * 350, 585); 

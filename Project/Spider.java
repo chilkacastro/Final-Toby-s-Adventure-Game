@@ -19,7 +19,7 @@ public class Spider extends Obstacles
             theWorld.removeObject(toby);
             Greenfoot.playSound("Crying.wav");
             getWorld().showText("POISONED!", 800, 300);
-            Greenfoot.stop();
+
        }
        moveAndTurn(); 
     }

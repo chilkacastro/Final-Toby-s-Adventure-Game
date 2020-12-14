@@ -30,7 +30,7 @@ public class Car4 extends Car
         */
         public void act() {
            removeToby();
-           move(-2);
+           move(2);
            if(isAtEdge()) {
                setLocation(1640, getY());
            }
@@ -64,10 +64,16 @@ public class Car4 extends Car
          * reviveToby() - to bring back Toby if life count is higher than 0.
          */
         public void reviveToby() {
-             if (lineCounter > 0) {
-                 Level1 myLevel1 = (Level1)getWorld();
-                 myLevel1.addObject(new Toby(), 800, 640);
-
+             MyWorld myWorld = (MyWorld)getWorld();
+             if (myWorld.getLifeCount() > 0) {
+                 if (getWorld() instanceof Level1) {
+                    Level1 myLevel1 = (Level1)getWorld();
+                    myLevel1.addObject(new Toby(), 800, 640);
+                 }
+                 else {
+                    Level3 myLevel3 = (Level3)getWorld();
+                    myLevel3.addObject(new Toby(), 800, 640);
+                  }
              }
        
        }
@@ -78,10 +84,19 @@ public class Car4 extends Car
         public void printMessage() {
              lineCounter++;
              if (lineCounter > 0) {
-                  Level1 line = (Level1)getWorld();
-                  line.addObject(new HitLine(), 850, 350); 
+                 if (getWorld() instanceof Level1) {
+                        Level1 line1 = (Level1)getWorld();
+                        line1.addObject(new HitLine(), 850, 350); 
+    
+                 }
+                 
+                 if (getWorld() instanceof Level3) {
+                        Level3 line3 = (Level3)getWorld();
+                        line3.addObject(new HitLine(), 850, 350); 
+    
+                 }
 
-             }
+             }  
        }
 }
        
