@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Blood
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Blood\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Blood\ Class-\ Consequence\ of\ Toby\ getting\ hit\ by\ any\ mode\ of\ transportation(train,\ cars,\ trucks,\ motorcycles)\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Blood\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

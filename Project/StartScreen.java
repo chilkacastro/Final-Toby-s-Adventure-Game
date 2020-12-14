@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class StartScreen here.
+ * Start Screen Class - the game menu which links to start, instructions and credits 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class StartScreen extends World
 {
@@ -19,8 +19,6 @@ public class StartScreen extends World
         super(1065, 600, 1); 
         mouseClicked();
         Greenfoot.playSound("Intro.wav");
-
-        prepare();
     }
 
     /**
@@ -41,16 +39,5 @@ public class StartScreen extends World
         Paw pawCredit = new Paw();
         addObject(pawCredit, 860, 555);
         addObject(new Credits(),975, 555);
-
-        //addObject(new Start("Start"), 880, 560);
-
-    }
-
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
-    private void prepare()
-    {
     }
 }

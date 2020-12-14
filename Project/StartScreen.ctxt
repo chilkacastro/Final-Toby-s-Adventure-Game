@@ -1,13 +1,10 @@
 #BlueJ class context
 comment0.target=StartScreen
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ StartScreen\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Start\ Screen\ Class\ -\ the\ game\ menu\ which\ links\ to\ start,\ instructions\ and\ credits\ \r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=StartScreen()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ StartScreen.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ mouseClicked()
 comment2.text=\r\n\ mouseClicked()\ -\ to\ move\ to\ different\ worlds\ by\ clicking\ the\ brown\ paw\ on\ the\ screen.\ \r\n
-comment3.params=
-comment3.target=void\ prepare()
-comment3.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
-numComments=4
+numComments=3

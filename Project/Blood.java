@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Blood here.
+ * Blood Class- Consequence of Toby getting hit by any mode of transportation(train, cars, trucks, motorcycles)
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Blood extends Actor
 {
@@ -16,10 +16,10 @@ public class Blood extends Actor
     public void act() 
     {
         counter++;
+        // To remove Toby with blood
         if (counter == 20) {
             getWorld().removeObject(this);
             counter = 0; 
         }
-
     }  
 }

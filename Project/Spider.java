@@ -5,7 +5,7 @@ import greenfoot.*;
 /**
  * 
  */
-public class Spider extends Actor
+public class Spider extends Obstacles
 {
     int test = 0;
     /**

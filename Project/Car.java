@@ -4,8 +4,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Class of Red Car
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Car extends Actor {
        private int rotation;
@@ -16,15 +16,14 @@ public class Car extends Actor {
         */
        public Car() {
           // used to add object in level 1
-           
        }
 
        /**
-        * Constructor with one parameter
+        * Constructor with one parameter(rotation) - to rotate the car so that it could be used in the opposite direction
+        * 
         */
         public Car(int rotation) {
            setRotation(rotation);
-           
        }
        
        /**
@@ -41,58 +40,56 @@ public class Car extends Actor {
 
        }
         
-        /**
-         * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
-         */
+       /**
+        * removeToby() - to remove Toby from the World and replace health Toby with Toby with blood.
+        */
         public void removeToby() {
              if (isTouching(Toby.class)) {
-                lineCounter++;
-                getWorld().addObject(new Blood(), getX()-80, getY());
                 Greenfoot.playSound("tireSkid.wav");
+                getWorld().addObject(new Blood(), getX()-80, getY());
                 removeTouching(Toby.class);
-                deductPoints();
-                MyWorld myWorld = (MyWorld)getWorld();
-                if (myWorld.getLifeCount() > 0) {
-                    reviveToby();
-                }  
-
-                if (lineCounter > 0) {
-                    if (getWorld() instanceof Level1) {
-                        Level1 line = (Level1)getWorld();
-                       line.addObject(new HitLine(), 850, 350); 
-                    }
-                    else {
-                      Level3 line3 = (Level3)getWorld();
-                      line3.addObject(new HitLine(), 850, 350);   
-                     
-                    }
-                 }
-                
-            }
-        }
+                deductLife();
+                reviveToby();
+                printMessage();
+     
+           }
+       }
     
-        /**
-         * deductPoints() - to remove points when Toby touches the traffic cones.
+       /**
+         * deductPoints() - to remove points when Toby touches the red car.
          */
-         public void deductPoints() {
+         public void deductLife() {
             MyWorld myWorld = (MyWorld)getWorld();
             myWorld.lifeCount(-1);
+       }
     
-        }
-    
-        /**
-         * reviveToby() - bring back Toby
+       /**
+         * reviveToby() - to bring back Toby if life count is higher than 0.
          */
         public void reviveToby() {
-             if (getWorld() instanceof Level1) {
-                Level1 myLevel1 = (Level1)getWorld();
-                myLevel1.addObject(new Toby(), 800, 640);
+             MyWorld myWorld = (MyWorld)getWorld();
+             if (myWorld.getLifeCount() > 0) {
+                 // to reuse car in  level 1 and level 3(prevents logic errors when car hits Toby)
+                 if (getWorld() instanceof Level1) {
+                    Level1 myLevel1 = (Level1)getWorld();
+                    myLevel1.addObject(new Toby(), 800, 640);
+                 }
+                 else {
+                    Level3 myLevel3 = (Level3)getWorld();
+                    myLevel3.addObject(new Toby(), 800, 640);
+                 }
              }
-             else {
-                Level3 myLevel3 = (Level3)getWorld();
-                myLevel3.addObject(new Toby(), 800, 640);
-           
+       }
+       
+        /**
+         * printMessage() - to print a message when Toby touches the red car.
+         */
+        public void printMessage() {
+             lineCounter++;
+             if (lineCounter > 0) {
+                                     Level3 line3 = (Level3)getWorld();
+                      line3.addObject(new HitLine(), 850, 350);   
              }
-        }
 
+       }
 }
