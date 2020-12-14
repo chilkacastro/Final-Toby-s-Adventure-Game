@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=KeyPass
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ KeyPass\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ KeyPass\ Class\ -\ first\ level\ keys\ that\ Toby\ needs\ to\ collect\ to\ be\ able\ to\ move\ to\ the\ next\ level.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ KeyPass\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

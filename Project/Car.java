@@ -55,7 +55,7 @@ public class Car extends Actor {
    }
 
    /**
-     * deductPoints() - to remove points when Toby touches the red car.
+     * deductLife() - to remove points when Toby touches the red car.
      */
      public void deductLife() {
          MyWorld myWorld = (MyWorld)getWorld();

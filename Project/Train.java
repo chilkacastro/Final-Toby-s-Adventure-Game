@@ -4,7 +4,7 @@
  * The Train class is one of the main objects from the level 2. Whenever Toby touches a train, this will automatically remove one 
  * life.
  * @author (Chilka, Madalina, Nicolas, Jose) 
- * @version (a version number or a date)
+ * @version Gold Master(December 14, 2020)
  */
 public class Train extends Actor
 {
@@ -19,7 +19,9 @@ public class Train extends Actor
     private GreenfootImage image8;
     private int lineCounter = 0;
     
-    //default constructor
+    /**
+     * Default constructor
+     */
     public Train() {
         image1 = new GreenfootImage("Train3.png");
         image2 = new GreenfootImage("end1.png");
@@ -38,70 +40,89 @@ public class Train extends Actor
     public void act() 
     {
         setLocation(getX()-4, getY());
-        if (getX() == 0) {
-            trainCounter++;
-            if (trainCounter == 8) {
-                setImage(image2);
-            }
-            if (trainCounter == 16 ) {
-                setImage(image3);
-            }
-            if (trainCounter == 24) {
-                setImage(image4);
-            }
-            if (trainCounter == 32) {
-                setImage(image5);
-            }
-            if (trainCounter == 40) {
-                setImage(image6);
-            }
-            if (trainCounter == 48) {
-                setImage(image7);
-            }
-            if(trainCounter == 56){
-                setImage(image1);
-                setLocation(1650,getY());
-                trainCounter = 0;
-            }
-        }
+        switchImage();
         removeToby();
     }    
+    
+    /**
+     * switchImage() - to make the disappearance of the train realistic
+     */
+    public void switchImage() {
+       if (getX() == 0) {
+          trainCounter++;
+          if (trainCounter == 8) {
+                setImage(image2);
+          }
+          if (trainCounter == 16 ) {
+             setImage(image3);
+          }
+          if (trainCounter == 24) {
+             setImage(image4);
+          }
+          if (trainCounter == 32) {
+             setImage(image5);
+          }
+          if (trainCounter == 40) {
+             setImage(image6);
+          }
+          if (trainCounter == 48) {
+             setImage(image7);
+          }
+          if(trainCounter == 56){
+             setImage(image1);
+             setLocation(1650,getY());
+             trainCounter = 0;
+          }
+       } 
+        
+    }
     
     /**
      * removeToby() - to remove Toby from the World and bring him back to his initial position in that level.
      */
     public void removeToby() {
         if (isTouching(Toby.class)) {
-            lineCounter++;
-            getWorld().addObject(new Blood(), getX()-80, getY());
-            Greenfoot.playSound("Train.wav");
-            removeTouching(Toby.class);
-            deductPoints();
-            MyWorld myWorld = (MyWorld)getWorld();
-            if (myWorld.getLifeCount() > 0) {
-                reviveToby();
-            }   
-            Level2 line = (Level2)getWorld();
-            line.addObject(new HitLine(), 850, 350); 
+           getWorld().addObject(new Blood(), getX()-80, getY());
+           Greenfoot.playSound("Train.wav");
+           removeTouching(Toby.class);
+           reviveToby();
+           deductLife();
+           printMessage();
+     
         }
     }
 
     /**
-     * deducPoints() - to remove points when Toby touches the traffic cones.
+     * deductLife() - to remove points when Toby touches the train
      */
-     public void deductPoints() {
+     public void deductLife() {
         MyWorld myWorld = (MyWorld)getWorld();
         myWorld.lifeCount(-1);
     }
 
     /**
-     * reviveToby() - bring back Toby
+     * reviveToby() - bring back Toby if life count is higher than 0.
      */
     public void reviveToby() {
-        if (getWorld() instanceof Level2) {
-            Level2 myLevel2 = (Level2)getWorld();
-            myLevel2.addObject(new Toby(), 800, 640);
-       
+        MyWorld myWorld = (MyWorld)getWorld();
+        if (myWorld.getLifeCount() > 0) {
+            if (getWorld() instanceof Level2) {
+                Level2 myLevel2 = (Level2)getWorld();
+                myLevel2.addObject(new Toby(), 800, 640);
+           
+            }
+        }
+    }
+    
+    /**
+     * printMessage() - to print a message whenever Toby touches the heart
+     */
+     public void printMessage() {
+        lineCounter++;
+        if (lineCounter > 0) {
+           Level2 line = (Level2)getWorld();
+           line.addObject(new HitLine(), 850, 350); 
+  
         }
     }
 } 

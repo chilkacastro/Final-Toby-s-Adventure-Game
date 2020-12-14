@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Hole2
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Hole1\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Hole1\ Class\ -\ one\ of\ Toby's\ obstacle\ that\ removes\ one\ life\ if\ toby\ touches\ it.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Hole1\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
@@ -8,9 +8,12 @@ comment2.params=
 comment2.target=void\ removeToby()
 comment2.text=\r\n\ removeToby()\ -\ to\ remove\ Toby\ from\ the\ World\ and\ bring\ him\ back\ to\ his\ initial\ position\ in\ that\ level.\r\n
 comment3.params=
-comment3.target=void\ deductPoints()
-comment3.text=\r\n\ deductPoints()\ -\ to\ remove\ a\ life\ when\ Toby\ touches\ the\ holes.\r\n
+comment3.target=void\ deductLife()
+comment3.text=\r\n\ deductLife()\ -\ to\ remove\ a\ life\ when\ Toby\ touches\ the\ holes.\r\n
 comment4.params=
 comment4.target=void\ reviveToby()
-comment4.text=\r\n\ reviveToby()\ -\ bring\ back\ Toby\r\n
-numComments=5
+comment4.text=\r\n\ reviveToby()\ -\ bring\ back\ Toby\ to\ initial\ position.\r\n
+comment5.params=
+comment5.target=void\ printMessage()
+comment5.text=\r\n\ printMessage()\ -\ to\ print\ a\ message\ when\ Toby\ touches\ a\ hole\r\n
+numComments=6

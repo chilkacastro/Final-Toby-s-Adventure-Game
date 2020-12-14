@@ -55,7 +55,7 @@
        }
     
        /**
-         * deductPoints() - to remove points when Toby touches the blue car.
+         * deductLife() - to remove points when Toby touches the blue car.
          */
          public void deductLife() {
             MyWorld myWorld = (MyWorld)getWorld();

@@ -1,5 +1,4 @@
-import lang.stride.*;
-import java.util.List;
+
 import greenfoot.*;
 
 /**

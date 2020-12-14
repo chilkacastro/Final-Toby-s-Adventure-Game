@@ -54,7 +54,7 @@ public class Motorcycle extends Car
        }
     
         /**
-         * deductPoints() - to remove points when Toby touches the red motorcycle.
+         * deductLife() - to remove points when Toby touches the red motorcycle.
          */
          public void deductLife() {
             MyWorld myWorld = (MyWorld)getWorld();

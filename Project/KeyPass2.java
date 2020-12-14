@@ -3,7 +3,7 @@ import greenfoot.*;
 /**
  * The KeyPass2 class helps you to get to the next level once you collect all 3 objects from the Level2 class.
  * @author (Chilka, Madalina, Nicolas, Jose) 
- * @version (1)
+ * @version Gold Master(December 14, 2020)
  */
 public class KeyPass2 extends Actor
 {
@@ -16,10 +16,6 @@ public class KeyPass2 extends Actor
         if (isTouching(Toby.class)) {
             Greenfoot.playSound("Key.wav");
         }  
-        if (this.getWorld() == null) {
-            Greenfoot.playSound("Key.wav");
-            Greenfoot.setWorld(new Level2());
-            
-        } 
+        
     }
 }

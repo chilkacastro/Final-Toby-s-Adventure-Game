@@ -1,18 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class StartF here.
+ * StartF Class - clickable play word that brings Toby to Bonus Level(Level 4)
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class StartF extends Actor
 {
-    public StartF() {
-        /*GreenfootImage textImage = new GreenfootImage(text.length()* 50, 600);
-        textImage.drawString(text, 10, 300);
-        setImage(textImage); */
-    }
     /**
      * Act - do whatever the StartF wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -23,6 +18,6 @@ public class StartF extends Actor
           Greenfoot.playSound("Woof.wav");
           Greenfoot.setWorld(new MyWorld());
           Greenfoot.setWorld(new Level4());
-        }    
+      }    
     }
 }

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=HoleLine
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ HoleLine\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ HoleLine\ Class\ -\ This\ is\ a\ pop-up\ line\ that\ appears\ when\ Toby\ gets\ near\ a\ hole.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ PlusPoint\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

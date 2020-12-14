@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TrafficCone here.
+ * TrafficCone Class - one of Toby's obstacle in level 1 that decreases points by 100.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class TrafficCone extends Obstacles
 {
@@ -18,30 +18,41 @@ public class TrafficCone extends Obstacles
     }    
     
     /**
-     * deducPoints() - to remove points when Toby touches the traffic cones.
+     * deducPoints() - to remove points when Toby touches a traffic cone
      */
      public void deductPoints() {
        if (isTouching(Toby.class)) {
-            lineCounter++;
-            removeTouching(Toby.class);
-            MyWorld myWorld = (MyWorld)getWorld();
-            Greenfoot.playSound("Crying.wav");
-            myWorld.addScore(-100);
-            //getWorld().showText("You lost some POINTS!",250, 250);
-
-          if (myWorld.getLifeCount() > 0) {
-                Level1 myLevel1 = (Level1)getWorld();
-                myLevel1.addObject(new Toby(), 800, 640);
- 
-          }  
-            
-           if (lineCounter > 0) {
-            Level1 line = (Level1)getWorld();
-            line.addObject(new MinusLine(), 850, 350); 
-        
-                
-          }
+          removeTouching(Toby.class);
+          MyWorld myWorld = (MyWorld)getWorld();
+          myWorld.addScore(-100);
+          Greenfoot.playSound("Crying.wav");
+          printMessage();
+          reviveToby();
+    
        }
- 
     }
+    
+     /**
+     * reviveToby() - to revive Toby when life count is higher than 0.
+     */
+    public void reviveToby() {
+        MyWorld myWorld = (MyWorld)getWorld();
+        if (myWorld.getLifeCount() > 0) {
+             Level1 myLevel1 = (Level1)getWorld();
+             myLevel1.addObject(new Toby(), 800, 640);
+ 
+        }   
+    }
+    
+    /**
+     * printMessage() - to print a message whenever Toby touches the traffic cone
+     */
+    public void printMessage() {
+       lineCounter++;
+       if (lineCounter > 0) {
+           Level1 line = (Level1)getWorld();
+           line.addObject(new MinusLine(), 850, 350); 
+       }
+    }
+
 }

@@ -1,7 +1,16 @@
 #BlueJ class context
 comment0.target=Cactus2
-comment0.text=\r\n\ Whenever\ Toby\ touches\ the\ Cactus2\ class,\ 100\ points\ will\ be\ removed\ from\ his\ score.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ (1)\r\n
+comment0.text=\r\n\ Cactus2\ Class\ -\ whenever\ Toby\ touches\ the\ Cactus2\ class,\ 100\ points\ will\ be\ removed\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Cactus2\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Cactus\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ deductPoints()
+comment2.text=\r\n\ deductPoints()\ -\ to\ remove\ points\ when\ Toby\ touches\ a\ cactus\r\n
+comment3.params=
+comment3.target=void\ reviveToby()
+comment3.text=\r\n\ reviveToby()\ -\ to\ revive\ Toby\ when\ life\ count\ is\ higher\ than\ 0.\r\n
+comment4.params=
+comment4.target=void\ printMessage()
+comment4.text=\r\n\ printMessage()\ -\ to\ print\ a\ message\ whenever\ Toby\ touches\ the\ cactus\r\n
+numComments=5

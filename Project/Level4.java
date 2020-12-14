@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Level4 here.
+ * Bonus Level - Toby acquires fire ability
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Level4 extends MyWorld
 {
@@ -15,13 +15,14 @@ public class Level4 extends MyWorld
     public Level4()
     {
         prepare();
-        GreenfootImage gg = new GreenfootImage("Bonus Sandbox Level: Use special powers & defeat all enemies to clean the house!", 30, Color.PINK, new Color(0, 0, 0, 0)); gg.setColor(Color.YELLOW);
+        GreenfootImage gg = new GreenfootImage("Bonus Sandbox Level: Use special powers & defeat all enemies to clean the house!", 30, Color.PINK, new Color(0, 0, 0, 0)); 
+        gg.setColor(Color.YELLOW);
         getBackground().drawImage(gg, (getWidth()-gg.getWidth())/1, (getHeight()-gg.getHeight())/1);
 
     }
+    
     /**
      * Constructor for objects of class Level4.
-     * 
      */
     public void act()
     {

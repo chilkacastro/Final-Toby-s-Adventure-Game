@@ -1,18 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
- /**
- * Write a description of class Bee here.
+/**
+ * Bee Class - one of Toby's obstacles in Level 3 which decreases points by 500.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 
 public class Bee extends Obstacles
 {
-    private GreenfootImage image1;
-    private GreenfootImage image2;
-    private int rotation;
-    private int lineCounter = 0;
+        private GreenfootImage image1;
+        private GreenfootImage image2;
+        private int rotation;
+        private int lineCounter = 0;
    
         /**
          * Default constructor
@@ -24,15 +24,13 @@ public class Bee extends Obstacles
         }
 
         /**
-         * Constructor with one parameter
-    
+         * Constructor with one parameter(rotation) - turns the bee to opposite direction
          */
         public Bee(int rotation){
             image1 =  new GreenfootImage("bee1.png");
             image2 =  new GreenfootImage("bee2.png");
             setRotation(rotation);
             setRotation(90);
-            
         }
         
         /**
@@ -81,26 +79,40 @@ public class Bee extends Obstacles
          * decreasePoints() - to decrease the points of Toby when the bee goes near him and to play a sound.
          */
         public void decreasePoints(){
-          if (isTouching(Toby.class)) {
-                lineCounter++;
-                removeTouching(Toby.class);
-                Greenfoot.playSound("Bee.wav");
-                MyWorld myWorld = (MyWorld)getWorld();
-                myWorld.addScore(-500);
-               
-               if (myWorld.getLifeCount() > 0) {
-                    Level3 myLevel3 = (Level3)getWorld();
-                    myLevel3.addObject(new Toby(), 800, 640);
-               }   
-               if (lineCounter > 0) {
-                   Level3 line = (Level3)getWorld();
-                   line.addObject(new BeeLine(), 850, 350); 
-                    
-               }
-          }
+           if (isTouching(Toby.class)) {
+               Greenfoot.playSound("Bee.wav");
+               removeTouching(Toby.class);
+               MyWorld myWorld = (MyWorld)getWorld();
+               myWorld.addScore(-500);
+               printMessage();
+               reviveToby();
+ 
+           }
 
         }
     
-       
+        /**
+         * reviveToby() - to bring back Toby if life count is higher than 0.
+         */
+        public void reviveToby() {
+             MyWorld myWorld = (MyWorld)getWorld();
+             if (myWorld.getLifeCount() > 0) {
+                 Level3 myLevel3 = (Level3)getWorld();
+                 myLevel3.addObject(new Toby(), 800, 640);
+             }
+        }
         
+        /**
+         * printMessage() - to print a message whenever Toby touches the heart
+         */
+        public void printMessage() {
+           lineCounter++;
+           if (lineCounter > 0) {
+               Level3 line = (Level3)getWorld();
+               line.addObject(new BeeLine(), 850, 350); 
+  
+           }
+        }
 }
+        
+        

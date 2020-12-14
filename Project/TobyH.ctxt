@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=TobyH
-comment0.text=\r\n\ A\ class\ of\ the\ main\ character,\ TobyH.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ A\ class\ of\ the\ main\ character,\ TobyH.\ TobyH\ for\ Bonus\ Level(Level\ 4)\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=TobyH()
 comment1.text=\r\n\ Default\ Constructor-\ To\ create\ objects.\r\n
@@ -8,9 +8,12 @@ comment2.params=
 comment2.target=void\ act()
 comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ TobyH\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment3.params=
-comment3.target=void\ nextLevel()
-comment3.text=\r\n\ nextLevel()\ -\ to\ bring\ TobyH\ to\ next\ level.\r\n
+comment3.target=void\ fireBall()
+comment3.text=\r\n\ fireBall()\ -\ allows\ Toby\ to\ shoot\ fireballs\r\n
 comment4.params=
-comment4.target=void\ checkKeyPressed()
-comment4.text=\r\n\ checkKeyPressed\ -\ to\ move\ or\ control\ TobyH\ whenever\ a\ key\ is\ pressed.\r\n
-numComments=5
+comment4.target=void\ nextLevel()
+comment4.text=\r\n\ nextLevel()\ -\ to\ bring\ TobyH\ to\ next\ level.\r\n
+comment5.params=
+comment5.target=void\ checkKeyPressed()
+comment5.text=\r\n\ checkKeyPressed\ -\ to\ move\ or\ control\ TobyH\ whenever\ a\ key\ is\ pressed.\r\n
+numComments=6

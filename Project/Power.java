@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Power here.
+ * Power Class - to inform player to pick up the fireball so that Toby could gain fire ability.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Power extends Actor
 {   
@@ -17,9 +17,7 @@ public class Power extends Actor
         //When touching Toby
         Actor power = getOneObjectAtOffset(0, 0, TobyH.class);
         if (power != null) {
-            getWorld().showText("You have obtained the power to shoot Fireballs! Press Space to use it", 500, 500);
             Greenfoot.playSound("Heart.wav");
-            
         }
     }
     

@@ -1,13 +1,13 @@
 #BlueJ class context
 comment0.target=Rectangle
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Rectangle\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Rectangle\ Class\ -\ used\ to\ show\ the\ score\ on\ the\ winner\ screen\ and\ game\ over\ screen\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=Rectangle()
+comment1.text=\r\n\ Default\ Constructor\r\n
 comment2.params=score\ lifeCount
 comment2.target=Rectangle(int,\ int)
+comment2.text=\r\n\ Constructor\ with\ two\ parameters\r\n
 comment3.params=score\ lifeCount\ fontSize
 comment3.target=Rectangle(int,\ int,\ int)
-comment4.params=
-comment4.target=void\ act()
-comment4.text=\r\n\ Act\ -\ do\ whatever\ the\ Rectangle\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=5
+comment3.text=\r\n\ Constructors\ with\ three\ parameters\r\n
+numComments=4

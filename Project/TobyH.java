@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * A class of the main character, TobyH.
+ * A class of the main character, TobyH. TobyH for Bonus Level(Level 4)
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class TobyH extends Actor {
     private GreenfootImage image1;
@@ -50,7 +50,14 @@ public class TobyH extends Actor {
     public void act() {
         checkKeyPressed();
         nextLevel();
-        //Gives Toby power to shoot fireballs
+        fireBall();
+    }
+
+    /**
+     * fireBall() - allows Toby to shoot fireballs
+     */
+    public void fireBall() {
+      //Gives Toby power to shoot fireballs
         if(Greenfoot.isKeyDown("space"))
         {
             Greenfoot.playSound("Fire.wav");
@@ -65,7 +72,9 @@ public class TobyH extends Actor {
             }
         }
         //Else statement to reset the bullet value
-        else {numShot = 0;}
+        else {
+            numShot = 0;
+        }
         //Removes the Power when obtained
         Actor power = getOneObjectAtOffset(0, 0, Power.class);
         if (power != null) {
@@ -74,8 +83,9 @@ public class TobyH extends Actor {
             Greenfoot.playSound("Heart.wav");
             myWorld.removeObject(power);
         }
+        
     }
-
+    
     /**
      * nextLevel() - to bring TobyH to next level.
      */

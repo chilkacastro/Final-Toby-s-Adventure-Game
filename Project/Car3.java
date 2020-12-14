@@ -56,7 +56,7 @@ public class Car3 extends Car
        }
     
        /**
-         * deductPoints() - to remove points when Toby touches the yellow car.
+         * deductLife() - to remove points when Toby touches the yellow car.
          */
          public void deductLife() {
             MyWorld myWorld = (MyWorld)getWorld();

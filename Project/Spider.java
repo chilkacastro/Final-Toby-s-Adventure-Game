@@ -1,40 +1,31 @@
-import lang.stride.*;
-import java.util.List;
 import greenfoot.*;
 
 /**
- * 
+ * Spider Class - Toby's obstacle in the Bonus Level(Level 4)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Spider extends Obstacles
 {
-    int test = 0;
     /**
-     * Constructor
-     */
-    public Spider()
-    {
-        //test = Greenfoot.getRandomNumber(50);
-    }
-
-    /**
-     * Moves randomly in the screen
+     * Act - do whatever the Train wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {        
         Actor toby = getOneObjectAtOffset(0, 0, TobyH.class);
         if (toby != null) {
             World theWorld = getWorld();
-            getWorld().addObject(new Blood(), getX()-80, getY());
             theWorld.removeObject(toby);
             Greenfoot.playSound("Crying.wav");
+            getWorld().showText("POISONED!", 800, 300);
             Greenfoot.stop();
-            getWorld().showText("POISONED!", 300, 200);
-        }
-        moveAndTurn(); 
+       }
+       moveAndTurn(); 
     }
 
     /**
-     * 
+     * moveAndTurn() - random movement of the spiders
      */
     public void moveAndTurn()
     {

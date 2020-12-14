@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Hole1 here.
+ * Hole1 Class - one of Toby's obstacle that removes one life if toby touches it.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Hole2 extends Actor
 {   
@@ -16,7 +16,6 @@ public class Hole2 extends Actor
     public void act() 
     {
        removeToby();
-       
     }
     
     /**
@@ -24,46 +23,49 @@ public class Hole2 extends Actor
      */
     public void removeToby() {
         if (isTouching(Toby.class)) {
-            lineCounter++;
             Greenfoot.playSound("Crying.wav");
+            printMessage();
+            deductLife();
             removeTouching(Toby.class);
-            // getWorld().showText("You lose a life!",500, 500);
-            deductPoints();
-            MyWorld myWorld = (MyWorld)getWorld();
-            if (myWorld.getLifeCount() > 0) {
-                reviveToby();
-            }   
-            
-            if (lineCounter > 0) {
-                Level1 line = (Level1)getWorld();
-                line.addObject(new HoleLine(), 850, 350); 
-                
-            }
         }
     }
     
     /**
-     * deductPoints() - to remove a life when Toby touches the holes.
+     * deductLife() - to remove a life when Toby touches the holes.
      */
-     public void deductPoints() {
+     public void deductLife() {
         MyWorld myWorld = (MyWorld)getWorld();
         myWorld.lifeCount(-1);
-
+        
     }
     
     /**
-     * reviveToby() - bring back Toby
+     * reviveToby() - bring back Toby to initial position.
      */
-        public void reviveToby() {
-         if (getWorld() instanceof Level1) {
-            Level1 myLevel1 = (Level1)getWorld();
-            myLevel1.addObject(new Toby(), 800, 640);
-         }
-         else {
-            Level3 myLevel3 = (Level3)getWorld();
-            myLevel3.addObject(new Toby(), 800, 640);
-       
-         }
+     public void reviveToby() {
+        MyWorld myWorld = (MyWorld)getWorld();
+        if (myWorld.getLifeCount() > 0) {
+             if (getWorld() instanceof Level1) {
+                Level1 myLevel1 = (Level1)getWorld();
+                myLevel1.addObject(new Toby(), 800, 640);
+             }
+             else {
+                Level3 myLevel3 = (Level3)getWorld();
+                myLevel3.addObject(new Toby(), 800, 640);
+           
+             }
+        }
     }
 
+    /**
+     * printMessage() - to print a message when Toby touches a hole
+     */
+    public void printMessage() {
+      lineCounter++;
+      if (lineCounter > 0) {
+          Level1 line = (Level1)getWorld();
+          line.addObject(new HoleLine(), 850, 350); 
+      }
+      
+    }
 }

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class House here.
+ * House Class- Toby's home
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka,, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class House extends Actor
 {
@@ -18,8 +18,6 @@ public class House extends Actor
            Greenfoot.playSound("House.wav");
            removeTouching(Toby.class);
            Greenfoot.setWorld(new WinScreen());
-           //getWorld().showText("You have won the game!",500, 500);
-           
         }
     }    
 }

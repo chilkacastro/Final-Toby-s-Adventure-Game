@@ -51,11 +51,11 @@ public class Truck1 extends Car
                 reviveToby();
                 printMessage();
      
-           }
+            }
        }
     
         /**
-         * deductPoints() - to remove points when Toby touches the yellow truck.
+         * deductLife() - to remove points when Toby touches the yellow truck.
          */
          public void deductLife() {
             MyWorld myWorld = (MyWorld)getWorld();

@@ -1,10 +1,13 @@
 #BlueJ class context
 comment0.target=Gun
+comment0.text=\r\n\ Gun\ Class\ -\ fireball\ of\ Toby\ in\ Bonus\ Level(Level4)\r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Gun\ wants\ to\ do.\ This\ method\ is\ called\ \r\n\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=world
 comment2.target=void\ addedToWorld(greenfoot.World)
+comment2.text=\r\n\ addedToWorld()\ -\ to\ add\ fireball\ to\ Level\ 4\r\n
 comment3.params=
 comment3.target=void\ checkDestroy()
-comment3.text=\r\n\ Checks\ if\ fireball\ touches\ spider\ to\ destroy\ it\r\n
+comment3.text=\r\n\ checkDestroy()-\ checks\ if\ fireball\ touches\ spider\ to\ destroy\ it\r\n
 numComments=4

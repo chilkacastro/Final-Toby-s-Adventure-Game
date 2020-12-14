@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+
 /**
- * Write a description of class WaterLine here.
+ * WaterLine Class - This is a pop-up line that appears when Toby touches the deep water
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose)
+ * @version Gold Master(December 14, 2020)
  */
 public class WaterLine extends Lines
 {

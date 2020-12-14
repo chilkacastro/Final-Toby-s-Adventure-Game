@@ -20,8 +20,7 @@ public class Water extends Obstacles
            deductLife();
            reviveToby();
            printMessage();
-           
-        }
+       }
    }  
    
    /**

@@ -1,13 +1,10 @@
 #BlueJ class context
 comment0.target=Spider
-comment0.text=\r\n\ \r\n
+comment0.text=\r\n\ Spider\ Class\ -\ Toby's\ obstacle\ in\ the\ Bonus\ Level(Level\ 4)\r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
-comment1.target=Spider()
-comment1.text=\r\n\ Constructor\r\n
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Train\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=
-comment2.target=void\ act()
-comment2.text=\r\n\ Moves\ randomly\ in\ the\ screen\r\n
-comment3.params=
-comment3.target=void\ moveAndTurn()
-comment3.text=\r\n\ \r\n
-numComments=4
+comment2.target=void\ moveAndTurn()
+comment2.text=\r\n\ moveAndTurn()\ -\ random\ movement\ of\ the\ spiders\r\n
+numComments=3

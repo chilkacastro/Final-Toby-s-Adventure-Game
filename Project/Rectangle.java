@@ -1,18 +1,24 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Rectangle here.
+ * Rectangle Class - used to show the score on the winner screen and game over screen
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose)
+ * @version Gold Master(December 14, 2020)
  */
 public class Rectangle extends Actor
 {
+    /**
+     * Default Constructor
+     */
     public Rectangle () {
-        //default constructor
+        //no parameter
         
     }
 
+    /**
+     * Constructor with two parameters
+     */
     public Rectangle(int score, int lifeCount) {
        int fontSize = 60;
        Color fontColor = new Color(233, 255, 221);
@@ -24,6 +30,9 @@ public class Rectangle extends Actor
        setImage(img);
     }
     
+    /**
+     * Constructors with three parameters
+     */
     public Rectangle(int score, int lifeCount, int fontSize) {
         Color fontColor = new Color(233, 255, 221);
         Color fontBgColor = new Color(0, 0, 0, 0);
@@ -42,12 +51,4 @@ public class Rectangle extends Actor
         
     }
     
-    /**
-     * Act - do whatever the Rectangle wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        // Add your action code here.
-    }    
 }

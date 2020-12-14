@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Paw here.
+ * Paw Class - clickable paw that brings player to another world
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Paw extends Actor
 {
@@ -51,11 +51,10 @@ public class Paw extends Actor
         }
          
         if (Greenfoot.mouseClicked(this) && getX() == 860) {
-            Greenfoot.playSound("Woof.wav");
+           Greenfoot.playSound("Woof.wav");
             if (getWorld() instanceof Credit) {
                 Greenfoot.setWorld(new StartScreen());
            }
-
         }
 
         if (Greenfoot.mouseClicked(this) && getX() == 700) {
@@ -63,7 +62,6 @@ public class Paw extends Actor
             if (getWorld() instanceof Credit) {
                 Greenfoot.setWorld(new Sources());
             }
-
         }
         
         if (Greenfoot.mouseClicked(this) && getX() == 1310) {
@@ -76,7 +74,6 @@ public class Paw extends Actor
             if (getWorld() instanceof WinScreen) {
                 Greenfoot.setWorld(new StartScreen());
             }
-
         }
     }
 }

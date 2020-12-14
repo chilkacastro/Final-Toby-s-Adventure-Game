@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=KeyPass2
-comment0.text=\r\n\ The\ KeyPass2\ class\ helps\ you\ to\ get\ to\ the\ next\ level\ once\ you\ collect\ all\ 3\ objects\ from\ the\ Level2\ class.\r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ (1)\r\n
+comment0.text=\r\n\ The\ KeyPass2\ class\ helps\ you\ to\ get\ to\ the\ next\ level\ once\ you\ collect\ all\ 3\ objects\ from\ the\ Level2\ class.\r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ KeyPass2\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

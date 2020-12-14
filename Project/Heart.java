@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Heart here.
+ * Heart Class - increase Toby's life by 1.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Chilka, Madalina, Nicolas, Jose) 
+ * @version Gold Master(December 14, 2020)
  */
 public class Heart extends Actor
 {
@@ -12,7 +12,6 @@ public class Heart extends Actor
     private GreenfootImage image2;
     private GreenfootImage image3;
     private int counter = 0;
-    private int counter2 = 0;
     private int lineCounter = 0;
     /**
      * Default constructor
@@ -29,10 +28,17 @@ public class Heart extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() {
-        lineCounter++;
-        counter++;   
-        getImage();
+        switchImage();
         gainPoints();  
+         
+    }
+
+    /**
+     * switchImage() - to animate the heart
+     */
+    public void switchImage() {
+        counter++;
+        Greenfoot.playSound("Heart.wav");
         if (counter == 10) {
              setImage(image1);
         }
@@ -43,33 +49,30 @@ public class Heart extends Actor
             setImage(image3);
             counter=0;
         } 
-        
     }
-
-
+    
     /**
      * gainPoints() - to gain points if Toby touches and picks up the heart.
-
      */
     public void gainPoints(){
         if (isTouching(Toby.class)) {
-           lineCounter++;
-           counter2++;
            MyWorld myWorld = (MyWorld)getWorld();
            myWorld.lifeCount(+1);
-           //getWorld().showText("YOU GAINED 1 LIFE!",450, 350);
-           Greenfoot.playSound("Heart.wav");
-           
-           if (counter2 == 8){
-               getWorld().showText("",797, 350);           
-           }
-
-           if (lineCounter > 0) {
-                Level3 myLevel3 = (Level3)getWorld();
-                myLevel3.addObject(new PlusLifeLine(), 840, 400);
-           }
-           
+           printMessage();
            getWorld().removeObject(this);
         }
+    }  
+    
+    /**
+     * printMessage() - to print a message whenever Toby touches the heart
+     */
+    public void printMessage() {
+       lineCounter++;
+       if (lineCounter > 0) {
+            Level3 myLevel3 = (Level3)getWorld();
+            myLevel3.addObject(new PlusLifeLine(), 840, 400);
+       }
     }
-}
+ }
+    
+

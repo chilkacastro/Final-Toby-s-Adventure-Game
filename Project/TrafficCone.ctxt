@@ -1,10 +1,16 @@
 #BlueJ class context
 comment0.target=TrafficCone
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ TrafficCone\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ TrafficCone\ Class\ -\ one\ of\ Toby's\ obstacle\ in\ level\ 1\ that\ decreases\ points\ by\ 100.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ TrafficCone\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=
 comment2.target=void\ deductPoints()
-comment2.text=\r\n\ deducPoints()\ -\ to\ remove\ points\ when\ Toby\ touches\ the\ traffic\ cones.\r\n
-numComments=3
+comment2.text=\r\n\ deducPoints()\ -\ to\ remove\ points\ when\ Toby\ touches\ a\ traffic\ cone\r\n
+comment3.params=
+comment3.target=void\ reviveToby()
+comment3.text=\r\n\ reviveToby()\ -\ to\ revive\ Toby\ when\ life\ count\ is\ higher\ than\ 0.\r\n
+comment4.params=
+comment4.target=void\ printMessage()
+comment4.text=\r\n\ printMessage()\ -\ to\ print\ a\ message\ whenever\ Toby\ touches\ the\ traffic\ cone\r\n
+numComments=5

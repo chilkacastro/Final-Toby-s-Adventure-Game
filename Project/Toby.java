@@ -1,10 +1,10 @@
     import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
     
     /**
-     * A class of the main character, Toby.
+     * Toby Class - main character of the game
      * 
-     * @author 
-     * @version (a version number or a date)
+     * @author (Chilka, Madalina, Nicolas, Jose)
+     * @version Gold Master(December 14, 2020)
      */
     public class Toby extends Actor {
             private GreenfootImage image1;
@@ -82,7 +82,7 @@
                     Greenfoot.setWorld(new Level2());
                     
                } 
-           }
+            }
         
             
             /**
@@ -93,7 +93,7 @@
                 if (Greenfoot.isKeyDown("up")) {
                     setLocation(getX(), getY() - 3);
                     // Animates Toby when going up
-                    if (slow == 8) {
+                   if (slow == 8) {
                         if (getImage() == image7) {
                             setImage(image8);
                         }

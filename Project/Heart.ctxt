@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Heart
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Heart\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Heart\ Class\ -\ increase\ Toby's\ life\ by\ 1.\r\n\ \r\n\ @author\ (Chilka,\ Madalina,\ Nicolas,\ Jose)\ \r\n\ @version\ Gold\ Master(December\ 14,\ 2020)\r\n
 comment1.params=
 comment1.target=Heart()
 comment1.text=\r\n\ Default\ constructor\r\n
@@ -8,6 +8,12 @@ comment2.params=
 comment2.target=void\ act()
 comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Heart\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment3.params=
-comment3.target=void\ gainPoints()
-comment3.text=\r\n\ gainPoints()\ -\ to\ gain\ points\ if\ Toby\ touches\ and\ picks\ up\ the\ heart.\r\n\r\n
-numComments=4
+comment3.target=void\ switchImage()
+comment3.text=\r\n\ switchImage()\ -\ to\ animate\ the\ heart\r\n
+comment4.params=
+comment4.target=void\ gainPoints()
+comment4.text=\r\n\ gainPoints()\ -\ to\ gain\ points\ if\ Toby\ touches\ and\ picks\ up\ the\ heart.\r\n
+comment5.params=
+comment5.target=void\ printMessage()
+comment5.text=\r\n\ printMessage()\ -\ to\ print\ a\ message\ whenever\ Toby\ touches\ the\ heart\r\n
+numComments=6
