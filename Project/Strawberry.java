@@ -17,7 +17,7 @@ public class Strawberry extends Food
     {
       if (isTouching(Toby.class)) {
            ((MyWorld)getWorld()).addScore(50); 
-           Greenfoot.playSound("Treats.wav");
+           Greenfoot.playSound("House.wav");
            printMessage();
            getWorld().removeObject(this);
       }  
