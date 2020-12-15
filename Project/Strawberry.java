@@ -23,9 +23,9 @@ public class Strawberry extends Food
       }  
    }
    
-    /**
-     * printMessage() - to print a message whenever Toby touches a strawberry
-     */
+   /**
+    * printMessage() - to print a message whenever Toby touches a strawberry
+    */
     public void printMessage() {
        lineCounter++;
        if (lineCounter > 0) {
