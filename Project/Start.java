@@ -18,6 +18,7 @@ public class Start extends ClickLines
           Greenfoot.playSound("Woof.wav");
           Greenfoot.setWorld(new MyWorld());
           Greenfoot.setWorld(new Level1());
+          Greenfoot.setWorld(new Level1()); // to ensure it resets to 500
      }    
    }
 }

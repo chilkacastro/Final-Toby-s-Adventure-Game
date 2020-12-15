@@ -19,6 +19,7 @@ public class StartScreen extends World
         super(1065, 600, 1); 
         mouseClicked();
         Greenfoot.playSound("Intro.wav");
+        prepare();
     }
 
     /**
@@ -39,5 +40,13 @@ public class StartScreen extends World
         Paw pawCredit = new Paw();
         addObject(pawCredit, 860, 555);
         addObject(new Credits(),975, 555);
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
     }
 }
