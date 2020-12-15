@@ -3,7 +3,7 @@
      /**
       * Superclass of Level 1, Level 2, Level 3, Level 4, Winner Screen and Game Over Screen
       * 
-      * @author Chilka, Madalina, Nicolas, Jose
+      * @author (Chilka, Madalina, Nicolas, Jose)
       * @version Gold Master(December 14, 2020)
       */
         public class MyWorld extends World {
@@ -31,6 +31,15 @@
              */
             public int getLifeCount() {
                 return lifeCount;
+            }
+            
+            // MUSIC
+            /**
+             * act() - To play a background music when game starts.
+             */
+            public void act()
+            {
+                myMusic.play();
             }
             
             // SCORE
@@ -78,15 +87,7 @@
 
                 }
             }  
-            
-            // MUSIC
-            /**
-             * playMusic() - To play a background music when game starts.
-             */
-            public void playMusic()
-            {
-                myMusic.play();
-            }
+
      }
     
     

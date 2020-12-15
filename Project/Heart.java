@@ -38,7 +38,7 @@ public class Heart extends Actor
      */
     public void switchImage() {
         counter++;
-        Greenfoot.playSound("Heart.wav");
+        
         if (counter == 10) {
              setImage(image1);
         }
@@ -56,6 +56,7 @@ public class Heart extends Actor
      */
     public void gainPoints(){
         if (isTouching(Toby.class)) {
+           Greenfoot.playSound("Heart.wav");
            MyWorld myWorld = (MyWorld)getWorld();
            myWorld.lifeCount(+1);
            printMessage();
